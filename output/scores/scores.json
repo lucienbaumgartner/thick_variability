@@ -1,0 +1,110 @@
+[
+  {
+    "sentence": "John is a cruel and calculating person.",
+    "target_word": "cruel",
+    "Normalized Semantic Contribution": 0.25801530480384827,
+    "Residual Semantic Shift": 0.3691960871219635,
+    "Normalized Semantic Contribution (INLP)": 0.24119315388605786,
+    "Residual Semantic Shift (INLP)": 0.3046337679926829,
+    "Normalized Sentiment Contribution": 0.9545740895430533,
+    "Sentiment Target": -1,
+    "Sentence Polarity": 0,
+    "IG Target Word Contribution": 0.25506967306137085
+  },
+  {
+    "sentence": "It was cruel of her to ignore his pleas.",
+    "target_word": "cruel",
+    "Normalized Semantic Contribution": 0.19542981684207916,
+    "Residual Semantic Shift": 0.30695250630378723,
+    "Normalized Semantic Contribution (INLP)": 0.19746086566563606,
+    "Residual Semantic Shift (INLP)": 0.31069897905416355,
+    "Normalized Sentiment Contribution": 0.3298793458751579,
+    "Sentiment Target": -1,
+    "Sentence Polarity": 0,
+    "IG Target Word Contribution": 0.19584615528583527
+  },
+  {
+    "sentence": "The cruel winter froze the crops.",
+    "target_word": "cruel",
+    "Normalized Semantic Contribution": 0.0958656519651413,
+    "Residual Semantic Shift": -0.1896314173936844,
+    "Normalized Semantic Contribution (INLP)": 0.09671434495159084,
+    "Residual Semantic Shift (INLP)": -0.1848057259541609,
+    "Normalized Sentiment Contribution": 0.005294892230923834,
+    "Sentiment Target": 1,
+    "Sentence Polarity": 0,
+    "IG Target Word Contribution": 0.10259291529655457
+  },
+  {
+    "sentence": "She gave him a cruel smile.",
+    "target_word": "cruel",
+    "Normalized Semantic Contribution": 0.30651602149009705,
+    "Residual Semantic Shift": 0.49555671215057373,
+    "Normalized Semantic Contribution (INLP)": 0.2967670182443522,
+    "Residual Semantic Shift (INLP)": 0.450595007599988,
+    "Normalized Sentiment Contribution": 0.008019922039167057,
+    "Sentiment Target": -1,
+    "Sentence Polarity": 1,
+    "IG Target Word Contribution": 0.12176390737295151
+  },
+  {
+    "sentence": "His cruel jokes made everyone uncomfortable.",
+    "target_word": "cruel",
+    "Normalized Semantic Contribution": 0.13318556547164917,
+    "Residual Semantic Shift": -0.128151535987854,
+    "Normalized Semantic Contribution (INLP)": 0.13505430310212188,
+    "Residual Semantic Shift (INLP)": -0.11874706391826689,
+    "Normalized Sentiment Contribution": 0.011018190238196193,
+    "Sentiment Target": 1,
+    "Sentence Polarity": 0,
+    "IG Target Word Contribution": -0.0025016884319484234
+  },
+  {
+    "sentence": "The punishment was cruel but just.",
+    "target_word": "cruel",
+    "Normalized Semantic Contribution": 0.23907004296779633,
+    "Residual Semantic Shift": 0.21902602910995483,
+    "Normalized Semantic Contribution (INLP)": 0.24077748383571115,
+    "Residual Semantic Shift (INLP)": 0.22038382797796896,
+    "Normalized Sentiment Contribution": 0.2412186115729152,
+    "Sentiment Target": 1,
+    "Sentence Polarity": 0,
+    "IG Target Word Contribution": -0.15620242059230804
+  },
+  {
+    "sentence": "Some say the villain is not truly cruel, just misunderstood.",
+    "target_word": "cruel",
+    "Normalized Semantic Contribution": 0.0,
+    "Residual Semantic Shift": -0.3229595720767975,
+    "Normalized Semantic Contribution (INLP)": 0.0,
+    "Residual Semantic Shift (INLP)": -0.32099220908942183,
+    "Normalized Sentiment Contribution": 0.0,
+    "Sentiment Target": 0,
+    "Sentence Polarity": 0,
+    "IG Target Word Contribution": 0.012881203554570675
+  },
+  {
+    "sentence": "That cruel twist of fate changed everything.",
+    "target_word": "cruel",
+    "Normalized Semantic Contribution": 0.10572223365306854,
+    "Residual Semantic Shift": -0.1232689917087555,
+    "Normalized Semantic Contribution (INLP)": 0.10620111819557038,
+    "Residual Semantic Shift (INLP)": -0.1203781514191789,
+    "Normalized Sentiment Contribution": 0.003239553827812814,
+    "Sentiment Target": -1,
+    "Sentence Polarity": 1,
+    "IG Target Word Contribution": 0.12816141545772552
+  },
+  {
+    "sentence": "He endured cruel treatment in prison.",
+    "target_word": "cruel",
+    "Normalized Semantic Contribution": 0.24147067964076996,
+    "Residual Semantic Shift": 0.22511735558509827,
+    "Normalized Semantic Contribution (INLP)": 0.2368002356321758,
+    "Residual Semantic Shift (INLP)": 0.2077737462061151,
+    "Normalized Sentiment Contribution": 0.5629181052515921,
+    "Sentiment Target": -1,
+    "Sentence Polarity": 0,
+    "IG Target Word Contribution": -0.01960712857544422
+  }
+]
