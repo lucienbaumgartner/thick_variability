@@ -1,3 +1,5 @@
+import json
+
 from transformers import pipeline, DistilBertTokenizer, DistilBertForSequenceClassification
 from sentence_transformers import SentenceTransformer
 import torch
@@ -102,53 +104,48 @@ def compute_ig_target_contribution(sentence, target_word, target_label=None):
     target_contribution = np.sum([norm_scores[i] for i in indices]) if indices else 0.0
     return float(target_contribution)
 
-corpus = [
-    # cruel
-    "John is a cruel and calculating person.",
-    "John is not a cruel and calculating person.",
-    "It was cruel of her to ignore his pleas.",
-    "It wasn't cruel of her to ignore his pleas.",
-    "The cruel winter froze the crops.",
-    "The winter was not cruel and froze the crops.",
-    "She gave him a cruel smile.",
-    "She did not give him a cruel smile.",
-    "His cruel jokes made everyone uncomfortable.",
-    "He did not make cruel jokes that made everyone uncomfortable.",
-    "The punishment was cruel but just.",
-    "The punishment was not cruel but just.",
-    "Some say the villain is truly cruel and not just misunderstood",
-    "Some say the villain is not truly cruel, just misunderstood.",
-    "That cruel twist of fate changed everything.",
-    "That twist of fate wasn't cruel and changed everything.",
-    "He endured cruel treatment in prison.",
-    "He endured no cruel treatment in prison.",
-    # honest
-    "John is an honest and straightforward person.",
-    "John is not an honest and straightforward person.",
-    "It was honest of her to admit her mistake.",
-    "It wasn't honest of her to admit her mistake.",
-    "The honest report revealed the facts.",
-    "The report was not honest and revealed the facts.",
-    "She gave him an honest smile.",
-    "She did not give him an honest smile.",
-    "His honest remarks made everyone uncomfortable.",
-    "He did not make honest remarks that made everyone uncomfortable.",
-    "The explanation was honest but incomplete.",
-    "The explanation was not honest but incomplete.",
-    "Some say the witness is truly honest and not just persuasive",
-    "Some say the witness is not truly honest, just persuasive.",
-    "That honest confession changed everything.",
-    "That confession wasn't honest and changed everything.",
-    "He was known for honest conduct in office.",
-    "He was known for no honest conduct in office.",
+with open("../../input/proof-of-concept_data_controlled.json", "r", encoding="utf-8") as f:
+    corpus_controlled = json.load(f)
+
+with open("../../input/proof-of-concept_data_naturalistic_w_symmetric_neg.json", "r", encoding="utf-8") as f:
+    corpus_naturalistic= json.load(f)
+
+# --- Controlled corpus ---
+target_terms = [
+    "compassionate", "cruel",
+    "generous", "selfish",
+    "sincere", "deceitful",
+    "courageous", "cowardly",
+    "virtuous", "vicious"
 ]
 
-df = pd.DataFrame({"text": corpus})
-df['id'] = df.reset_index().index
+controlled_rows = []
+for entry in corpus_controlled:
+    for term in target_terms:
+        for negated, key in [(False, "sentence_aff"), (True, "sentence_neg")]:
+            controlled_rows.append({
+                "id": entry["template_id"],
+                "text": entry[key].replace("TERM", term)
+            })
 
-target_terms = ["cruel", "honest"]
+df_controlled = pd.DataFrame(controlled_rows)
+
+naturalistic_rows = []
+for entry in corpus_naturalistic:
+    terms = entry["pair"].split("/")
+    for term in terms:
+        for negated, key in [(False, "sentence_aff"), (True, "sentence_neg")]:
+            naturalistic_rows.append({
+                "id": entry["frame_id"],
+                "text": entry[key].replace("TERM", term)
+            })
+
+df_naturalistic = pd.DataFrame(naturalistic_rows)
+df = pd.concat([df_controlled, df_naturalistic], ignore_index=True)
+
 data = extract_targets(df, target_terms, nlp)
 print(data)
+print(len(data))
 
 corpus_tuples = []
 

@@ -30,6 +30,7 @@ def compute_metrics(
     attribution_fn: Callable[[str, str], float],
     P_final: Optional[np.ndarray] = None,
     batch_size: int = 16,
+    compute_DW: bool = False,
 ):
     """
     Pure metric computation engine.
@@ -73,10 +74,12 @@ def compute_metrics(
         "NEC_INLP",
         "RSS_INLP",
         "SC",
+        "SC_signed",
+        "cw_SC_signed",
         "DW",
         "targetPolarity",
         "sentencePolarity",
-        "sententenceSentimentProb"
+        "sentenceSentimentProb"
     ]
 
     with open(output_path, "w", newline="") as f_out:
@@ -173,14 +176,30 @@ def compute_metrics(
                         if sentiment_total else 0.0
                     )
 
+                    SC_signed = (
+                        sentiment_diff / sentiment_total if sentiment_total else 0.0
+                        if sentiment_total else 0.0
+                    )
+
+                    cw_SC_signed = (
+                        (sentiment_diff / sentiment_total) * (2 * full_sentiment - 1)
+                        if sentiment_total else 0.0
+                    )
+
                     target_polarity = (
                         1 if sentiment_diff > 0
                         else -1 if sentiment_diff < 0
                         else 0
                     )
 
-                    # --- attribution ---
-                    DW = attribution_fn(sentence, target_word)
+                    if compute_DW:
+                        # --- attribution ---
+                        if attribution_fn is not None:
+                            DW = attribution_fn(sentence, target_word)
+                        else:
+                            DW = None
+                    else:
+                        DW = None
 
                     writer.writerow({
                         "id": id_,
@@ -197,8 +216,10 @@ def compute_metrics(
                         ),
                         "RSS_INLP": delta_target_proj - semantic_mean_proj,
                         "SC": SC,
+                        "SC_signed": SC_signed,
+                        "cw_SC_signed": cw_SC_signed,
                         "DW": DW,
                         "targetPolarity": target_polarity,
                         "sentencePolarity": sentiment_label_fn(sentence),
-                        "sententenceSentimentProb": sentiment_score_fn(sentence)
+                        "sentenceSentimentProb": sentiment_score_fn(sentence)
                     })

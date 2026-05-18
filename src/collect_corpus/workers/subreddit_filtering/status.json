@@ -1,0 +1,39 @@
+{
+    "args": "subreddit:relationships,relationship_advice,AmItheAsshole,confession,offmychest,CasualConversation,MadeMeSmile,HumansBeingBros,GetMotivated,wholesome,WritingPrompts",
+    "type": "split",
+    "completed_prefixes": [],
+    "files": [
+        [
+            "../../../data/reddit/submissions/RS_2025-10.zst",
+            "workers/subreddit_filtering/RS_2025-10.zst",
+            true,
+            43919436,
+            0,
+            89742
+        ],
+        [
+            "../../../data/reddit/submissions/RS_2025-11.zst",
+            "workers/subreddit_filtering/RS_2025-11.zst",
+            true,
+            42567337,
+            0,
+            89916
+        ],
+        [
+            "../../../data/reddit/submissions/RS_2025-12.zst",
+            "workers/subreddit_filtering/RS_2025-12.zst",
+            true,
+            42861082,
+            0,
+            86992
+        ],
+        [
+            "../../../data/reddit/submissions/RS_2026-01.zst",
+            "workers/subreddit_filtering/RS_2026-01.zst",
+            true,
+            46094845,
+            0,
+            91800
+        ]
+    ]
+}

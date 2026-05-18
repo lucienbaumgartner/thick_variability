@@ -1,0 +1,27 @@
+[
+  {
+    "pair": "cruel_compassionate",
+    "pos": ["cruel", "brutal", "merciless", "callous", "heartless"],
+    "neg": ["compassionate", "kind", "merciful", "caring", "empathetic"]
+  },
+  {
+    "pair": "selfish_generous",
+    "pos": ["selfish", "egoistic", "egotistical", "stingy", "greedy"],
+    "neg": ["generous", "selfless", "altruistic", "giving", "charitable"]
+  },
+  {
+    "pair": "sincere_deceitful",
+    "pos": ["sincere", "genuine", "earnest", "authentic", "honest"],
+    "neg": ["deceitful", "dishonest", "insincere", "fraudulent", "duplicitous"]
+  },
+  {
+    "pair": "virtuous_vicious",
+    "pos": ["virtuous", "moral", "righteous", "upright", "ethical"],
+    "neg": ["vicious", "cruel", "malicious", "evil", "malevolent"]
+  },
+  {
+    "pair": "courageous_cowardly",
+    "pos": ["courageous", "brave", "bold", "fearless", "valiant"],
+    "neg": ["cowardly", "fearful", "timid", "spineless", "craven"]
+  }
+]

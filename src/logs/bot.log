@@ -1,0 +1,975 @@
+2026-05-11 14:10:31,630 - INFO: Loading files from: ../../../../data/reddit/submissions
+2026-05-11 14:10:31,630 - INFO: Writing output to: ../../output/corpora/reddit/subreddit_filtering
+2026-05-11 14:10:31,630 - INFO: Checking if any of any of the values amitheasshole,relationships,relationship_advice,offmychest,confession are contained in field subreddit
+2026-05-11 14:10:31,706 - INFO: Processed 0 of 0 files with 0.00 of 0.00 gigabytes
+2026-05-11 14:14:14,438 - INFO: Loading files from: ../../../data/reddit/submissions
+2026-05-11 14:14:14,439 - INFO: Writing output to: ../../output/corpora/reddit/subreddit_filtering
+2026-05-11 14:14:14,439 - INFO: Checking if any of any of the values relationships,offmychest,relationship_advice,amitheasshole,confession are contained in field subreddit
+2026-05-11 14:14:14,512 - INFO: Existing input file was read, if this is not correct you should delete the pushshift_working folder and run this script again
+2026-05-11 14:14:14,512 - INFO: Processed 0 of 0 files with 0.00 of 0.00 gigabytes
+2026-05-11 14:14:41,673 - INFO: Loading files from: ../../../data/reddit/submissions
+2026-05-11 14:14:41,673 - INFO: Writing output to: ../../output/corpora/reddit/subreddit_filtering
+2026-05-11 14:14:41,673 - INFO: Checking if any of any of the values offmychest,relationships,amitheasshole,relationship_advice,confession are contained in field subreddit
+2026-05-11 14:14:41,748 - INFO: Processed 0 of 4 files with 0.00 of 68.97 gigabytes
+2026-05-11 14:14:41,748 - INFO: Processing file: ../../../data/reddit/submissions/RS_2026-01.zst
+2026-05-11 14:14:41,748 - INFO: Processing file: ../../../data/reddit/submissions/RS_2025-10.zst
+2026-05-11 14:14:41,748 - INFO: Processing file: ../../../data/reddit/submissions/RS_2025-12.zst
+2026-05-11 14:14:41,748 - INFO: Processing file: ../../../data/reddit/submissions/RS_2025-11.zst
+2026-05-11 14:15:23,917 - INFO: 1,000,000 lines at 23,716/s, 0 errored, 4,373 matched : 0.39 gb at 10 mb/s, 1% : 0(0)/4 files : 2:02:38 remaining
+2026-05-11 14:15:25,719 - INFO: 2,000,000 lines at 45,485/s, 0 errored, 8,913 matched : 0.79 gb at 18 mb/s, 1% : 0(0)/4 files : 1:23:13 remaining
+2026-05-11 14:15:25,761 - INFO: 3,000,000 lines at 68,162/s, 0 errored, 13,353 matched : 1.20 gb at 28 mb/s, 2% : 0(0)/4 files : 1:02:07 remaining
+2026-05-11 14:15:27,549 - INFO: 4,000,000 lines at 87,337/s, 0 errored, 18,222 matched : 1.60 gb at 36 mb/s, 2% : 0(0)/4 files : 0:50:09 remaining
+2026-05-11 14:16:04,956 - INFO: 5,000,000 lines at 60,091/s, 0 errored, 23,150 matched : 1.97 gb at 24 mb/s, 3% : 0(0)/4 files : 0:49:20 remaining
+2026-05-11 14:16:06,217 - INFO: 6,000,000 lines at 71,032/s, 0 errored, 27,690 matched : 2.34 gb at 28 mb/s, 3% : 0(0)/4 files : 0:47:16 remaining
+2026-05-11 14:16:06,728 - INFO: 7,000,000 lines at 82,372/s, 0 errored, 32,266 matched : 2.74 gb at 33 mb/s, 4% : 0(0)/4 files : 0:44:37 remaining
+2026-05-11 14:16:07,921 - INFO: 8,000,000 lines at 92,837/s, 0 errored, 36,862 matched : 3.13 gb at 37 mb/s, 5% : 0(0)/4 files : 0:41:53 remaining
+2026-05-11 14:16:45,938 - INFO: 9,000,000 lines at 72,470/s, 0 errored, 41,710 matched : 3.52 gb at 29 mb/s, 5% : 0(0)/4 files : 0:41:16 remaining
+2026-05-11 14:16:48,364 - INFO: 10,000,000 lines at 78,979/s, 0 errored, 45,956 matched : 3.90 gb at 32 mb/s, 6% : 0(0)/4 files : 0:40:21 remaining
+2026-05-11 14:16:48,675 - INFO: 11,000,000 lines at 86,664/s, 0 errored, 50,410 matched : 4.30 gb at 35 mb/s, 6% : 0(0)/4 files : 0:39:11 remaining
+2026-05-11 14:16:48,897 - INFO: 12,000,000 lines at 94,377/s, 0 errored, 54,682 matched : 4.69 gb at 38 mb/s, 7% : 0(0)/4 files : 0:37:51 remaining
+2026-05-11 14:17:25,722 - INFO: 13,000,000 lines at 79,281/s, 0 errored, 59,518 matched : 5.09 gb at 32 mb/s, 7% : 0(0)/4 files : 0:37:21 remaining
+2026-05-11 14:17:29,916 - INFO: 14,000,000 lines at 83,250/s, 0 errored, 64,100 matched : 5.47 gb at 33 mb/s, 8% : 0(0)/4 files : 0:36:45 remaining
+2026-05-11 14:17:32,461 - INFO: 15,000,000 lines at 87,867/s, 0 errored, 68,401 matched : 5.86 gb at 35 mb/s, 9% : 0(0)/4 files : 0:36:04 remaining
+2026-05-11 14:17:33,313 - INFO: 16,000,000 lines at 93,259/s, 0 errored, 73,118 matched : 6.26 gb at 37 mb/s, 9% : 0(0)/4 files : 0:35:17 remaining
+2026-05-11 14:18:07,835 - INFO: 17,000,000 lines at 82,489/s, 0 errored, 77,669 matched : 6.66 gb at 33 mb/s, 10% : 0(0)/4 files : 0:34:52 remaining
+2026-05-11 14:18:09,930 - INFO: 18,000,000 lines at 86,463/s, 0 errored, 82,286 matched : 7.03 gb at 35 mb/s, 10% : 0(0)/4 files : 0:34:24 remaining
+2026-05-11 14:18:14,534 - INFO: 19,000,000 lines at 89,292/s, 0 errored, 86,625 matched : 7.44 gb at 36 mb/s, 11% : 0(0)/4 files : 0:33:53 remaining
+2026-05-11 14:18:15,030 - INFO: 20,000,000 lines at 93,772/s, 0 errored, 91,394 matched : 7.83 gb at 38 mb/s, 11% : 0(0)/4 files : 0:33:19 remaining
+2026-05-11 14:18:49,738 - INFO: 21,000,000 lines at 84,681/s, 0 errored, 96,024 matched : 8.22 gb at 34 mb/s, 12% : 0(0)/4 files : 0:32:58 remaining
+2026-05-11 14:18:54,442 - INFO: 22,000,000 lines at 87,062/s, 0 errored, 100,582 matched : 8.60 gb at 35 mb/s, 12% : 0(0)/4 files : 0:32:36 remaining
+2026-05-11 14:18:56,951 - INFO: 23,000,000 lines at 90,124/s, 0 errored, 104,611 matched : 8.99 gb at 36 mb/s, 13% : 0(0)/4 files : 0:32:11 remaining
+2026-05-11 14:19:00,211 - INFO: 24,000,000 lines at 92,857/s, 0 errored, 109,034 matched : 9.39 gb at 37 mb/s, 14% : 0(0)/4 files : 0:31:45 remaining
+2026-05-11 14:19:29,507 - INFO: 25,000,000 lines at 86,878/s, 0 errored, 113,320 matched : 9.78 gb at 35 mb/s, 14% : 0(0)/4 files : 0:31:26 remaining
+2026-05-11 14:19:35,140 - INFO: 26,000,000 lines at 88,619/s, 0 errored, 118,304 matched : 10.16 gb at 35 mb/s, 15% : 0(0)/4 files : 0:31:06 remaining
+2026-05-11 14:19:36,483 - INFO: 27,000,000 lines at 91,608/s, 0 errored, 122,382 matched : 10.56 gb at 37 mb/s, 15% : 0(0)/4 files : 0:30:44 remaining
+2026-05-11 14:19:44,261 - INFO: 28,000,000 lines at 92,558/s, 0 errored, 127,098 matched : 10.95 gb at 37 mb/s, 16% : 0(0)/4 files : 0:30:23 remaining
+2026-05-11 14:20:10,030 - INFO: 29,000,000 lines at 88,339/s, 0 errored, 131,399 matched : 11.33 gb at 35 mb/s, 16% : 0(0)/4 files : 0:30:05 remaining
+2026-05-11 14:20:14,938 - INFO: 30,000,000 lines at 90,039/s, 0 errored, 136,355 matched : 11.71 gb at 36 mb/s, 17% : 0(0)/4 files : 0:29:48 remaining
+2026-05-11 14:20:16,718 - INFO: 31,000,000 lines at 92,546/s, 0 errored, 140,689 matched : 12.10 gb at 37 mb/s, 18% : 0(0)/4 files : 0:29:28 remaining
+2026-05-11 14:20:25,071 - INFO: 32,000,000 lines at 93,207/s, 0 errored, 145,075 matched : 12.50 gb at 37 mb/s, 18% : 0(0)/4 files : 0:29:08 remaining
+2026-05-11 14:20:54,121 - INFO: 33,000,000 lines at 88,621/s, 0 errored, 149,509 matched : 12.89 gb at 35 mb/s, 19% : 0(0)/4 files : 0:28:53 remaining
+2026-05-11 14:20:58,824 - INFO: 34,000,000 lines at 90,167/s, 0 errored, 153,916 matched : 13.27 gb at 36 mb/s, 19% : 0(0)/4 files : 0:28:36 remaining
+2026-05-11 14:20:59,349 - INFO: 35,000,000 lines at 92,690/s, 0 errored, 158,847 matched : 13.67 gb at 37 mb/s, 20% : 0(0)/4 files : 0:28:19 remaining
+2026-05-11 14:21:08,849 - INFO: 36,000,000 lines at 92,999/s, 0 errored, 163,165 matched : 14.06 gb at 37 mb/s, 20% : 0(0)/4 files : 0:28:01 remaining
+2026-05-11 14:21:34,554 - INFO: 37,000,000 lines at 89,631/s, 0 errored, 167,519 matched : 14.46 gb at 36 mb/s, 21% : 0(0)/4 files : 0:27:46 remaining
+2026-05-11 14:21:38,559 - INFO: 38,000,000 lines at 91,169/s, 0 errored, 171,792 matched : 14.85 gb at 36 mb/s, 22% : 0(0)/4 files : 0:27:30 remaining
+2026-05-11 14:21:39,885 - INFO: 39,000,000 lines at 93,271/s, 0 errored, 176,329 matched : 15.23 gb at 37 mb/s, 22% : 0(0)/4 files : 0:27:13 remaining
+2026-05-11 14:21:48,072 - INFO: 40,000,000 lines at 101,521/s, 0 errored, 180,656 matched : 15.62 gb at 41 mb/s, 23% : 0(0)/4 files : 0:26:53 remaining
+2026-05-11 14:22:16,017 - INFO: 41,000,000 lines at 95,053/s, 0 errored, 185,000 matched : 16.01 gb at 38 mb/s, 23% : 0(0)/4 files : 0:26:09 remaining
+2026-05-11 14:22:20,556 - INFO: 42,000,000 lines at 94,022/s, 0 errored, 189,692 matched : 16.39 gb at 37 mb/s, 24% : 0(0)/4 files : 0:25:36 remaining
+2026-05-11 14:22:20,851 - INFO: 43,000,000 lines at 94,362/s, 0 errored, 194,262 matched : 16.78 gb at 38 mb/s, 24% : 0(0)/4 files : 0:25:14 remaining
+2026-05-11 14:22:30,767 - INFO: 44,000,000 lines at 101,086/s, 0 errored, 198,520 matched : 17.17 gb at 40 mb/s, 25% : 0(0)/4 files : 0:24:58 remaining
+2026-05-11 14:23:00,128 - INFO: 45,000,000 lines at 94,223/s, 0 errored, 203,430 matched : 17.56 gb at 38 mb/s, 25% : 0(0)/4 files : 0:24:33 remaining
+2026-05-11 14:23:01,779 - INFO: 46,000,000 lines at 93,964/s, 0 errored, 207,908 matched : 17.96 gb at 38 mb/s, 26% : 0(0)/4 files : 0:24:12 remaining
+2026-05-11 14:23:02,590 - INFO: 47,000,000 lines at 94,051/s, 0 errored, 212,524 matched : 18.33 gb at 38 mb/s, 27% : 0(0)/4 files : 0:23:57 remaining
+2026-05-11 14:23:13,326 - INFO: 48,000,000 lines at 100,674/s, 0 errored, 216,619 matched : 18.73 gb at 40 mb/s, 27% : 0(0)/4 files : 0:23:43 remaining
+2026-05-11 14:23:41,569 - INFO: 49,000,000 lines at 94,384/s, 0 errored, 221,045 matched : 19.13 gb at 38 mb/s, 28% : 0(0)/4 files : 0:23:23 remaining
+2026-05-11 14:23:44,288 - INFO: 50,000,000 lines at 93,837/s, 0 errored, 225,054 matched : 19.52 gb at 38 mb/s, 28% : 0(0)/4 files : 0:23:06 remaining
+2026-05-11 14:23:45,242 - INFO: 51,000,000 lines at 93,672/s, 0 errored, 229,488 matched : 19.91 gb at 37 mb/s, 29% : 0(0)/4 files : 0:22:53 remaining
+2026-05-11 14:23:54,571 - INFO: 52,000,000 lines at 100,296/s, 0 errored, 233,937 matched : 20.30 gb at 40 mb/s, 29% : 0(0)/4 files : 0:22:40 remaining
+2026-05-11 14:24:23,196 - INFO: 53,000,000 lines at 94,367/s, 0 errored, 238,130 matched : 20.70 gb at 38 mb/s, 30% : 0(0)/4 files : 0:22:23 remaining
+2026-05-11 14:24:24,968 - INFO: 54,000,000 lines at 94,544/s, 0 errored, 242,669 matched : 21.09 gb at 38 mb/s, 31% : 0(0)/4 files : 0:22:08 remaining
+2026-05-11 14:24:26,056 - INFO: 55,000,000 lines at 94,490/s, 0 errored, 247,078 matched : 21.48 gb at 38 mb/s, 31% : 0(0)/4 files : 0:21:55 remaining
+2026-05-11 14:24:36,485 - INFO: 56,000,000 lines at 100,347/s, 0 errored, 251,397 matched : 21.88 gb at 40 mb/s, 32% : 0(0)/4 files : 0:21:42 remaining
+2026-05-11 14:25:07,684 - INFO: 57,000,000 lines at 93,357/s, 0 errored, 255,743 matched : 22.27 gb at 37 mb/s, 32% : 0(0)/4 files : 0:21:27 remaining
+2026-05-11 14:25:10,705 - INFO: 58,000,000 lines at 93,712/s, 0 errored, 260,408 matched : 22.65 gb at 37 mb/s, 33% : 0(0)/4 files : 0:21:14 remaining
+2026-05-11 14:25:10,924 - INFO: 59,000,000 lines at 93,774/s, 0 errored, 264,871 matched : 23.04 gb at 37 mb/s, 33% : 0(0)/4 files : 0:21:02 remaining
+2026-05-11 14:25:21,451 - INFO: 60,000,000 lines at 99,562/s, 0 errored, 269,204 matched : 23.44 gb at 40 mb/s, 34% : 0(0)/4 files : 0:20:49 remaining
+2026-05-11 14:25:50,755 - INFO: 61,000,000 lines at 93,679/s, 0 errored, 273,488 matched : 23.84 gb at 37 mb/s, 35% : 0(0)/4 files : 0:20:35 remaining
+2026-05-11 14:25:53,816 - INFO: 62,000,000 lines at 93,556/s, 0 errored, 278,066 matched : 24.22 gb at 37 mb/s, 35% : 0(0)/4 files : 0:20:23 remaining
+2026-05-11 14:25:54,830 - INFO: 63,000,000 lines at 94,062/s, 0 errored, 282,350 matched : 24.61 gb at 38 mb/s, 36% : 0(0)/4 files : 0:20:11 remaining
+2026-05-11 14:26:04,570 - INFO: 64,000,000 lines at 98,718/s, 0 errored, 286,751 matched : 25.01 gb at 39 mb/s, 36% : 0(0)/4 files : 0:19:58 remaining
+2026-05-11 14:26:32,333 - INFO: 65,000,000 lines at 93,482/s, 0 errored, 291,023 matched : 25.41 gb at 37 mb/s, 37% : 0(0)/4 files : 0:19:45 remaining
+2026-05-11 14:26:34,585 - INFO: 66,000,000 lines at 93,279/s, 0 errored, 295,996 matched : 25.80 gb at 37 mb/s, 37% : 0(0)/4 files : 0:19:33 remaining
+2026-05-11 14:26:35,302 - INFO: 67,000,000 lines at 94,881/s, 0 errored, 300,341 matched : 26.19 gb at 38 mb/s, 38% : 0(0)/4 files : 0:19:22 remaining
+2026-05-11 14:26:47,597 - INFO: 68,000,000 lines at 98,097/s, 0 errored, 304,743 matched : 26.58 gb at 39 mb/s, 39% : 0(0)/4 files : 0:19:09 remaining
+2026-05-11 14:27:14,737 - INFO: 69,000,000 lines at 92,902/s, 0 errored, 308,867 matched : 26.99 gb at 37 mb/s, 39% : 0(0)/4 files : 0:18:57 remaining
+2026-05-11 14:27:15,735 - INFO: 70,000,000 lines at 93,075/s, 0 errored, 313,805 matched : 27.37 gb at 37 mb/s, 40% : 0(0)/4 files : 0:18:45 remaining
+2026-05-11 14:27:16,453 - INFO: 71,000,000 lines at 94,802/s, 0 errored, 318,013 matched : 27.76 gb at 38 mb/s, 40% : 0(0)/4 files : 0:18:34 remaining
+2026-05-11 14:27:30,665 - INFO: 72,000,000 lines at 98,350/s, 0 errored, 322,302 matched : 28.16 gb at 39 mb/s, 41% : 0(0)/4 files : 0:18:22 remaining
+2026-05-11 14:27:57,232 - INFO: 73,000,000 lines at 93,211/s, 0 errored, 327,043 matched : 28.54 gb at 37 mb/s, 41% : 0(0)/4 files : 0:18:10 remaining
+2026-05-11 14:27:58,635 - INFO: 74,000,000 lines at 93,015/s, 0 errored, 331,630 matched : 28.93 gb at 37 mb/s, 42% : 0(0)/4 files : 0:17:59 remaining
+2026-05-11 14:28:01,995 - INFO: 75,000,000 lines at 94,398/s, 0 errored, 335,811 matched : 29.33 gb at 38 mb/s, 43% : 0(0)/4 files : 0:17:47 remaining
+2026-05-11 14:28:13,057 - INFO: 76,000,000 lines at 97,866/s, 0 errored, 340,076 matched : 29.72 gb at 39 mb/s, 43% : 0(0)/4 files : 0:17:35 remaining
+2026-05-11 14:28:39,511 - INFO: 77,000,000 lines at 92,647/s, 0 errored, 344,541 matched : 30.12 gb at 37 mb/s, 44% : 0(0)/4 files : 0:17:24 remaining
+2026-05-11 14:28:41,698 - INFO: 78,000,000 lines at 92,458/s, 0 errored, 349,067 matched : 30.52 gb at 37 mb/s, 44% : 0(0)/4 files : 0:17:13 remaining
+2026-05-11 14:28:42,800 - INFO: 79,000,000 lines at 94,037/s, 0 errored, 352,983 matched : 30.89 gb at 38 mb/s, 45% : 0(0)/4 files : 0:17:02 remaining
+2026-05-11 14:28:54,087 - INFO: 80,000,000 lines at 97,973/s, 0 errored, 357,211 matched : 31.29 gb at 39 mb/s, 45% : 0(0)/4 files : 0:16:52 remaining
+2026-05-11 14:29:21,661 - INFO: 81,000,000 lines at 92,613/s, 0 errored, 361,732 matched : 31.67 gb at 37 mb/s, 46% : 0(0)/4 files : 0:16:43 remaining
+2026-05-11 14:29:22,334 - INFO: 82,000,000 lines at 92,530/s, 0 errored, 366,132 matched : 32.07 gb at 37 mb/s, 46% : 0(0)/4 files : 0:16:32 remaining
+2026-05-11 14:29:24,511 - INFO: 83,000,000 lines at 94,261/s, 0 errored, 370,121 matched : 32.46 gb at 38 mb/s, 47% : 0(0)/4 files : 0:16:22 remaining
+2026-05-11 14:29:34,911 - INFO: 84,000,000 lines at 98,789/s, 0 errored, 374,423 matched : 32.85 gb at 40 mb/s, 48% : 0(0)/4 files : 0:16:11 remaining
+2026-05-11 14:30:04,604 - INFO: 85,000,000 lines at 92,237/s, 0 errored, 378,923 matched : 33.25 gb at 37 mb/s, 48% : 0(0)/4 files : 0:16:01 remaining
+2026-05-11 14:30:06,032 - INFO: 86,000,000 lines at 92,102/s, 0 errored, 383,188 matched : 33.65 gb at 37 mb/s, 49% : 0(0)/4 files : 0:15:51 remaining
+2026-05-11 14:30:07,385 - INFO: 87,000,000 lines at 94,189/s, 0 errored, 387,517 matched : 34.04 gb at 38 mb/s, 49% : 0(0)/4 files : 0:15:40 remaining
+2026-05-11 14:30:19,664 - INFO: 88,000,000 lines at 97,966/s, 0 errored, 391,706 matched : 34.45 gb at 39 mb/s, 50% : 0(0)/4 files : 0:15:29 remaining
+2026-05-11 14:30:48,120 - INFO: 89,000,000 lines at 92,018/s, 0 errored, 396,214 matched : 34.85 gb at 37 mb/s, 51% : 0(0)/4 files : 0:15:19 remaining
+2026-05-11 14:30:49,385 - INFO: 90,000,000 lines at 91,950/s, 0 errored, 400,313 matched : 35.23 gb at 37 mb/s, 51% : 0(0)/4 files : 0:15:09 remaining
+2026-05-11 14:30:53,523 - INFO: 91,000,000 lines at 93,089/s, 0 errored, 404,531 matched : 35.63 gb at 37 mb/s, 52% : 0(0)/4 files : 0:14:58 remaining
+2026-05-11 14:31:06,453 - INFO: 92,000,000 lines at 96,712/s, 0 errored, 408,661 matched : 36.02 gb at 39 mb/s, 52% : 0(0)/4 files : 0:14:48 remaining
+2026-05-11 14:31:29,587 - INFO: 93,000,000 lines at 91,847/s, 0 errored, 412,739 matched : 36.42 gb at 37 mb/s, 53% : 0(0)/4 files : 0:14:38 remaining
+2026-05-11 14:31:33,143 - INFO: 94,000,000 lines at 91,316/s, 0 errored, 416,946 matched : 36.81 gb at 37 mb/s, 53% : 0(0)/4 files : 0:14:28 remaining
+2026-05-11 14:31:34,932 - INFO: 95,000,000 lines at 93,202/s, 0 errored, 421,448 matched : 37.20 gb at 37 mb/s, 54% : 0(0)/4 files : 0:14:18 remaining
+2026-05-11 14:31:48,308 - INFO: 96,000,000 lines at 97,348/s, 0 errored, 425,266 matched : 37.57 gb at 39 mb/s, 54% : 0(0)/4 files : 0:14:08 remaining
+2026-05-11 14:32:10,929 - INFO: 97,000,000 lines at 92,808/s, 0 errored, 429,680 matched : 37.98 gb at 37 mb/s, 55% : 0(0)/4 files : 0:13:57 remaining
+2026-05-11 14:32:15,092 - INFO: 98,000,000 lines at 91,945/s, 0 errored, 434,027 matched : 38.35 gb at 37 mb/s, 56% : 0(0)/4 files : 0:13:47 remaining
+2026-05-11 14:32:16,251 - INFO: 99,000,000 lines at 94,021/s, 0 errored, 438,180 matched : 38.74 gb at 38 mb/s, 56% : 0(0)/4 files : 0:13:37 remaining
+2026-05-11 14:32:32,985 - INFO: 100,000,000 lines at 96,960/s, 0 errored, 442,239 matched : 39.14 gb at 39 mb/s, 57% : 0(0)/4 files : 0:13:26 remaining
+2026-05-11 14:32:54,268 - INFO: 101,000,000 lines at 92,757/s, 0 errored, 446,349 matched : 39.53 gb at 37 mb/s, 57% : 0(0)/4 files : 0:13:16 remaining
+2026-05-11 14:32:57,864 - INFO: 102,000,000 lines at 92,191/s, 0 errored, 450,630 matched : 39.93 gb at 37 mb/s, 58% : 0(0)/4 files : 0:13:05 remaining
+2026-05-11 14:32:59,048 - INFO: 103,000,000 lines at 94,094/s, 0 errored, 454,925 matched : 40.31 gb at 38 mb/s, 58% : 0(0)/4 files : 0:12:55 remaining
+2026-05-11 14:33:17,576 - INFO: 104,000,000 lines at 96,239/s, 0 errored, 459,390 matched : 40.71 gb at 39 mb/s, 59% : 0(0)/4 files : 0:12:45 remaining
+2026-05-11 14:33:37,198 - INFO: 105,000,000 lines at 92,283/s, 0 errored, 463,478 matched : 41.11 gb at 37 mb/s, 60% : 0(0)/4 files : 0:12:34 remaining
+2026-05-11 14:33:39,029 - INFO: 106,000,000 lines at 92,040/s, 0 errored, 467,652 matched : 41.49 gb at 37 mb/s, 60% : 0(0)/4 files : 0:12:24 remaining
+2026-05-11 14:33:44,545 - INFO: 107,000,000 lines at 93,537/s, 0 errored, 472,249 matched : 41.89 gb at 38 mb/s, 61% : 0(0)/4 files : 0:12:13 remaining
+2026-05-11 14:34:02,548 - INFO: 108,000,000 lines at 95,633/s, 0 errored, 476,794 matched : 42.28 gb at 38 mb/s, 61% : 0(0)/4 files : 0:12:03 remaining
+2026-05-11 14:34:20,757 - INFO: 109,000,000 lines at 91,760/s, 0 errored, 481,151 matched : 42.68 gb at 37 mb/s, 62% : 0(0)/4 files : 0:11:52 remaining
+2026-05-11 14:34:21,441 - INFO: 110,000,000 lines at 91,767/s, 0 errored, 485,293 matched : 43.07 gb at 37 mb/s, 62% : 0(0)/4 files : 0:11:42 remaining
+2026-05-11 14:34:23,374 - INFO: 111,000,000 lines at 94,498/s, 0 errored, 489,559 matched : 43.42 gb at 38 mb/s, 63% : 0(0)/4 files : 0:11:33 remaining
+2026-05-11 14:34:45,649 - INFO: 112,000,000 lines at 95,491/s, 0 errored, 493,770 matched : 43.81 gb at 38 mb/s, 64% : 0(0)/4 files : 0:11:22 remaining
+2026-05-11 14:35:04,327 - INFO: 113,000,000 lines at 91,616/s, 0 errored, 497,950 matched : 44.20 gb at 37 mb/s, 64% : 0(0)/4 files : 0:11:12 remaining
+2026-05-11 14:35:04,664 - INFO: 114,000,000 lines at 92,271/s, 0 errored, 502,613 matched : 44.58 gb at 37 mb/s, 65% : 0(0)/4 files : 0:11:02 remaining
+2026-05-11 14:35:06,163 - INFO: 115,000,000 lines at 94,407/s, 0 errored, 507,209 matched : 44.98 gb at 38 mb/s, 65% : 0(0)/4 files : 0:10:51 remaining
+2026-05-11 14:35:28,151 - INFO: 116,000,000 lines at 95,438/s, 0 errored, 511,418 matched : 45.38 gb at 38 mb/s, 66% : 0(0)/4 files : 0:10:41 remaining
+2026-05-11 14:35:47,672 - INFO: 117,000,000 lines at 91,555/s, 0 errored, 515,883 matched : 45.76 gb at 37 mb/s, 66% : 0(0)/4 files : 0:10:31 remaining
+2026-05-11 14:35:47,829 - INFO: 118,000,000 lines at 91,758/s, 0 errored, 519,963 matched : 46.17 gb at 37 mb/s, 67% : 0(0)/4 files : 0:10:20 remaining
+2026-05-11 14:35:48,448 - INFO: 119,000,000 lines at 94,121/s, 0 errored, 524,638 matched : 46.56 gb at 38 mb/s, 68% : 0(0)/4 files : 0:10:09 remaining
+2026-05-11 14:36:11,531 - INFO: 120,000,000 lines at 95,152/s, 0 errored, 528,832 matched : 46.95 gb at 38 mb/s, 68% : 0(0)/4 files : 0:09:59 remaining
+2026-05-11 14:36:28,564 - INFO: 121,000,000 lines at 91,500/s, 0 errored, 533,576 matched : 47.33 gb at 37 mb/s, 69% : 0(0)/4 files : 0:09:49 remaining
+2026-05-11 14:36:29,417 - INFO: 122,000,000 lines at 91,785/s, 0 errored, 538,390 matched : 47.74 gb at 37 mb/s, 69% : 0(0)/4 files : 0:09:38 remaining
+2026-05-11 14:36:30,256 - INFO: 123,000,000 lines at 93,898/s, 0 errored, 542,627 matched : 48.13 gb at 38 mb/s, 70% : 0(0)/4 files : 0:09:27 remaining
+2026-05-11 14:36:54,799 - INFO: 124,000,000 lines at 95,077/s, 0 errored, 546,554 matched : 48.54 gb at 38 mb/s, 70% : 0(0)/4 files : 0:09:17 remaining
+2026-05-11 14:37:12,362 - INFO: 125,000,000 lines at 91,479/s, 0 errored, 551,157 matched : 48.93 gb at 37 mb/s, 71% : 0(0)/4 files : 0:09:06 remaining
+2026-05-11 14:37:12,658 - INFO: 126,000,000 lines at 91,706/s, 0 errored, 555,833 matched : 49.32 gb at 37 mb/s, 72% : 0(0)/4 files : 0:08:55 remaining
+2026-05-11 14:37:13,132 - INFO: 127,000,000 lines at 94,324/s, 0 errored, 560,542 matched : 49.72 gb at 38 mb/s, 72% : 0(0)/4 files : 0:08:45 remaining
+2026-05-11 14:37:36,988 - INFO: 128,000,000 lines at 95,385/s, 0 errored, 564,584 matched : 50.11 gb at 38 mb/s, 73% : 0(0)/4 files : 0:08:34 remaining
+2026-05-11 14:37:54,082 - INFO: 129,000,000 lines at 91,830/s, 0 errored, 569,110 matched : 50.50 gb at 37 mb/s, 73% : 0(0)/4 files : 0:08:24 remaining
+2026-05-11 14:37:54,921 - INFO: 130,000,000 lines at 92,549/s, 0 errored, 573,467 matched : 50.91 gb at 37 mb/s, 74% : 0(0)/4 files : 0:08:12 remaining
+2026-05-11 14:37:56,272 - INFO: 131,000,000 lines at 95,164/s, 0 errored, 577,957 matched : 51.31 gb at 38 mb/s, 74% : 0(0)/4 files : 0:08:01 remaining
+2026-05-11 14:38:18,513 - INFO: 132,000,000 lines at 95,372/s, 0 errored, 581,917 matched : 51.70 gb at 38 mb/s, 75% : 0(0)/4 files : 0:07:51 remaining
+2026-05-11 14:38:37,789 - INFO: 133,000,000 lines at 91,841/s, 0 errored, 586,666 matched : 52.09 gb at 37 mb/s, 76% : 0(0)/4 files : 0:07:40 remaining
+2026-05-11 14:38:38,513 - INFO: 134,000,000 lines at 92,072/s, 0 errored, 591,237 matched : 52.49 gb at 37 mb/s, 76% : 0(0)/4 files : 0:07:29 remaining
+2026-05-11 14:38:38,719 - INFO: 135,000,000 lines at 95,027/s, 0 errored, 595,924 matched : 52.88 gb at 38 mb/s, 77% : 0(0)/4 files : 0:07:18 remaining
+2026-05-11 14:39:05,310 - INFO: 136,000,000 lines at 94,116/s, 0 errored, 599,678 matched : 53.29 gb at 38 mb/s, 77% : 0(0)/4 files : 0:07:08 remaining
+2026-05-11 14:39:22,253 - INFO: 137,000,000 lines at 91,301/s, 0 errored, 603,890 matched : 53.68 gb at 37 mb/s, 78% : 0(0)/4 files : 0:06:57 remaining
+2026-05-11 14:39:22,418 - INFO: 138,000,000 lines at 91,513/s, 0 errored, 608,607 matched : 54.08 gb at 37 mb/s, 78% : 0(0)/4 files : 0:06:46 remaining
+2026-05-11 14:39:24,993 - INFO: 139,000,000 lines at 94,658/s, 0 errored, 613,304 matched : 54.48 gb at 38 mb/s, 79% : 0(0)/4 files : 0:06:35 remaining
+2026-05-11 14:39:48,009 - INFO: 140,000,000 lines at 94,262/s, 0 errored, 617,306 matched : 54.88 gb at 38 mb/s, 80% : 0(0)/4 files : 0:06:24 remaining
+2026-05-11 14:40:03,357 - INFO: 141,000,000 lines at 91,659/s, 0 errored, 621,451 matched : 55.27 gb at 37 mb/s, 80% : 0(0)/4 files : 0:06:14 remaining
+2026-05-11 14:40:05,306 - INFO: 142,000,000 lines at 91,494/s, 0 errored, 625,945 matched : 55.67 gb at 37 mb/s, 81% : 0(0)/4 files : 0:06:03 remaining
+2026-05-11 14:40:07,382 - INFO: 143,000,000 lines at 95,167/s, 0 errored, 630,760 matched : 56.08 gb at 38 mb/s, 81% : 0(0)/4 files : 0:05:52 remaining
+2026-05-11 14:40:30,905 - INFO: 144,000,000 lines at 94,270/s, 0 errored, 635,055 matched : 56.46 gb at 38 mb/s, 82% : 0(0)/4 files : 0:05:41 remaining
+2026-05-11 14:40:46,732 - INFO: 145,000,000 lines at 91,185/s, 0 errored, 639,349 matched : 56.87 gb at 37 mb/s, 82% : 0(0)/4 files : 0:05:30 remaining
+2026-05-11 14:40:46,881 - INFO: 146,000,000 lines at 92,343/s, 0 errored, 644,109 matched : 57.26 gb at 37 mb/s, 83% : 0(0)/4 files : 0:05:19 remaining
+2026-05-11 14:40:51,673 - INFO: 147,000,000 lines at 95,325/s, 0 errored, 648,809 matched : 57.68 gb at 39 mb/s, 84% : 0(0)/4 files : 0:05:08 remaining
+2026-05-11 14:41:16,126 - INFO: 148,000,000 lines at 93,892/s, 0 errored, 652,990 matched : 58.09 gb at 38 mb/s, 84% : 0(0)/4 files : 0:04:57 remaining
+2026-05-11 14:41:28,354 - INFO: 149,000,000 lines at 91,354/s, 0 errored, 657,194 matched : 58.48 gb at 37 mb/s, 85% : 0(0)/4 files : 0:04:46 remaining
+2026-05-11 14:41:28,798 - INFO: 150,000,000 lines at 91,673/s, 0 errored, 661,781 matched : 58.88 gb at 37 mb/s, 85% : 0(0)/4 files : 0:04:35 remaining
+2026-05-11 14:41:34,402 - INFO: 151,000,000 lines at 95,412/s, 0 errored, 666,845 matched : 59.30 gb at 39 mb/s, 86% : 0(0)/4 files : 0:04:24 remaining
+2026-05-11 14:41:59,357 - INFO: 152,000,000 lines at 93,969/s, 0 errored, 671,371 matched : 59.70 gb at 38 mb/s, 87% : 0(0)/4 files : 0:04:13 remaining
+2026-05-11 14:42:12,410 - INFO: 153,000,000 lines at 91,176/s, 0 errored, 676,094 matched : 60.09 gb at 37 mb/s, 87% : 0(0)/4 files : 0:04:02 remaining
+2026-05-11 14:42:12,545 - INFO: 154,000,000 lines at 91,467/s, 0 errored, 680,834 matched : 60.49 gb at 37 mb/s, 88% : 0(0)/4 files : 0:03:51 remaining
+2026-05-11 14:42:18,770 - INFO: 155,000,000 lines at 94,978/s, 0 errored, 685,293 matched : 60.89 gb at 39 mb/s, 88% : 0(0)/4 files : 0:03:40 remaining
+2026-05-11 14:42:44,418 - INFO: 156,000,000 lines at 93,582/s, 0 errored, 689,302 matched : 61.28 gb at 38 mb/s, 89% : 0(0)/4 files : 0:03:29 remaining
+2026-05-11 14:42:54,304 - INFO: 157,000,000 lines at 91,447/s, 0 errored, 693,313 matched : 61.68 gb at 37 mb/s, 89% : 0(0)/4 files : 0:03:18 remaining
+2026-05-11 14:42:56,167 - INFO: 158,000,000 lines at 91,181/s, 0 errored, 697,946 matched : 62.08 gb at 37 mb/s, 90% : 0(0)/4 files : 0:03:07 remaining
+2026-05-11 14:43:02,783 - INFO: 159,000,000 lines at 94,833/s, 0 errored, 702,371 matched : 62.46 gb at 39 mb/s, 91% : 0(0)/4 files : 0:02:57 remaining
+2026-05-11 14:43:29,228 - INFO: 160,000,000 lines at 92,711/s, 0 errored, 706,436 matched : 62.86 gb at 38 mb/s, 91% : 0(0)/4 files : 0:02:46 remaining
+2026-05-11 14:43:39,072 - INFO: 161,000,000 lines at 90,771/s, 0 errored, 711,047 matched : 63.25 gb at 37 mb/s, 92% : 0(0)/4 files : 0:02:35 remaining
+2026-05-11 14:43:40,527 - INFO: 162,000,000 lines at 90,641/s, 0 errored, 715,421 matched : 63.64 gb at 37 mb/s, 92% : 0(0)/4 files : 0:02:24 remaining
+2026-05-11 14:43:46,743 - INFO: 163,000,000 lines at 94,673/s, 0 errored, 719,889 matched : 64.04 gb at 39 mb/s, 93% : 0(0)/4 files : 0:02:14 remaining
+2026-05-11 14:44:13,885 - INFO: 164,000,000 lines at 92,522/s, 0 errored, 724,197 matched : 64.44 gb at 38 mb/s, 93% : 0(0)/4 files : 0:02:03 remaining
+2026-05-11 14:44:23,273 - INFO: 165,000,000 lines at 90,568/s, 0 errored, 728,622 matched : 64.84 gb at 37 mb/s, 94% : 0(0)/4 files : 0:01:52 remaining
+2026-05-11 14:44:23,333 - INFO: 166,000,000 lines at 90,655/s, 0 errored, 733,261 matched : 65.24 gb at 37 mb/s, 95% : 0(0)/4 files : 0:01:41 remaining
+2026-05-11 14:44:30,877 - INFO: 167,000,000 lines at 94,228/s, 0 errored, 737,536 matched : 65.64 gb at 38 mb/s, 95% : 0(0)/4 files : 0:01:30 remaining
+2026-05-11 14:44:47,471 - INFO: 167,567,337 lines at 93,295/s, 0 errored, 740,019 matched : 65.86 gb at 38 mb/s, 95% : 1(0)/4 files : 0:01:24 remaining
+2026-05-11 14:44:56,591 - INFO: 168,567,337 lines at 91,463/s, 0 errored, 744,401 matched : 66.25 gb at 37 mb/s, 96% : 1(0)/4 files : 0:01:13 remaining
+2026-05-11 14:44:59,505 - INFO: 169,428,419 lines at 90,797/s, 0 errored, 748,063 matched : 66.59 gb at 37 mb/s, 97% : 2(0)/4 files : 0:01:04 remaining
+2026-05-11 14:45:09,222 - INFO: 170,428,419 lines at 93,566/s, 0 errored, 752,205 matched : 66.99 gb at 38 mb/s, 97% : 2(0)/4 files : 0:00:53 remaining
+2026-05-11 14:45:31,287 - INFO: 171,428,419 lines at 92,935/s, 0 errored, 756,467 matched : 67.39 gb at 38 mb/s, 98% : 2(0)/4 files : 0:00:42 remaining
+2026-05-11 14:45:40,422 - INFO: 172,347,855 lines at 90,891/s, 0 errored, 760,118 matched : 67.75 gb at 37 mb/s, 98% : 3(0)/4 files : 0:00:33 remaining
+2026-05-11 14:46:04,938 - INFO: 173,347,855 lines at 85,940/s, 0 errored, 763,993 matched : 68.14 gb at 35 mb/s, 99% : 3(0)/4 files : 0:00:22 remaining
+2026-05-11 14:46:39,206 - INFO: 174,347,855 lines at 84,486/s, 0 errored, 767,929 matched : 68.54 gb at 34 mb/s, 99% : 3(0)/4 files : 0:00:11 remaining
+2026-05-11 14:47:12,982 - INFO: 175,347,855 lines at 81,465/s, 0 errored, 772,035 matched : 68.93 gb at 33 mb/s, 100% : 3(0)/4 files : 0:00:00 remaining
+2026-05-11 14:47:15,960 - INFO: 175,442,700 lines at 79,069/s, 0 errored, 772,410 matched : 68.97 gb at 32 mb/s, 100% : 4(0)/4 files : 0:00:00 remaining
+2026-05-11 15:03:21,846 - INFO: Loading files from: ../../../data/reddit/submissions
+2026-05-11 15:03:21,846 - INFO: Writing output to: ../../output/corpora/reddit/subreddit_filtering
+2026-05-11 15:03:21,846 - INFO: Checking if any of any of the values relationships,amitheasshole,confession,offmychest,relationship_advice are contained in field subreddit
+2026-05-11 15:03:21,923 - INFO: Existing input file was read, if this is not correct you should delete the pushshift_working folder and run this script again
+2026-05-11 15:03:21,924 - INFO: Processed 4 of 4 files with 68.97 of 68.97 gigabytes
+2026-05-11 15:03:21,924 - INFO: 175,442,700, 0 errored : 68.97 gb, 100% : 4/4
+2026-05-11 15:03:21,924 - INFO: Processing complete, combining 4 result files
+2026-05-11 15:03:21,924 - INFO: From 0/4 files to 0 output handles : 0/772,410 lines
+2026-05-11 15:03:48,349 - INFO: From 4/4 files to 0 output handles : 772,410/772,410 lines
+2026-05-11 15:07:19,993 - INFO: Loading files from: ../../output/corpora/reddit/subreddit_filtering
+2026-05-11 15:07:19,993 - INFO: Writing output to: ../../output/corpora/reddit/term_filtering
+2026-05-11 15:07:19,994 - INFO: Checking if any of any of 10 values are contained in field selftext
+2026-05-11 15:07:20,067 - INFO: Processed 0 of 0 files with 0.00 of 0.00 gigabytes
+2026-05-11 15:08:24,898 - INFO: Loading files from: ../../output/corpora/reddit/subreddit_filtering
+2026-05-11 15:08:24,898 - INFO: Writing output to: ../../output/corpora/reddit/term_filtering
+2026-05-11 15:08:24,898 - INFO: Checking if any of any of 10 values are contained in field selftext
+2026-05-11 15:08:24,971 - INFO: Existing input file was read, if this is not correct you should delete the pushshift_workers/term_filtering folder and run this script again
+2026-05-11 15:08:24,971 - INFO: Processed 0 of 0 files with 0.00 of 0.00 gigabytes
+2026-05-11 15:09:59,325 - INFO: Loading files from: ../../output/corpora/reddit/subreddit_filtering
+2026-05-11 15:09:59,325 - INFO: Writing output to: ../../output/corpora/reddit/term_filtering
+2026-05-11 15:09:59,325 - INFO: Checking if any of any of 10 values are contained in field selftext
+2026-05-11 15:09:59,399 - INFO: Processed 0 of 0 files with 0.00 of 0.00 gigabytes
+2026-05-11 15:13:19,374 - INFO: Loading files from: ../../output/corpora/reddit/subreddit_filtering
+2026-05-11 15:13:19,374 - INFO: Writing output to: ../../output/corpora/reddit/term_filtering
+2026-05-11 15:13:19,374 - INFO: Checking if any of any of 10 values are contained in field selftext
+2026-05-11 15:13:19,449 - INFO: Existing input file was read, if this is not correct you should delete the pushshift_workers/term_filtering folder and run this script again
+2026-05-11 15:13:19,449 - INFO: Processed 0 of 0 files with 0.00 of 0.00 gigabytes
+2026-05-11 15:14:23,412 - INFO: Loading files from: ../../output/corpora/reddit/subreddit_filtering
+2026-05-11 15:14:23,412 - INFO: Writing output to: ../../output/corpora/reddit/term_filtering
+2026-05-11 15:14:23,412 - INFO: Checking if any of any of 10 values are contained in field selftext
+2026-05-11 15:14:23,486 - INFO: Existing input file was read, if this is not correct you should delete the pushshift_workers/term_filtering folder and run this script again
+2026-05-11 15:14:23,486 - INFO: Processed 0 of 0 files with 0.00 of 0.00 gigabytes
+2026-05-11 15:15:26,110 - INFO: Loading files from: ../../output/corpora/reddit/subreddit_filtering
+2026-05-11 15:15:26,110 - INFO: Writing output to: ../../output/corpora/reddit/term_filtering
+2026-05-11 15:15:26,111 - INFO: Checking if any of any of 10 values are contained in field selftext
+2026-05-11 15:17:24,754 - INFO: Loading files from: ../../output/corpora/reddit/subreddit_filtering
+2026-05-11 15:17:24,754 - INFO: Writing output to: ../../output/corpora/reddit/term_filtering
+2026-05-11 15:17:24,754 - INFO: Checking if any of any of 10 values are contained in field selftext
+2026-05-11 15:17:24,828 - INFO: Processed 0 of 1 files with 0.00 of 0.35 gigabytes
+2026-05-11 15:17:24,828 - INFO: Processing file: ../../output/corpora/reddit/subreddit_filtering/RS_2025.zst
+2026-05-11 15:17:50,127 - INFO: 772,410 lines at 30,531/s, 0 errored, 13,174 matched : 0.35 gb at 14 mb/s, 100% : 1(0)/1 files : 0:00:00 remaining
+2026-05-11 15:17:50,134 - INFO: 772,410, 0 errored : 0.35 gb, 100% : 1/1
+2026-05-11 15:17:50,135 - INFO: Processing complete, combining 1 result files
+2026-05-11 15:17:50,135 - INFO: From 0/1 files to 0 output handles : 0/13,174 lines
+2026-05-11 15:17:50,925 - INFO: From 1/1 files to 0 output handles : 13,174/13,174 lines
+2026-05-11 15:26:01,730 - INFO: Loading files from: ../../output/corpora/reddit/subreddit_filtering
+2026-05-11 15:26:01,730 - INFO: Writing output to: ../../output/corpora/reddit/term_filtering
+2026-05-11 15:26:01,730 - INFO: Checking if any of any of 10 values are contained in field selftext
+2026-05-11 15:26:01,804 - INFO: Processed 0 of 1 files with 0.00 of 0.35 gigabytes
+2026-05-11 15:26:01,804 - INFO: Processing file: ../../output/corpora/reddit/subreddit_filtering/RS_2025_filtered_subreddits.zst
+2026-05-11 15:26:27,110 - INFO: 772,410 lines at 30,523/s, 0 errored, 13,174 matched : 0.35 gb at 14 mb/s, 100% : 1(0)/1 files : 0:00:00 remaining
+2026-05-11 15:26:27,117 - INFO: 772,410, 0 errored : 0.35 gb, 100% : 1/1
+2026-05-11 15:26:27,117 - INFO: Processing complete, combining 1 result files
+2026-05-11 15:26:27,117 - INFO: From 0/1 files to 0 output handles : 0/13,174 lines
+2026-05-11 15:26:27,908 - INFO: From 1/1 files to 0 output handles : 13,174/13,174 lines
+2026-05-12 13:57:54,800 - INFO: Loading files from: ../../../data/reddit/submissions
+2026-05-12 13:57:54,800 - INFO: Writing output to: ../../output/corpora/reddit/subreddit_filtering
+2026-05-12 13:57:54,800 - INFO: Checking if any of any of the values relationship_advice,amitheasshole,offmychest,relationships,confession exactly match field subreddit
+2026-05-12 13:57:54,877 - INFO: Processed 0 of 4 files with 0.00 of 68.97 gigabytes
+2026-05-12 13:57:54,877 - INFO: Processing file: ../../../data/reddit/submissions/RS_2026-01.zst
+2026-05-12 13:57:54,877 - INFO: Processing file: ../../../data/reddit/submissions/RS_2025-10.zst
+2026-05-12 13:57:54,877 - INFO: Processing file: ../../../data/reddit/submissions/RS_2025-12.zst
+2026-05-12 13:57:54,877 - INFO: Processing file: ../../../data/reddit/submissions/RS_2025-11.zst
+2026-05-12 13:58:36,536 - INFO: 1,000,000 lines at 24,005/s, 0 errored, 1,515 matched : 0.39 gb at 10 mb/s, 1% : 0(0)/4 files : 2:01:09 remaining
+2026-05-12 13:58:37,440 - INFO: 2,000,000 lines at 46,989/s, 0 errored, 2,988 matched : 0.79 gb at 19 mb/s, 1% : 0(0)/4 files : 1:21:07 remaining
+2026-05-12 13:58:37,863 - INFO: 3,000,000 lines at 69,790/s, 0 errored, 4,748 matched : 1.19 gb at 28 mb/s, 2% : 0(0)/4 files : 1:00:44 remaining
+2026-05-12 13:58:38,363 - INFO: 4,000,000 lines at 91,984/s, 0 errored, 6,376 matched : 1.60 gb at 38 mb/s, 2% : 0(0)/4 files : 0:48:28 remaining
+2026-05-12 13:59:19,137 - INFO: 5,000,000 lines at 59,340/s, 0 errored, 8,029 matched : 1.98 gb at 24 mb/s, 3% : 0(0)/4 files : 0:48:04 remaining
+2026-05-12 13:59:20,116 - INFO: 6,000,000 lines at 70,391/s, 0 errored, 9,925 matched : 2.34 gb at 28 mb/s, 3% : 0(0)/4 files : 0:46:23 remaining
+2026-05-12 13:59:22,112 - INFO: 7,000,000 lines at 80,243/s, 0 errored, 11,658 matched : 2.74 gb at 32 mb/s, 4% : 0(0)/4 files : 0:44:09 remaining
+2026-05-12 13:59:22,152 - INFO: 8,000,000 lines at 91,664/s, 0 errored, 13,327 matched : 3.13 gb at 37 mb/s, 5% : 0(0)/4 files : 0:41:37 remaining
+2026-05-12 13:59:57,401 - INFO: 9,000,000 lines at 73,455/s, 0 errored, 14,865 matched : 3.51 gb at 29 mb/s, 5% : 0(0)/4 files : 0:40:58 remaining
+2026-05-12 13:59:59,263 - INFO: 10,000,000 lines at 80,395/s, 0 errored, 16,906 matched : 3.90 gb at 32 mb/s, 6% : 0(0)/4 files : 0:40:01 remaining
+2026-05-12 14:00:02,978 - INFO: 11,000,000 lines at 85,870/s, 0 errored, 18,565 matched : 4.30 gb at 34 mb/s, 6% : 0(0)/4 files : 0:38:56 remaining
+2026-05-12 14:00:04,064 - INFO: 12,000,000 lines at 92,889/s, 0 errored, 20,303 matched : 4.69 gb at 37 mb/s, 7% : 0(0)/4 files : 0:37:42 remaining
+2026-05-12 14:00:37,491 - INFO: 13,000,000 lines at 79,944/s, 0 errored, 21,806 matched : 5.07 gb at 32 mb/s, 7% : 0(0)/4 files : 0:37:12 remaining
+2026-05-12 14:00:39,843 - INFO: 14,000,000 lines at 84,866/s, 0 errored, 23,727 matched : 5.47 gb at 34 mb/s, 8% : 0(0)/4 files : 0:36:33 remaining
+2026-05-12 14:00:45,289 - INFO: 15,000,000 lines at 88,022/s, 0 errored, 25,276 matched : 5.86 gb at 35 mb/s, 9% : 0(0)/4 files : 0:35:53 remaining
+2026-05-12 14:00:46,355 - INFO: 16,000,000 lines at 93,306/s, 0 errored, 26,906 matched : 6.26 gb at 37 mb/s, 9% : 0(0)/4 files : 0:35:07 remaining
+2026-05-12 14:01:16,808 - INFO: 17,000,000 lines at 84,187/s, 0 errored, 28,467 matched : 6.64 gb at 34 mb/s, 10% : 0(0)/4 files : 0:34:41 remaining
+2026-05-12 14:01:20,896 - INFO: 18,000,000 lines at 87,370/s, 0 errored, 30,342 matched : 7.03 gb at 35 mb/s, 10% : 0(0)/4 files : 0:34:12 remaining
+2026-05-12 14:01:26,512 - INFO: 19,000,000 lines at 89,777/s, 0 errored, 32,076 matched : 7.44 gb at 36 mb/s, 11% : 0(0)/4 files : 0:33:41 remaining
+2026-05-12 14:01:27,330 - INFO: 20,000,000 lines at 94,138/s, 0 errored, 33,805 matched : 7.83 gb at 38 mb/s, 11% : 0(0)/4 files : 0:33:07 remaining
+2026-05-12 14:01:57,829 - INFO: 21,000,000 lines at 86,437/s, 0 errored, 35,493 matched : 8.21 gb at 35 mb/s, 12% : 0(0)/4 files : 0:32:46 remaining
+2026-05-12 14:02:04,072 - INFO: 22,000,000 lines at 88,284/s, 0 errored, 37,455 matched : 8.60 gb at 35 mb/s, 12% : 0(0)/4 files : 0:32:23 remaining
+2026-05-12 14:02:07,244 - INFO: 23,000,000 lines at 91,137/s, 0 errored, 39,018 matched : 8.99 gb at 36 mb/s, 13% : 0(0)/4 files : 0:31:58 remaining
+2026-05-12 14:02:11,250 - INFO: 24,000,000 lines at 93,614/s, 0 errored, 40,830 matched : 9.39 gb at 38 mb/s, 14% : 0(0)/4 files : 0:31:32 remaining
+2026-05-12 14:02:37,130 - INFO: 25,000,000 lines at 88,573/s, 0 errored, 42,449 matched : 9.77 gb at 35 mb/s, 14% : 0(0)/4 files : 0:31:12 remaining
+2026-05-12 14:02:44,795 - INFO: 26,000,000 lines at 89,681/s, 0 errored, 44,212 matched : 10.16 gb at 36 mb/s, 15% : 0(0)/4 files : 0:30:52 remaining
+2026-05-12 14:02:47,380 - INFO: 27,000,000 lines at 92,307/s, 0 errored, 45,654 matched : 10.56 gb at 37 mb/s, 15% : 0(0)/4 files : 0:30:30 remaining
+2026-05-12 14:02:52,560 - INFO: 28,000,000 lines at 94,060/s, 0 errored, 47,374 matched : 10.95 gb at 38 mb/s, 16% : 0(0)/4 files : 0:30:08 remaining
+2026-05-12 14:03:18,056 - INFO: 29,000,000 lines at 89,734/s, 0 errored, 49,093 matched : 11.33 gb at 36 mb/s, 16% : 0(0)/4 files : 0:29:50 remaining
+2026-05-12 14:03:28,016 - INFO: 30,000,000 lines at 90,053/s, 0 errored, 50,621 matched : 11.72 gb at 36 mb/s, 17% : 0(0)/4 files : 0:29:33 remaining
+2026-05-12 14:03:28,026 - INFO: 31,000,000 lines at 93,051/s, 0 errored, 52,265 matched : 12.10 gb at 37 mb/s, 18% : 0(0)/4 files : 0:29:14 remaining
+2026-05-12 14:03:36,628 - INFO: 32,000,000 lines at 93,636/s, 0 errored, 53,926 matched : 12.50 gb at 37 mb/s, 18% : 0(0)/4 files : 0:28:55 remaining
+2026-05-12 14:03:59,316 - INFO: 33,000,000 lines at 90,550/s, 0 errored, 55,662 matched : 12.89 gb at 36 mb/s, 19% : 0(0)/4 files : 0:28:38 remaining
+2026-05-12 14:04:09,156 - INFO: 34,000,000 lines at 90,841/s, 0 errored, 57,343 matched : 13.27 gb at 36 mb/s, 19% : 0(0)/4 files : 0:28:22 remaining
+2026-05-12 14:04:10,349 - INFO: 35,000,000 lines at 93,216/s, 0 errored, 59,111 matched : 13.67 gb at 37 mb/s, 20% : 0(0)/4 files : 0:28:05 remaining
+2026-05-12 14:04:19,232 - INFO: 36,000,000 lines at 93,664/s, 0 errored, 60,878 matched : 14.06 gb at 37 mb/s, 20% : 0(0)/4 files : 0:27:47 remaining
+2026-05-12 14:04:39,839 - INFO: 37,000,000 lines at 91,367/s, 0 errored, 62,460 matched : 14.44 gb at 37 mb/s, 21% : 0(0)/4 files : 0:27:32 remaining
+2026-05-12 14:04:51,629 - INFO: 38,000,000 lines at 91,181/s, 0 errored, 64,041 matched : 14.84 gb at 36 mb/s, 22% : 0(0)/4 files : 0:27:16 remaining
+2026-05-12 14:04:53,517 - INFO: 39,000,000 lines at 93,159/s, 0 errored, 65,767 matched : 15.23 gb at 37 mb/s, 22% : 0(0)/4 files : 0:27:00 remaining
+2026-05-12 14:05:00,284 - INFO: 40,000,000 lines at 101,629/s, 0 errored, 67,300 matched : 15.62 gb at 41 mb/s, 23% : 0(0)/4 files : 0:26:41 remaining
+2026-05-12 14:05:21,330 - INFO: 41,000,000 lines at 96,561/s, 0 errored, 68,986 matched : 15.99 gb at 39 mb/s, 23% : 0(0)/4 files : 0:25:57 remaining
+2026-05-12 14:05:34,282 - INFO: 42,000,000 lines at 93,656/s, 0 errored, 70,737 matched : 16.39 gb at 37 mb/s, 24% : 0(0)/4 files : 0:25:25 remaining
+2026-05-12 14:05:36,912 - INFO: 43,000,000 lines at 93,179/s, 0 errored, 72,458 matched : 16.78 gb at 37 mb/s, 24% : 0(0)/4 files : 0:25:04 remaining
+2026-05-12 14:05:42,227 - INFO: 44,000,000 lines at 101,804/s, 0 errored, 74,114 matched : 17.17 gb at 41 mb/s, 25% : 0(0)/4 files : 0:24:50 remaining
+2026-05-12 14:06:03,175 - INFO: 45,000,000 lines at 96,760/s, 0 errored, 75,747 matched : 17.55 gb at 39 mb/s, 25% : 0(0)/4 files : 0:24:24 remaining
+2026-05-12 14:06:17,561 - INFO: 46,000,000 lines at 93,874/s, 0 errored, 77,567 matched : 17.94 gb at 37 mb/s, 26% : 0(0)/4 files : 0:24:04 remaining
+2026-05-12 14:06:20,215 - INFO: 47,000,000 lines at 93,287/s, 0 errored, 79,482 matched : 18.33 gb at 37 mb/s, 27% : 0(0)/4 files : 0:23:47 remaining
+2026-05-12 14:06:26,774 - INFO: 48,000,000 lines at 100,161/s, 0 errored, 81,059 matched : 18.73 gb at 40 mb/s, 27% : 0(0)/4 files : 0:23:33 remaining
+2026-05-12 14:06:47,933 - INFO: 49,000,000 lines at 95,432/s, 0 errored, 82,569 matched : 19.12 gb at 38 mb/s, 28% : 0(0)/4 files : 0:23:14 remaining
+2026-05-12 14:07:00,464 - INFO: 50,000,000 lines at 93,416/s, 0 errored, 84,201 matched : 19.51 gb at 37 mb/s, 28% : 0(0)/4 files : 0:22:58 remaining
+2026-05-12 14:07:02,267 - INFO: 51,000,000 lines at 93,256/s, 0 errored, 86,005 matched : 19.91 gb at 37 mb/s, 29% : 0(0)/4 files : 0:22:44 remaining
+2026-05-12 14:07:09,659 - INFO: 52,000,000 lines at 99,447/s, 0 errored, 87,551 matched : 20.30 gb at 40 mb/s, 29% : 0(0)/4 files : 0:22:31 remaining
+2026-05-12 14:07:28,854 - INFO: 53,000,000 lines at 95,352/s, 0 errored, 88,975 matched : 20.69 gb at 38 mb/s, 30% : 0(0)/4 files : 0:22:14 remaining
+2026-05-12 14:07:43,976 - INFO: 54,000,000 lines at 93,148/s, 0 errored, 90,515 matched : 21.09 gb at 37 mb/s, 31% : 0(0)/4 files : 0:22:01 remaining
+2026-05-12 14:07:47,668 - INFO: 55,000,000 lines at 92,568/s, 0 errored, 92,312 matched : 21.48 gb at 37 mb/s, 31% : 0(0)/4 files : 0:21:48 remaining
+2026-05-12 14:07:54,475 - INFO: 56,000,000 lines at 98,072/s, 0 errored, 93,891 matched : 21.88 gb at 39 mb/s, 32% : 0(0)/4 files : 0:21:36 remaining
+2026-05-12 14:08:11,144 - INFO: 57,000,000 lines at 95,065/s, 0 errored, 95,465 matched : 22.26 gb at 38 mb/s, 32% : 0(0)/4 files : 0:21:22 remaining
+2026-05-12 14:08:26,565 - INFO: 58,000,000 lines at 92,845/s, 0 errored, 97,200 matched : 22.65 gb at 37 mb/s, 33% : 0(0)/4 files : 0:21:09 remaining
+2026-05-12 14:08:29,061 - INFO: 59,000,000 lines at 92,476/s, 0 errored, 99,138 matched : 23.04 gb at 37 mb/s, 33% : 0(0)/4 files : 0:20:57 remaining
+2026-05-12 14:08:37,865 - INFO: 60,000,000 lines at 97,491/s, 0 errored, 100,810 matched : 23.44 gb at 39 mb/s, 34% : 0(0)/4 files : 0:20:45 remaining
+2026-05-12 14:08:54,816 - INFO: 61,000,000 lines at 94,950/s, 0 errored, 102,447 matched : 23.82 gb at 38 mb/s, 35% : 0(0)/4 files : 0:20:32 remaining
+2026-05-12 14:09:10,150 - INFO: 62,000,000 lines at 92,219/s, 0 errored, 104,195 matched : 24.22 gb at 37 mb/s, 35% : 0(0)/4 files : 0:20:20 remaining
+2026-05-12 14:09:12,956 - INFO: 63,000,000 lines at 92,481/s, 0 errored, 106,013 matched : 24.61 gb at 37 mb/s, 36% : 0(0)/4 files : 0:20:09 remaining
+2026-05-12 14:09:19,527 - INFO: 64,000,000 lines at 96,919/s, 0 errored, 107,684 matched : 25.01 gb at 39 mb/s, 36% : 0(0)/4 files : 0:19:57 remaining
+2026-05-12 14:09:34,819 - INFO: 65,000,000 lines at 95,116/s, 0 errored, 109,262 matched : 25.40 gb at 38 mb/s, 37% : 0(0)/4 files : 0:19:44 remaining
+2026-05-12 14:09:54,726 - INFO: 66,000,000 lines at 91,261/s, 0 errored, 110,758 matched : 25.80 gb at 37 mb/s, 37% : 0(0)/4 files : 0:19:33 remaining
+2026-05-12 14:09:57,605 - INFO: 67,000,000 lines at 91,755/s, 0 errored, 112,503 matched : 26.19 gb at 37 mb/s, 38% : 0(0)/4 files : 0:19:23 remaining
+2026-05-12 14:10:00,938 - INFO: 68,000,000 lines at 96,802/s, 0 errored, 114,201 matched : 26.58 gb at 39 mb/s, 39% : 0(0)/4 files : 0:19:11 remaining
+2026-05-12 14:10:19,164 - INFO: 69,000,000 lines at 94,856/s, 0 errored, 115,973 matched : 26.97 gb at 38 mb/s, 39% : 0(0)/4 files : 0:18:59 remaining
+2026-05-12 14:10:39,370 - INFO: 70,000,000 lines at 90,415/s, 0 errored, 117,381 matched : 27.37 gb at 36 mb/s, 40% : 0(0)/4 files : 0:18:48 remaining
+2026-05-12 14:10:41,313 - INFO: 71,000,000 lines at 91,833/s, 0 errored, 119,161 matched : 27.76 gb at 37 mb/s, 40% : 0(0)/4 files : 0:18:38 remaining
+2026-05-12 14:10:46,156 - INFO: 72,000,000 lines at 95,861/s, 0 errored, 120,837 matched : 28.16 gb at 38 mb/s, 41% : 0(0)/4 files : 0:18:26 remaining
+2026-05-12 14:11:00,439 - INFO: 73,000,000 lines at 94,825/s, 0 errored, 122,545 matched : 28.54 gb at 38 mb/s, 41% : 0(0)/4 files : 0:18:15 remaining
+2026-05-12 14:11:21,164 - INFO: 74,000,000 lines at 90,526/s, 0 errored, 124,155 matched : 28.93 gb at 36 mb/s, 42% : 0(0)/4 files : 0:18:04 remaining
+2026-05-12 14:11:24,332 - INFO: 75,000,000 lines at 91,743/s, 0 errored, 125,860 matched : 29.33 gb at 37 mb/s, 43% : 0(0)/4 files : 0:17:54 remaining
+2026-05-12 14:11:29,218 - INFO: 76,000,000 lines at 95,266/s, 0 errored, 127,410 matched : 29.72 gb at 38 mb/s, 43% : 0(0)/4 files : 0:17:42 remaining
+2026-05-12 14:11:42,606 - INFO: 77,000,000 lines at 94,896/s, 0 errored, 128,988 matched : 30.12 gb at 38 mb/s, 44% : 0(0)/4 files : 0:17:31 remaining
+2026-05-12 14:12:05,559 - INFO: 78,000,000 lines at 90,269/s, 0 errored, 130,727 matched : 30.52 gb at 36 mb/s, 44% : 0(0)/4 files : 0:17:20 remaining
+2026-05-12 14:12:05,812 - INFO: 79,000,000 lines at 91,651/s, 0 errored, 132,231 matched : 30.89 gb at 37 mb/s, 45% : 0(0)/4 files : 0:17:10 remaining
+2026-05-12 14:12:11,043 - INFO: 80,000,000 lines at 95,189/s, 0 errored, 133,753 matched : 31.29 gb at 38 mb/s, 45% : 0(0)/4 files : 0:17:01 remaining
+2026-05-12 14:12:24,590 - INFO: 81,000,000 lines at 95,050/s, 0 errored, 135,393 matched : 31.67 gb at 38 mb/s, 46% : 0(0)/4 files : 0:16:51 remaining
+2026-05-12 14:12:49,861 - INFO: 82,000,000 lines at 90,080/s, 0 errored, 137,051 matched : 32.07 gb at 36 mb/s, 46% : 0(0)/4 files : 0:16:41 remaining
+2026-05-12 14:12:52,151 - INFO: 83,000,000 lines at 90,714/s, 0 errored, 138,460 matched : 32.46 gb at 36 mb/s, 47% : 0(0)/4 files : 0:16:31 remaining
+2026-05-12 14:12:56,192 - INFO: 84,000,000 lines at 94,427/s, 0 errored, 140,135 matched : 32.85 gb at 38 mb/s, 48% : 0(0)/4 files : 0:16:22 remaining
+2026-05-12 14:13:08,784 - INFO: 85,000,000 lines at 94,839/s, 0 errored, 141,845 matched : 33.25 gb at 38 mb/s, 48% : 0(0)/4 files : 0:16:11 remaining
+2026-05-12 14:13:34,629 - INFO: 86,000,000 lines at 89,776/s, 0 errored, 143,486 matched : 33.65 gb at 36 mb/s, 49% : 0(0)/4 files : 0:16:01 remaining
+2026-05-12 14:13:36,432 - INFO: 87,000,000 lines at 90,770/s, 0 errored, 145,162 matched : 34.04 gb at 36 mb/s, 49% : 0(0)/4 files : 0:15:51 remaining
+2026-05-12 14:13:40,199 - INFO: 88,000,000 lines at 94,599/s, 0 errored, 146,634 matched : 34.45 gb at 38 mb/s, 50% : 0(0)/4 files : 0:15:41 remaining
+2026-05-12 14:13:51,060 - INFO: 89,000,000 lines at 94,984/s, 0 errored, 148,268 matched : 34.83 gb at 38 mb/s, 51% : 0(0)/4 files : 0:15:31 remaining
+2026-05-12 14:14:17,319 - INFO: 90,000,000 lines at 89,645/s, 0 errored, 149,915 matched : 35.23 gb at 36 mb/s, 51% : 0(0)/4 files : 0:15:21 remaining
+2026-05-12 14:14:18,064 - INFO: 91,000,000 lines at 91,035/s, 0 errored, 151,569 matched : 35.63 gb at 37 mb/s, 52% : 0(0)/4 files : 0:15:10 remaining
+2026-05-12 14:14:21,276 - INFO: 92,000,000 lines at 94,563/s, 0 errored, 153,011 matched : 36.02 gb at 38 mb/s, 52% : 0(0)/4 files : 0:15:01 remaining
+2026-05-12 14:14:32,615 - INFO: 93,000,000 lines at 95,439/s, 0 errored, 154,512 matched : 36.41 gb at 38 mb/s, 53% : 0(0)/4 files : 0:14:50 remaining
+2026-05-12 14:14:58,954 - INFO: 94,000,000 lines at 90,427/s, 0 errored, 156,247 matched : 36.80 gb at 36 mb/s, 53% : 0(0)/4 files : 0:14:39 remaining
+2026-05-12 14:15:00,939 - INFO: 95,000,000 lines at 91,450/s, 0 errored, 157,787 matched : 37.20 gb at 37 mb/s, 54% : 0(0)/4 files : 0:14:29 remaining
+2026-05-12 14:15:03,894 - INFO: 96,000,000 lines at 94,488/s, 0 errored, 159,234 matched : 37.57 gb at 38 mb/s, 54% : 0(0)/4 files : 0:14:19 remaining
+2026-05-12 14:15:13,236 - INFO: 97,000,000 lines at 95,902/s, 0 errored, 160,846 matched : 37.95 gb at 39 mb/s, 55% : 0(0)/4 files : 0:14:09 remaining
+2026-05-12 14:15:40,904 - INFO: 98,000,000 lines at 90,310/s, 0 errored, 162,554 matched : 38.34 gb at 36 mb/s, 56% : 0(0)/4 files : 0:13:58 remaining
+2026-05-12 14:15:43,584 - INFO: 99,000,000 lines at 91,610/s, 0 errored, 164,091 matched : 38.74 gb at 37 mb/s, 56% : 0(0)/4 files : 0:13:47 remaining
+2026-05-12 14:15:44,581 - INFO: 100,000,000 lines at 95,177/s, 0 errored, 165,507 matched : 39.14 gb at 38 mb/s, 57% : 0(0)/4 files : 0:13:37 remaining
+2026-05-12 14:15:57,757 - INFO: 101,000,000 lines at 95,681/s, 0 errored, 167,195 matched : 39.52 gb at 38 mb/s, 57% : 0(0)/4 files : 0:13:26 remaining
+2026-05-12 14:16:25,612 - INFO: 102,000,000 lines at 90,141/s, 0 errored, 168,904 matched : 39.91 gb at 36 mb/s, 58% : 0(0)/4 files : 0:13:16 remaining
+2026-05-12 14:16:28,936 - INFO: 103,000,000 lines at 90,822/s, 0 errored, 170,502 matched : 40.32 gb at 37 mb/s, 58% : 0(0)/4 files : 0:13:05 remaining
+2026-05-12 14:16:29,002 - INFO: 104,000,000 lines at 94,161/s, 0 errored, 172,032 matched : 40.71 gb at 38 mb/s, 59% : 0(0)/4 files : 0:12:55 remaining
+2026-05-12 14:16:40,651 - INFO: 105,000,000 lines at 96,077/s, 0 errored, 173,721 matched : 41.11 gb at 39 mb/s, 60% : 0(0)/4 files : 0:12:44 remaining
+2026-05-12 14:17:09,280 - INFO: 106,000,000 lines at 90,346/s, 0 errored, 175,302 matched : 41.49 gb at 36 mb/s, 60% : 0(0)/4 files : 0:12:33 remaining
+2026-05-12 14:17:10,617 - INFO: 107,000,000 lines at 90,766/s, 0 errored, 177,010 matched : 41.88 gb at 36 mb/s, 61% : 0(0)/4 files : 0:12:22 remaining
+2026-05-12 14:17:13,092 - INFO: 108,000,000 lines at 94,219/s, 0 errored, 178,574 matched : 42.28 gb at 38 mb/s, 61% : 0(0)/4 files : 0:12:12 remaining
+2026-05-12 14:17:20,772 - INFO: 109,000,000 lines at 97,159/s, 0 errored, 180,216 matched : 42.63 gb at 39 mb/s, 62% : 0(0)/4 files : 0:12:02 remaining
+2026-05-12 14:17:50,903 - INFO: 110,000,000 lines at 90,784/s, 0 errored, 181,830 matched : 43.02 gb at 36 mb/s, 62% : 0(0)/4 files : 0:11:51 remaining
+2026-05-12 14:17:51,937 - INFO: 111,000,000 lines at 91,596/s, 0 errored, 183,399 matched : 43.41 gb at 37 mb/s, 63% : 0(0)/4 files : 0:11:40 remaining
+2026-05-12 14:17:53,958 - INFO: 112,000,000 lines at 94,312/s, 0 errored, 184,951 matched : 43.81 gb at 38 mb/s, 64% : 0(0)/4 files : 0:11:30 remaining
+2026-05-12 14:18:00,849 - INFO: 113,000,000 lines at 97,577/s, 0 errored, 186,621 matched : 44.19 gb at 39 mb/s, 64% : 0(0)/4 files : 0:11:19 remaining
+2026-05-12 14:18:33,845 - INFO: 114,000,000 lines at 90,801/s, 0 errored, 188,297 matched : 44.58 gb at 36 mb/s, 65% : 0(0)/4 files : 0:11:08 remaining
+2026-05-12 14:18:35,859 - INFO: 115,000,000 lines at 91,412/s, 0 errored, 189,855 matched : 44.98 gb at 37 mb/s, 65% : 0(0)/4 files : 0:10:57 remaining
+2026-05-12 14:18:37,063 - INFO: 116,000,000 lines at 94,099/s, 0 errored, 191,578 matched : 45.38 gb at 38 mb/s, 66% : 0(0)/4 files : 0:10:47 remaining
+2026-05-12 14:18:42,888 - INFO: 117,000,000 lines at 98,155/s, 0 errored, 193,252 matched : 45.76 gb at 39 mb/s, 66% : 0(0)/4 files : 0:10:36 remaining
+2026-05-12 14:19:16,127 - INFO: 118,000,000 lines at 90,631/s, 0 errored, 194,877 matched : 46.15 gb at 36 mb/s, 67% : 0(0)/4 files : 0:10:25 remaining
+2026-05-12 14:19:16,962 - INFO: 119,000,000 lines at 91,567/s, 0 errored, 196,402 matched : 46.56 gb at 37 mb/s, 68% : 0(0)/4 files : 0:10:14 remaining
+2026-05-12 14:19:19,123 - INFO: 120,000,000 lines at 94,082/s, 0 errored, 198,120 matched : 46.95 gb at 38 mb/s, 68% : 0(0)/4 files : 0:10:03 remaining
+2026-05-12 14:19:22,685 - INFO: 121,000,000 lines at 99,281/s, 0 errored, 199,818 matched : 47.33 gb at 40 mb/s, 69% : 0(0)/4 files : 0:09:52 remaining
+2026-05-12 14:19:58,498 - INFO: 122,000,000 lines at 91,475/s, 0 errored, 201,259 matched : 47.74 gb at 37 mb/s, 69% : 0(0)/4 files : 0:09:41 remaining
+2026-05-12 14:19:59,020 - INFO: 123,000,000 lines at 92,236/s, 0 errored, 202,829 matched : 48.13 gb at 37 mb/s, 70% : 0(0)/4 files : 0:09:30 remaining
+2026-05-12 14:20:01,292 - INFO: 124,000,000 lines at 94,544/s, 0 errored, 204,694 matched : 48.54 gb at 38 mb/s, 70% : 0(0)/4 files : 0:09:19 remaining
+2026-05-12 14:20:04,239 - INFO: 125,000,000 lines at 100,100/s, 0 errored, 206,427 matched : 48.93 gb at 40 mb/s, 71% : 0(0)/4 files : 0:09:07 remaining
+2026-05-12 14:20:39,366 - INFO: 126,000,000 lines at 92,213/s, 0 errored, 207,971 matched : 49.32 gb at 37 mb/s, 72% : 0(0)/4 files : 0:08:56 remaining
+2026-05-12 14:20:41,268 - INFO: 127,000,000 lines at 92,621/s, 0 errored, 209,730 matched : 49.71 gb at 37 mb/s, 72% : 0(0)/4 files : 0:08:45 remaining
+2026-05-12 14:20:43,857 - INFO: 128,000,000 lines at 94,477/s, 0 errored, 211,433 matched : 50.11 gb at 38 mb/s, 73% : 0(0)/4 files : 0:08:35 remaining
+2026-05-12 14:20:45,175 - INFO: 129,000,000 lines at 100,553/s, 0 errored, 213,109 matched : 50.50 gb at 40 mb/s, 73% : 0(0)/4 files : 0:08:23 remaining
+2026-05-12 14:21:18,615 - INFO: 130,000,000 lines at 92,735/s, 0 errored, 214,645 matched : 50.89 gb at 37 mb/s, 74% : 0(0)/4 files : 0:08:12 remaining
+2026-05-12 14:21:22,164 - INFO: 131,000,000 lines at 92,661/s, 0 errored, 216,367 matched : 51.30 gb at 37 mb/s, 74% : 0(0)/4 files : 0:08:01 remaining
+2026-05-12 14:21:24,808 - INFO: 132,000,000 lines at 94,616/s, 0 errored, 217,932 matched : 51.70 gb at 38 mb/s, 75% : 0(0)/4 files : 0:07:50 remaining
+2026-05-12 14:21:25,928 - INFO: 133,000,000 lines at 100,782/s, 0 errored, 219,519 matched : 52.10 gb at 40 mb/s, 76% : 0(0)/4 files : 0:07:38 remaining
+2026-05-12 14:21:59,289 - INFO: 134,000,000 lines at 93,223/s, 0 errored, 220,882 matched : 52.50 gb at 37 mb/s, 76% : 0(0)/4 files : 0:07:27 remaining
+2026-05-12 14:22:03,284 - INFO: 135,000,000 lines at 92,992/s, 0 errored, 222,551 matched : 52.90 gb at 37 mb/s, 77% : 0(0)/4 files : 0:07:16 remaining
+2026-05-12 14:22:06,831 - INFO: 136,000,000 lines at 94,294/s, 0 errored, 224,154 matched : 53.30 gb at 38 mb/s, 77% : 0(0)/4 files : 0:07:05 remaining
+2026-05-12 14:22:09,566 - INFO: 137,000,000 lines at 100,344/s, 0 errored, 225,598 matched : 53.69 gb at 40 mb/s, 78% : 0(0)/4 files : 0:06:54 remaining
+2026-05-12 14:22:40,007 - INFO: 138,000,000 lines at 93,655/s, 0 errored, 226,999 matched : 54.09 gb at 38 mb/s, 78% : 0(0)/4 files : 0:06:43 remaining
+2026-05-12 14:22:46,457 - INFO: 139,000,000 lines at 92,444/s, 0 errored, 228,659 matched : 54.48 gb at 37 mb/s, 79% : 0(0)/4 files : 0:06:32 remaining
+2026-05-12 14:22:49,252 - INFO: 140,000,000 lines at 94,776/s, 0 errored, 230,420 matched : 54.89 gb at 38 mb/s, 80% : 0(0)/4 files : 0:06:21 remaining
+2026-05-12 14:22:51,520 - INFO: 141,000,000 lines at 101,060/s, 0 errored, 231,873 matched : 55.28 gb at 41 mb/s, 80% : 0(0)/4 files : 0:06:10 remaining
+2026-05-12 14:23:21,582 - INFO: 142,000,000 lines at 94,512/s, 0 errored, 233,489 matched : 55.67 gb at 38 mb/s, 81% : 0(0)/4 files : 0:05:59 remaining
+2026-05-12 14:23:27,730 - INFO: 143,000,000 lines at 93,139/s, 0 errored, 235,172 matched : 56.07 gb at 38 mb/s, 81% : 0(0)/4 files : 0:05:48 remaining
+2026-05-12 14:23:32,146 - INFO: 144,000,000 lines at 94,776/s, 0 errored, 237,085 matched : 56.49 gb at 38 mb/s, 82% : 0(0)/4 files : 0:05:36 remaining
+2026-05-12 14:23:35,126 - INFO: 145,000,000 lines at 101,076/s, 0 errored, 238,639 matched : 56.89 gb at 41 mb/s, 82% : 0(0)/4 files : 0:05:25 remaining
+2026-05-12 14:24:02,693 - INFO: 146,000,000 lines at 94,643/s, 0 errored, 240,177 matched : 57.29 gb at 38 mb/s, 83% : 0(0)/4 files : 0:05:14 remaining
+2026-05-12 14:24:10,970 - INFO: 147,000,000 lines at 93,329/s, 0 errored, 241,757 matched : 57.70 gb at 38 mb/s, 84% : 0(0)/4 files : 0:05:03 remaining
+2026-05-12 14:24:16,315 - INFO: 148,000,000 lines at 93,853/s, 0 errored, 243,621 matched : 58.11 gb at 38 mb/s, 84% : 0(0)/4 files : 0:04:51 remaining
+2026-05-12 14:24:16,835 - INFO: 149,000,000 lines at 101,054/s, 0 errored, 245,054 matched : 58.51 gb at 41 mb/s, 85% : 0(0)/4 files : 0:04:40 remaining
+2026-05-12 14:24:44,740 - INFO: 150,000,000 lines at 94,476/s, 0 errored, 246,739 matched : 58.91 gb at 38 mb/s, 85% : 0(0)/4 files : 0:04:29 remaining
+2026-05-12 14:24:53,732 - INFO: 151,000,000 lines at 92,907/s, 0 errored, 248,351 matched : 59.30 gb at 38 mb/s, 86% : 0(0)/4 files : 0:04:19 remaining
+2026-05-12 14:24:57,872 - INFO: 152,000,000 lines at 93,520/s, 0 errored, 249,916 matched : 59.70 gb at 38 mb/s, 87% : 0(0)/4 files : 0:04:08 remaining
+2026-05-12 14:24:58,654 - INFO: 153,000,000 lines at 101,349/s, 0 errored, 251,602 matched : 60.10 gb at 41 mb/s, 87% : 0(0)/4 files : 0:03:57 remaining
+2026-05-12 14:25:28,556 - INFO: 154,000,000 lines at 94,500/s, 0 errored, 253,207 matched : 60.49 gb at 38 mb/s, 88% : 0(0)/4 files : 0:03:46 remaining
+2026-05-12 14:25:36,865 - INFO: 155,000,000 lines at 92,901/s, 0 errored, 254,943 matched : 60.88 gb at 38 mb/s, 88% : 0(0)/4 files : 0:03:35 remaining
+2026-05-12 14:25:41,661 - INFO: 156,000,000 lines at 93,129/s, 0 errored, 256,540 matched : 61.28 gb at 38 mb/s, 89% : 0(0)/4 files : 0:03:25 remaining
+2026-05-12 14:25:41,717 - INFO: 157,000,000 lines at 101,144/s, 0 errored, 258,391 matched : 61.66 gb at 41 mb/s, 89% : 0(0)/4 files : 0:03:14 remaining
+2026-05-12 14:26:10,444 - INFO: 158,000,000 lines at 94,321/s, 0 errored, 259,867 matched : 62.06 gb at 38 mb/s, 90% : 0(0)/4 files : 0:03:04 remaining
+2026-05-12 14:26:20,339 - INFO: 159,000,000 lines at 92,589/s, 0 errored, 261,355 matched : 62.46 gb at 38 mb/s, 91% : 0(0)/4 files : 0:02:53 remaining
+2026-05-12 14:26:23,559 - INFO: 160,000,000 lines at 92,664/s, 0 errored, 262,993 matched : 62.86 gb at 38 mb/s, 91% : 0(0)/4 files : 0:02:42 remaining
+2026-05-12 14:26:23,947 - INFO: 161,000,000 lines at 101,181/s, 0 errored, 264,520 matched : 63.26 gb at 41 mb/s, 92% : 0(0)/4 files : 0:02:31 remaining
+2026-05-12 14:26:53,527 - INFO: 162,000,000 lines at 94,088/s, 0 errored, 266,090 matched : 63.66 gb at 38 mb/s, 92% : 0(0)/4 files : 0:02:21 remaining
+2026-05-12 14:27:03,564 - INFO: 163,000,000 lines at 92,357/s, 0 errored, 267,752 matched : 64.05 gb at 38 mb/s, 93% : 0(0)/4 files : 0:02:10 remaining
+2026-05-12 14:27:06,588 - INFO: 164,000,000 lines at 92,341/s, 0 errored, 269,185 matched : 64.44 gb at 38 mb/s, 93% : 0(0)/4 files : 0:02:00 remaining
+2026-05-12 14:27:06,607 - INFO: 165,000,000 lines at 100,713/s, 0 errored, 270,820 matched : 64.83 gb at 41 mb/s, 94% : 0(0)/4 files : 0:01:49 remaining
+2026-05-12 14:27:37,643 - INFO: 166,000,000 lines at 93,666/s, 0 errored, 272,512 matched : 65.23 gb at 38 mb/s, 95% : 0(0)/4 files : 0:01:39 remaining
+2026-05-12 14:27:47,112 - INFO: 167,000,000 lines at 92,143/s, 0 errored, 274,004 matched : 65.63 gb at 38 mb/s, 95% : 0(0)/4 files : 0:01:28 remaining
+2026-05-12 14:27:47,981 - INFO: 168,000,000 lines at 92,241/s, 0 errored, 275,637 matched : 66.03 gb at 38 mb/s, 96% : 0(0)/4 files : 0:01:17 remaining
+2026-05-12 14:27:49,641 - INFO: 169,000,000 lines at 99,738/s, 0 errored, 277,230 matched : 66.42 gb at 41 mb/s, 96% : 0(0)/4 files : 0:01:07 remaining
+2026-05-12 14:28:11,986 - INFO: 169,567,337 lines at 94,107/s, 0 errored, 278,198 matched : 66.64 gb at 38 mb/s, 97% : 1(0)/4 files : 0:01:01 remaining
+2026-05-12 14:28:18,343 - INFO: 170,567,337 lines at 93,263/s, 0 errored, 279,694 matched : 67.05 gb at 38 mb/s, 97% : 1(0)/4 files : 0:00:50 remaining
+2026-05-12 14:28:23,968 - INFO: 171,428,419 lines at 91,925/s, 0 errored, 280,923 matched : 67.39 gb at 37 mb/s, 98% : 2(0)/4 files : 0:00:41 remaining
+2026-05-12 14:28:27,294 - INFO: 172,347,855 lines at 98,833/s, 0 errored, 282,275 matched : 67.75 gb at 40 mb/s, 98% : 3(0)/4 files : 0:00:32 remaining
+2026-05-12 14:28:52,898 - INFO: 173,347,855 lines at 93,619/s, 0 errored, 283,671 matched : 68.14 gb at 38 mb/s, 99% : 3(0)/4 files : 0:00:21 remaining
+2026-05-12 14:29:26,363 - INFO: 174,347,855 lines at 87,247/s, 0 errored, 285,130 matched : 68.54 gb at 36 mb/s, 99% : 3(0)/4 files : 0:00:11 remaining
+2026-05-12 14:29:59,531 - INFO: 175,347,855 lines at 81,597/s, 0 errored, 286,541 matched : 68.93 gb at 33 mb/s, 100% : 3(0)/4 files : 0:00:00 remaining
+2026-05-12 14:30:02,392 - INFO: 175,442,700 lines at 84,638/s, 0 errored, 286,702 matched : 68.97 gb at 34 mb/s, 100% : 4(0)/4 files : 0:00:00 remaining
+2026-05-12 14:30:02,576 - INFO: 175,442,700, 0 errored : 68.97 gb, 100% : 4/4
+2026-05-12 14:30:02,577 - INFO: Processing complete, combining 4 result files
+2026-05-12 14:30:02,577 - INFO: From 0/4 files to 0 output handles : 0/286,702 lines
+2026-05-12 14:30:12,581 - INFO: From 4/4 files to 0 output handles : 286,702/286,702 lines
+2026-05-12 14:40:14,809 - INFO: Loading files from: ../../output/corpora/reddit/subreddit_filtering
+2026-05-12 14:40:14,809 - INFO: Writing output to: ../../output/corpora/reddit/term_filtering
+2026-05-12 14:40:14,809 - INFO: Checking if any of any of 10 values are contained in field selftext
+2026-05-12 14:40:14,896 - INFO: Processed 0 of 1 files with 0.00 of 0.35 gigabytes
+2026-05-12 14:40:14,896 - INFO: Processing file: ../../output/corpora/reddit/subreddit_filtering/RS_2025_filtered_subreddits.zst
+2026-05-12 14:41:40,170 - INFO: Loading files from: ../../output/corpora/reddit/subreddit_filtering
+2026-05-12 14:41:40,170 - INFO: Writing output to: ../../output/corpora/reddit/term_filtering
+2026-05-12 14:41:40,170 - INFO: Checking if any of any of 10 values are contained in field selftext
+2026-05-12 14:41:40,244 - INFO: Processed 0 of 0 files with 0.00 of 0.00 gigabytes
+2026-05-12 14:44:08,788 - INFO: Loading files from: ../../../data/reddit/submissions
+2026-05-12 14:44:08,788 - INFO: Writing output to: ../../output/corpora/reddit/subreddit_filtering
+2026-05-12 14:44:08,788 - INFO: Checking if any of any of the values offmychest,relationship_advice,confession,relationships,amitheasshole exactly match field subreddit
+2026-05-12 14:44:08,861 - INFO: Processed 0 of 4 files with 0.00 of 68.97 gigabytes
+2026-05-12 14:44:08,861 - INFO: Processing file: ../../../data/reddit/submissions/RS_2026-01.zst
+2026-05-12 14:44:08,861 - INFO: Processing file: ../../../data/reddit/submissions/RS_2025-10.zst
+2026-05-12 14:44:08,861 - INFO: Processing file: ../../../data/reddit/submissions/RS_2025-12.zst
+2026-05-12 14:44:08,861 - INFO: Processing file: ../../../data/reddit/submissions/RS_2025-11.zst
+2026-05-12 14:44:49,630 - INFO: 1,000,000 lines at 24,529/s, 0 errored, 1,515 matched : 0.39 gb at 10 mb/s, 1% : 0(0)/4 files : 1:58:34 remaining
+2026-05-12 14:44:50,514 - INFO: 2,000,000 lines at 48,016/s, 0 errored, 3,143 matched : 0.80 gb at 20 mb/s, 1% : 0(0)/4 files : 1:18:42 remaining
+2026-05-12 14:44:51,089 - INFO: 3,000,000 lines at 71,044/s, 0 errored, 4,616 matched : 1.20 gb at 29 mb/s, 2% : 0(0)/4 files : 0:59:10 remaining
+2026-05-12 14:44:53,291 - INFO: 4,000,000 lines at 90,031/s, 0 errored, 6,376 matched : 1.60 gb at 37 mb/s, 2% : 0(0)/4 files : 0:48:07 remaining
+2026-05-12 14:45:31,456 - INFO: 5,000,000 lines at 60,537/s, 0 errored, 8,272 matched : 1.97 gb at 24 mb/s, 3% : 0(0)/4 files : 0:47:40 remaining
+2026-05-12 14:45:33,096 - INFO: 6,000,000 lines at 71,230/s, 0 errored, 9,925 matched : 2.34 gb at 28 mb/s, 3% : 0(0)/4 files : 0:45:57 remaining
+2026-05-12 14:45:35,035 - INFO: 7,000,000 lines at 81,231/s, 0 errored, 11,594 matched : 2.74 gb at 33 mb/s, 4% : 0(0)/4 files : 0:43:42 remaining
+2026-05-12 14:45:38,045 - INFO: 8,000,000 lines at 89,703/s, 0 errored, 13,327 matched : 3.13 gb at 36 mb/s, 5% : 0(0)/4 files : 0:41:25 remaining
+2026-05-12 14:46:12,439 - INFO: 9,000,000 lines at 72,829/s, 0 errored, 15,368 matched : 3.52 gb at 29 mb/s, 5% : 0(0)/4 files : 0:40:50 remaining
+2026-05-12 14:46:13,093 - INFO: 10,000,000 lines at 80,495/s, 0 errored, 16,906 matched : 3.90 gb at 32 mb/s, 6% : 0(0)/4 files : 0:39:53 remaining
+2026-05-12 14:46:15,122 - INFO: 11,000,000 lines at 87,121/s, 0 errored, 18,644 matched : 4.30 gb at 35 mb/s, 6% : 0(0)/4 files : 0:38:45 remaining
+2026-05-12 14:46:17,167 - INFO: 12,000,000 lines at 93,527/s, 0 errored, 20,303 matched : 4.69 gb at 37 mb/s, 7% : 0(0)/4 files : 0:37:32 remaining
+2026-05-12 14:46:52,549 - INFO: 13,000,000 lines at 79,419/s, 0 errored, 22,224 matched : 5.09 gb at 32 mb/s, 7% : 0(0)/4 files : 0:37:03 remaining
+2026-05-12 14:46:52,864 - INFO: 14,000,000 lines at 85,365/s, 0 errored, 23,727 matched : 5.47 gb at 34 mb/s, 8% : 0(0)/4 files : 0:36:24 remaining
+2026-05-12 14:46:58,517 - INFO: 15,000,000 lines at 88,415/s, 0 errored, 25,357 matched : 5.87 gb at 35 mb/s, 9% : 0(0)/4 files : 0:35:43 remaining
+2026-05-12 14:46:58,784 - INFO: 16,000,000 lines at 94,160/s, 0 errored, 26,906 matched : 6.26 gb at 38 mb/s, 9% : 0(0)/4 files : 0:34:57 remaining
+2026-05-12 14:47:32,922 - INFO: 17,000,000 lines at 83,308/s, 0 errored, 28,467 matched : 6.64 gb at 33 mb/s, 10% : 0(0)/4 files : 0:34:34 remaining
+2026-05-12 14:47:35,447 - INFO: 18,000,000 lines at 87,131/s, 0 errored, 30,342 matched : 7.03 gb at 35 mb/s, 10% : 0(0)/4 files : 0:34:06 remaining
+2026-05-12 14:47:38,347 - INFO: 19,000,000 lines at 90,698/s, 0 errored, 32,071 matched : 7.43 gb at 36 mb/s, 11% : 0(0)/4 files : 0:33:34 remaining
+2026-05-12 14:47:41,975 - INFO: 20,000,000 lines at 93,847/s, 0 errored, 33,805 matched : 7.83 gb at 38 mb/s, 11% : 0(0)/4 files : 0:33:01 remaining
+2026-05-12 14:48:13,666 - INFO: 21,000,000 lines at 85,783/s, 0 errored, 35,493 matched : 8.21 gb at 34 mb/s, 12% : 0(0)/4 files : 0:32:40 remaining
+2026-05-12 14:48:18,119 - INFO: 22,000,000 lines at 88,262/s, 0 errored, 37,455 matched : 8.60 gb at 35 mb/s, 12% : 0(0)/4 files : 0:32:18 remaining
+2026-05-12 14:48:21,674 - INFO: 23,000,000 lines at 90,976/s, 0 errored, 39,267 matched : 9.00 gb at 36 mb/s, 13% : 0(0)/4 files : 0:31:53 remaining
+2026-05-12 14:48:23,353 - INFO: 24,000,000 lines at 94,306/s, 0 errored, 40,830 matched : 9.39 gb at 38 mb/s, 14% : 0(0)/4 files : 0:31:27 remaining
+2026-05-12 14:48:53,497 - INFO: 25,000,000 lines at 87,832/s, 0 errored, 42,449 matched : 9.77 gb at 35 mb/s, 14% : 0(0)/4 files : 0:31:08 remaining
+2026-05-12 14:48:59,126 - INFO: 26,000,000 lines at 89,574/s, 0 errored, 44,212 matched : 10.16 gb at 36 mb/s, 15% : 0(0)/4 files : 0:30:48 remaining
+2026-05-12 14:49:02,141 - INFO: 27,000,000 lines at 92,062/s, 0 errored, 45,932 matched : 10.56 gb at 37 mb/s, 15% : 0(0)/4 files : 0:30:27 remaining
+2026-05-12 14:49:05,619 - INFO: 28,000,000 lines at 94,353/s, 0 errored, 47,374 matched : 10.95 gb at 38 mb/s, 16% : 0(0)/4 files : 0:30:05 remaining
+2026-05-12 14:49:35,687 - INFO: 29,000,000 lines at 88,732/s, 0 errored, 49,093 matched : 11.33 gb at 36 mb/s, 16% : 0(0)/4 files : 0:29:48 remaining
+2026-05-12 14:49:43,462 - INFO: 30,000,000 lines at 89,659/s, 0 errored, 50,754 matched : 11.73 gb at 36 mb/s, 17% : 0(0)/4 files : 0:29:31 remaining
+2026-05-12 14:49:43,584 - INFO: 31,000,000 lines at 92,614/s, 0 errored, 52,398 matched : 12.10 gb at 37 mb/s, 18% : 0(0)/4 files : 0:29:12 remaining
+2026-05-12 14:49:51,134 - INFO: 32,000,000 lines at 93,493/s, 0 errored, 53,926 matched : 12.50 gb at 37 mb/s, 18% : 0(0)/4 files : 0:28:53 remaining
+2026-05-12 14:50:19,262 - INFO: 33,000,000 lines at 89,093/s, 0 errored, 55,662 matched : 12.89 gb at 36 mb/s, 19% : 0(0)/4 files : 0:28:38 remaining
+2026-05-12 14:50:26,228 - INFO: 34,000,000 lines at 90,098/s, 0 errored, 57,429 matched : 13.29 gb at 36 mb/s, 19% : 0(0)/4 files : 0:28:21 remaining
+2026-05-12 14:50:26,426 - INFO: 35,000,000 lines at 92,699/s, 0 errored, 59,197 matched : 13.68 gb at 37 mb/s, 20% : 0(0)/4 files : 0:28:04 remaining
+2026-05-12 14:50:32,445 - INFO: 36,000,000 lines at 93,852/s, 0 errored, 60,878 matched : 14.06 gb at 38 mb/s, 20% : 0(0)/4 files : 0:27:47 remaining
+2026-05-12 14:50:57,238 - INFO: 37,000,000 lines at 90,604/s, 0 errored, 62,460 matched : 14.44 gb at 36 mb/s, 21% : 0(0)/4 files : 0:27:32 remaining
+2026-05-12 14:51:05,668 - INFO: 38,000,000 lines at 91,169/s, 0 errored, 63,993 matched : 14.83 gb at 36 mb/s, 22% : 0(0)/4 files : 0:27:17 remaining
+2026-05-12 14:51:10,131 - INFO: 39,000,000 lines at 92,577/s, 0 errored, 65,719 matched : 15.22 gb at 37 mb/s, 22% : 0(0)/4 files : 0:27:02 remaining
+2026-05-12 14:51:14,053 - INFO: 40,000,000 lines at 101,450/s, 0 errored, 67,300 matched : 15.62 gb at 41 mb/s, 23% : 0(0)/4 files : 0:26:42 remaining
+2026-05-12 14:51:36,048 - INFO: 41,000,000 lines at 96,169/s, 0 errored, 68,986 matched : 15.99 gb at 38 mb/s, 23% : 0(0)/4 files : 0:25:58 remaining
+2026-05-12 14:51:48,967 - INFO: 42,000,000 lines at 93,329/s, 0 errored, 70,642 matched : 16.39 gb at 37 mb/s, 24% : 0(0)/4 files : 0:25:27 remaining
+2026-05-12 14:51:52,357 - INFO: 43,000,000 lines at 93,064/s, 0 errored, 72,363 matched : 16.78 gb at 37 mb/s, 24% : 0(0)/4 files : 0:25:07 remaining
+2026-05-12 14:51:58,611 - INFO: 44,000,000 lines at 100,735/s, 0 errored, 74,114 matched : 17.17 gb at 40 mb/s, 25% : 0(0)/4 files : 0:24:52 remaining
+2026-05-12 14:52:19,102 - INFO: 45,000,000 lines at 96,058/s, 0 errored, 75,747 matched : 17.55 gb at 38 mb/s, 25% : 0(0)/4 files : 0:24:27 remaining
+2026-05-12 14:52:32,303 - INFO: 46,000,000 lines at 93,465/s, 0 errored, 77,324 matched : 17.95 gb at 37 mb/s, 26% : 0(0)/4 files : 0:24:07 remaining
+2026-05-12 14:52:33,763 - INFO: 47,000,000 lines at 93,814/s, 0 errored, 79,239 matched : 18.34 gb at 37 mb/s, 27% : 0(0)/4 files : 0:23:51 remaining
+2026-05-12 14:52:39,338 - INFO: 48,000,000 lines at 100,802/s, 0 errored, 81,059 matched : 18.73 gb at 40 mb/s, 27% : 0(0)/4 files : 0:23:36 remaining
+2026-05-12 14:52:58,177 - INFO: 49,000,000 lines at 96,276/s, 0 errored, 82,569 matched : 19.12 gb at 38 mb/s, 28% : 0(0)/4 files : 0:23:16 remaining
+2026-05-12 14:53:12,397 - INFO: 50,000,000 lines at 93,464/s, 0 errored, 84,115 matched : 19.51 gb at 37 mb/s, 28% : 0(0)/4 files : 0:23:00 remaining
+2026-05-12 14:53:14,779 - INFO: 51,000,000 lines at 93,388/s, 0 errored, 85,919 matched : 19.91 gb at 37 mb/s, 29% : 0(0)/4 files : 0:22:46 remaining
+2026-05-12 14:53:21,362 - INFO: 52,000,000 lines at 100,305/s, 0 errored, 87,551 matched : 20.30 gb at 40 mb/s, 29% : 0(0)/4 files : 0:22:33 remaining
+2026-05-12 14:53:39,308 - INFO: 53,000,000 lines at 95,954/s, 0 errored, 88,975 matched : 20.69 gb at 38 mb/s, 30% : 0(0)/4 files : 0:22:16 remaining
+2026-05-12 14:53:51,908 - INFO: 54,000,000 lines at 94,341/s, 0 errored, 90,554 matched : 21.09 gb at 38 mb/s, 31% : 0(0)/4 files : 0:22:02 remaining
+2026-05-12 14:53:55,044 - INFO: 55,000,000 lines at 93,692/s, 0 errored, 92,351 matched : 21.49 gb at 37 mb/s, 31% : 0(0)/4 files : 0:21:49 remaining
+2026-05-12 14:54:00,140 - INFO: 56,000,000 lines at 100,719/s, 0 errored, 93,891 matched : 21.88 gb at 40 mb/s, 32% : 0(0)/4 files : 0:21:36 remaining
+2026-05-12 14:54:19,671 - INFO: 57,000,000 lines at 96,481/s, 0 errored, 95,465 matched : 22.26 gb at 39 mb/s, 32% : 0(0)/4 files : 0:21:21 remaining
+2026-05-12 14:54:32,408 - INFO: 58,000,000 lines at 94,189/s, 0 errored, 97,137 matched : 22.65 gb at 38 mb/s, 33% : 0(0)/4 files : 0:21:08 remaining
+2026-05-12 14:54:35,488 - INFO: 59,000,000 lines at 94,314/s, 0 errored, 99,075 matched : 23.05 gb at 38 mb/s, 33% : 0(0)/4 files : 0:20:56 remaining
+2026-05-12 14:54:40,924 - INFO: 60,000,000 lines at 100,708/s, 0 errored, 100,810 matched : 23.44 gb at 40 mb/s, 34% : 0(0)/4 files : 0:20:43 remaining
+2026-05-12 14:54:59,843 - INFO: 61,000,000 lines at 97,082/s, 0 errored, 102,447 matched : 23.82 gb at 39 mb/s, 35% : 0(0)/4 files : 0:20:29 remaining
+2026-05-12 14:55:12,583 - INFO: 62,000,000 lines at 94,912/s, 0 errored, 104,118 matched : 24.22 gb at 38 mb/s, 35% : 0(0)/4 files : 0:20:16 remaining
+2026-05-12 14:55:17,397 - INFO: 63,000,000 lines at 94,193/s, 0 errored, 105,936 matched : 24.61 gb at 38 mb/s, 36% : 0(0)/4 files : 0:20:04 remaining
+2026-05-12 14:55:22,719 - INFO: 64,000,000 lines at 100,200/s, 0 errored, 107,684 matched : 25.01 gb at 40 mb/s, 36% : 0(0)/4 files : 0:19:52 remaining
+2026-05-12 14:55:39,573 - INFO: 65,000,000 lines at 97,391/s, 0 errored, 109,262 matched : 25.40 gb at 39 mb/s, 37% : 0(0)/4 files : 0:19:38 remaining
+2026-05-12 14:55:52,746 - INFO: 66,000,000 lines at 94,982/s, 0 errored, 110,960 matched : 25.80 gb at 38 mb/s, 37% : 0(0)/4 files : 0:19:26 remaining
+2026-05-12 14:55:56,272 - INFO: 67,000,000 lines at 94,971/s, 0 errored, 112,705 matched : 26.19 gb at 38 mb/s, 38% : 0(0)/4 files : 0:19:14 remaining
+2026-05-12 14:56:03,426 - INFO: 68,000,000 lines at 100,583/s, 0 errored, 114,201 matched : 26.58 gb at 40 mb/s, 39% : 0(0)/4 files : 0:19:02 remaining
+2026-05-12 14:56:22,326 - INFO: 69,000,000 lines at 97,778/s, 0 errored, 115,973 matched : 26.97 gb at 39 mb/s, 39% : 0(0)/4 files : 0:18:49 remaining
+2026-05-12 14:56:32,041 - INFO: 70,000,000 lines at 95,481/s, 0 errored, 117,649 matched : 27.36 gb at 38 mb/s, 40% : 0(0)/4 files : 0:18:37 remaining
+2026-05-12 14:56:35,791 - INFO: 71,000,000 lines at 96,378/s, 0 errored, 119,429 matched : 27.75 gb at 39 mb/s, 40% : 0(0)/4 files : 0:18:25 remaining
+2026-05-12 14:56:45,552 - INFO: 72,000,000 lines at 100,960/s, 0 errored, 120,837 matched : 28.16 gb at 40 mb/s, 41% : 0(0)/4 files : 0:18:12 remaining
+2026-05-12 14:57:01,621 - INFO: 73,000,000 lines at 98,636/s, 0 errored, 122,545 matched : 28.54 gb at 39 mb/s, 41% : 0(0)/4 files : 0:17:59 remaining
+2026-05-12 14:57:13,587 - INFO: 74,000,000 lines at 95,785/s, 0 errored, 124,095 matched : 28.94 gb at 38 mb/s, 42% : 0(0)/4 files : 0:17:47 remaining
+2026-05-12 14:57:18,879 - INFO: 75,000,000 lines at 95,957/s, 0 errored, 125,800 matched : 29.33 gb at 38 mb/s, 43% : 0(0)/4 files : 0:17:35 remaining
+2026-05-12 14:57:25,823 - INFO: 76,000,000 lines at 100,362/s, 0 errored, 127,410 matched : 29.72 gb at 40 mb/s, 43% : 0(0)/4 files : 0:17:23 remaining
+2026-05-12 14:57:42,951 - INFO: 77,000,000 lines at 98,167/s, 0 errored, 128,988 matched : 30.12 gb at 39 mb/s, 44% : 0(0)/4 files : 0:17:10 remaining
+2026-05-12 14:57:53,705 - INFO: 78,000,000 lines at 96,636/s, 0 errored, 130,510 matched : 30.51 gb at 39 mb/s, 44% : 0(0)/4 files : 0:16:58 remaining
+2026-05-12 14:58:00,440 - INFO: 79,000,000 lines at 95,968/s, 0 errored, 132,014 matched : 30.89 gb at 38 mb/s, 45% : 0(0)/4 files : 0:16:47 remaining
+2026-05-12 14:59:02,498 - INFO: Loading files from: ../../../data/reddit/submissions
+2026-05-12 14:59:02,498 - INFO: Writing output to: ../../output/corpora/reddit/subreddit_filtering
+2026-05-12 14:59:02,498 - INFO: Checking if any of any of the values relationships,confession,offmychest,amitheasshole,relationship_advice exactly match field subreddit
+2026-05-12 14:59:02,589 - INFO: Processed 0 of 4 files with 0.00 of 68.97 gigabytes
+2026-05-12 14:59:02,589 - INFO: Processing file: ../../../data/reddit/submissions/RS_2026-01.zst
+2026-05-12 14:59:02,589 - INFO: Processing file: ../../../data/reddit/submissions/RS_2025-10.zst
+2026-05-12 14:59:02,589 - INFO: Processing file: ../../../data/reddit/submissions/RS_2025-12.zst
+2026-05-12 14:59:02,589 - INFO: Processing file: ../../../data/reddit/submissions/RS_2025-11.zst
+2026-05-12 14:59:43,919 - INFO: 1,000,000 lines at 24,195/s, 0 errored, 1,515 matched : 0.39 gb at 10 mb/s, 1% : 0(0)/4 files : 2:00:12 remaining
+2026-05-12 14:59:45,574 - INFO: 2,000,000 lines at 46,528/s, 0 errored, 3,143 matched : 0.80 gb at 19 mb/s, 1% : 0(0)/4 files : 1:20:44 remaining
+2026-05-12 14:59:46,043 - INFO: 3,000,000 lines at 69,039/s, 0 errored, 4,616 matched : 1.20 gb at 28 mb/s, 2% : 0(0)/4 files : 1:00:48 remaining
+2026-05-12 14:59:47,501 - INFO: 4,000,000 lines at 89,063/s, 0 errored, 6,376 matched : 1.60 gb at 37 mb/s, 2% : 0(0)/4 files : 0:49:08 remaining
+2026-05-12 15:00:26,420 - INFO: 5,000,000 lines at 59,644/s, 0 errored, 8,272 matched : 1.97 gb at 24 mb/s, 3% : 0(0)/4 files : 0:48:36 remaining
+2026-05-12 15:00:27,727 - INFO: 6,000,000 lines at 70,474/s, 0 errored, 9,925 matched : 2.34 gb at 28 mb/s, 3% : 0(0)/4 files : 0:46:47 remaining
+2026-05-12 15:00:29,700 - INFO: 7,000,000 lines at 80,358/s, 0 errored, 11,594 matched : 2.74 gb at 32 mb/s, 4% : 0(0)/4 files : 0:44:26 remaining
+2026-05-12 15:01:01,250 - INFO: Loading files from: ../../../data/reddit/submissions
+2026-05-12 15:01:01,250 - INFO: Writing output to: ../../output/corpora/reddit/subreddit_filtering
+2026-05-12 15:01:01,251 - INFO: Checking if any of any of the values relationship_advice,amitheasshole,offmychest,relationships,confession exactly match field subreddit
+2026-05-12 15:01:01,329 - INFO: Processed 0 of 4 files with 0.00 of 68.97 gigabytes
+2026-05-12 15:01:01,330 - INFO: Processing file: ../../../data/reddit/submissions/RS_2026-01.zst
+2026-05-12 15:01:01,330 - INFO: Processing file: ../../../data/reddit/submissions/RS_2025-10.zst
+2026-05-12 15:01:01,330 - INFO: Processing file: ../../../data/reddit/submissions/RS_2025-12.zst
+2026-05-12 15:01:01,330 - INFO: Processing file: ../../../data/reddit/submissions/RS_2025-11.zst
+2026-05-12 15:01:37,494 - INFO: 1,000,000 lines at 27,652/s, 0 errored, 1,515 matched : 0.39 gb at 11 mb/s, 1% : 0(0)/4 files : 1:45:10 remaining
+2026-05-12 15:01:39,272 - INFO: 2,000,000 lines at 52,711/s, 0 errored, 3,143 matched : 0.80 gb at 22 mb/s, 1% : 0(0)/4 files : 1:11:03 remaining
+2026-05-12 15:01:41,176 - INFO: 3,000,000 lines at 75,289/s, 0 errored, 4,903 matched : 1.20 gb at 31 mb/s, 2% : 0(0)/4 files : 0:54:28 remaining
+2026-05-12 15:01:41,428 - INFO: 4,000,000 lines at 99,755/s, 0 errored, 6,376 matched : 1.60 gb at 41 mb/s, 2% : 0(0)/4 files : 0:43:57 remaining
+2026-05-12 15:02:19,747 - INFO: 5,000,000 lines at 63,761/s, 0 errored, 8,029 matched : 1.98 gb at 26 mb/s, 3% : 0(0)/4 files : 0:43:49 remaining
+2026-05-12 15:02:20,899 - INFO: 6,000,000 lines at 75,406/s, 0 errored, 9,925 matched : 2.34 gb at 30 mb/s, 3% : 0(0)/4 files : 0:42:28 remaining
+2026-05-12 15:02:23,090 - INFO: 7,000,000 lines at 85,616/s, 0 errored, 11,658 matched : 2.74 gb at 34 mb/s, 4% : 0(0)/4 files : 0:40:35 remaining
+2026-05-12 15:02:24,344 - INFO: 8,000,000 lines at 96,369/s, 0 errored, 13,327 matched : 3.13 gb at 39 mb/s, 5% : 0(0)/4 files : 0:38:29 remaining
+2026-05-12 15:02:58,795 - INFO: 9,000,000 lines at 76,626/s, 0 errored, 14,865 matched : 3.51 gb at 31 mb/s, 5% : 0(0)/4 files : 0:38:03 remaining
+2026-05-12 15:03:02,723 - INFO: 10,000,000 lines at 82,377/s, 0 errored, 16,906 matched : 3.90 gb at 33 mb/s, 6% : 0(0)/4 files : 0:37:22 remaining
+2026-05-12 15:03:03,816 - INFO: 11,000,000 lines at 89,806/s, 0 errored, 18,565 matched : 4.30 gb at 36 mb/s, 6% : 0(0)/4 files : 0:36:27 remaining
+2026-05-12 15:03:04,578 - INFO: 12,000,000 lines at 97,364/s, 0 errored, 20,303 matched : 4.69 gb at 39 mb/s, 7% : 0(0)/4 files : 0:35:22 remaining
+2026-05-12 15:03:37,212 - INFO: 13,000,000 lines at 83,397/s, 0 errored, 21,806 matched : 5.07 gb at 33 mb/s, 7% : 0(0)/4 files : 0:34:58 remaining
+2026-05-12 15:03:43,055 - INFO: 14,000,000 lines at 86,567/s, 0 errored, 23,355 matched : 5.47 gb at 35 mb/s, 8% : 0(0)/4 files : 0:34:28 remaining
+2026-05-12 15:03:43,246 - INFO: 15,000,000 lines at 92,641/s, 0 errored, 25,276 matched : 5.86 gb at 37 mb/s, 9% : 0(0)/4 files : 0:33:51 remaining
+2026-05-12 15:03:45,618 - INFO: 16,000,000 lines at 97,390/s, 0 errored, 26,906 matched : 6.26 gb at 39 mb/s, 9% : 0(0)/4 files : 0:33:10 remaining
+2026-05-12 15:04:17,328 - INFO: 17,000,000 lines at 86,735/s, 0 errored, 28,467 matched : 6.64 gb at 35 mb/s, 10% : 0(0)/4 files : 0:32:50 remaining
+2026-05-12 15:04:23,215 - INFO: 18,000,000 lines at 89,160/s, 0 errored, 30,342 matched : 7.03 gb at 36 mb/s, 10% : 0(0)/4 files : 0:32:26 remaining
+2026-05-12 15:04:23,957 - INFO: 19,000,000 lines at 93,768/s, 0 errored, 32,076 matched : 7.44 gb at 38 mb/s, 11% : 0(0)/4 files : 0:31:58 remaining
+2026-05-12 15:04:25,491 - INFO: 20,000,000 lines at 97,962/s, 0 errored, 33,805 matched : 7.83 gb at 39 mb/s, 11% : 0(0)/4 files : 0:31:27 remaining
+2026-05-12 15:04:57,430 - INFO: 21,000,000 lines at 88,945/s, 0 errored, 35,493 matched : 8.21 gb at 36 mb/s, 12% : 0(0)/4 files : 0:31:09 remaining
+2026-05-12 15:05:05,985 - INFO: 22,000,000 lines at 89,923/s, 0 errored, 37,455 matched : 8.60 gb at 36 mb/s, 12% : 0(0)/4 files : 0:30:50 remaining
+2026-05-12 15:05:06,035 - INFO: 23,000,000 lines at 93,991/s, 0 errored, 39,018 matched : 8.99 gb at 38 mb/s, 13% : 0(0)/4 files : 0:30:28 remaining
+2026-05-12 15:05:08,406 - INFO: 24,000,000 lines at 97,136/s, 0 errored, 40,830 matched : 9.39 gb at 39 mb/s, 14% : 0(0)/4 files : 0:30:04 remaining
+2026-05-12 15:05:37,790 - INFO: 25,000,000 lines at 90,429/s, 0 errored, 42,449 matched : 9.77 gb at 36 mb/s, 14% : 0(0)/4 files : 0:29:47 remaining
+2026-05-12 15:05:44,932 - INFO: 26,000,000 lines at 91,678/s, 0 errored, 44,212 matched : 10.16 gb at 37 mb/s, 15% : 0(0)/4 files : 0:29:30 remaining
+2026-05-12 15:05:48,180 - INFO: 27,000,000 lines at 94,126/s, 0 errored, 45,654 matched : 10.56 gb at 38 mb/s, 15% : 0(0)/4 files : 0:29:11 remaining
+2026-05-12 15:05:51,297 - INFO: 28,000,000 lines at 96,562/s, 0 errored, 47,374 matched : 10.95 gb at 39 mb/s, 16% : 0(0)/4 files : 0:28:51 remaining
+2026-05-12 15:06:16,806 - INFO: 29,000,000 lines at 91,925/s, 0 errored, 49,093 matched : 11.33 gb at 37 mb/s, 16% : 0(0)/4 files : 0:28:35 remaining
+2026-05-12 15:06:26,090 - INFO: 30,000,000 lines at 92,376/s, 0 errored, 50,737 matched : 11.71 gb at 37 mb/s, 17% : 0(0)/4 files : 0:28:20 remaining
+2026-05-12 15:06:30,888 - INFO: 31,000,000 lines at 94,065/s, 0 errored, 52,265 matched : 12.10 gb at 38 mb/s, 18% : 0(0)/4 files : 0:28:03 remaining
+2026-05-12 15:06:33,061 - INFO: 32,000,000 lines at 96,463/s, 0 errored, 53,926 matched : 12.50 gb at 39 mb/s, 18% : 0(0)/4 files : 0:27:46 remaining
+2026-05-12 15:06:58,018 - INFO: 33,000,000 lines at 92,518/s, 0 errored, 55,662 matched : 12.89 gb at 37 mb/s, 19% : 0(0)/4 files : 0:27:31 remaining
+2026-05-12 15:07:06,040 - INFO: 34,000,000 lines at 93,225/s, 0 errored, 57,430 matched : 13.28 gb at 37 mb/s, 19% : 0(0)/4 files : 0:27:16 remaining
+2026-05-12 15:07:12,063 - INFO: 35,000,000 lines at 94,407/s, 0 errored, 59,111 matched : 13.67 gb at 38 mb/s, 20% : 0(0)/4 files : 0:27:01 remaining
+2026-05-12 15:07:12,874 - INFO: 36,000,000 lines at 96,893/s, 0 errored, 60,878 matched : 14.06 gb at 39 mb/s, 20% : 0(0)/4 files : 0:26:44 remaining
+2026-05-12 15:07:39,768 - INFO: 37,000,000 lines at 92,863/s, 0 errored, 62,460 matched : 14.44 gb at 37 mb/s, 21% : 0(0)/4 files : 0:26:30 remaining
+2026-05-12 15:07:47,101 - INFO: 38,000,000 lines at 93,649/s, 0 errored, 64,186 matched : 14.84 gb at 37 mb/s, 22% : 0(0)/4 files : 0:26:16 remaining
+2026-05-12 15:07:52,305 - INFO: 39,000,000 lines at 94,896/s, 0 errored, 65,719 matched : 15.22 gb at 38 mb/s, 22% : 0(0)/4 files : 0:26:02 remaining
+2026-05-12 15:07:53,402 - INFO: 40,000,000 lines at 103,749/s, 0 errored, 67,300 matched : 15.62 gb at 41 mb/s, 23% : 0(0)/4 files : 0:25:43 remaining
+2026-05-12 15:08:19,882 - INFO: 41,000,000 lines at 97,352/s, 0 errored, 68,986 matched : 15.99 gb at 39 mb/s, 23% : 0(0)/4 files : 0:25:03 remaining
+2026-05-12 15:08:28,737 - INFO: 42,000,000 lines at 95,691/s, 0 errored, 70,707 matched : 16.39 gb at 38 mb/s, 24% : 0(0)/4 files : 0:24:35 remaining
+2026-05-12 15:08:32,178 - INFO: 43,000,000 lines at 94,948/s, 0 errored, 72,363 matched : 16.78 gb at 38 mb/s, 24% : 0(0)/4 files : 0:24:17 remaining
+2026-05-12 15:08:35,304 - INFO: 44,000,000 lines at 103,846/s, 0 errored, 74,114 matched : 17.17 gb at 41 mb/s, 25% : 0(0)/4 files : 0:24:06 remaining
+2026-05-12 15:09:00,088 - INFO: 45,000,000 lines at 97,698/s, 0 errored, 75,747 matched : 17.55 gb at 39 mb/s, 25% : 0(0)/4 files : 0:23:42 remaining
+2026-05-12 15:09:09,444 - INFO: 46,000,000 lines at 95,976/s, 0 errored, 77,662 matched : 17.94 gb at 38 mb/s, 26% : 0(0)/4 files : 0:23:24 remaining
+2026-05-12 15:09:13,209 - INFO: 47,000,000 lines at 95,386/s, 0 errored, 79,239 matched : 18.34 gb at 38 mb/s, 27% : 0(0)/4 files : 0:23:09 remaining
+2026-05-12 15:09:16,314 - INFO: 48,000,000 lines at 103,303/s, 0 errored, 81,059 matched : 18.73 gb at 41 mb/s, 27% : 0(0)/4 files : 0:22:56 remaining
+2026-05-12 15:09:41,337 - INFO: 49,000,000 lines at 97,839/s, 0 errored, 82,569 matched : 19.12 gb at 39 mb/s, 28% : 0(0)/4 files : 0:22:38 remaining
+2026-05-12 15:09:48,935 - INFO: 50,000,000 lines at 96,268/s, 0 errored, 84,373 matched : 19.51 gb at 38 mb/s, 28% : 0(0)/4 files : 0:22:22 remaining
+2026-05-12 15:09:53,159 - INFO: 51,000,000 lines at 95,452/s, 0 errored, 85,919 matched : 19.91 gb at 38 mb/s, 29% : 0(0)/4 files : 0:22:09 remaining
+2026-05-12 15:09:56,710 - INFO: 52,000,000 lines at 102,767/s, 0 errored, 87,551 matched : 20.30 gb at 41 mb/s, 29% : 0(0)/4 files : 0:21:57 remaining
+2026-05-12 15:10:19,977 - INFO: 53,000,000 lines at 98,256/s, 0 errored, 88,975 matched : 20.69 gb at 39 mb/s, 30% : 0(0)/4 files : 0:21:41 remaining
+2026-05-12 15:10:28,368 - INFO: 54,000,000 lines at 96,267/s, 0 errored, 90,772 matched : 21.09 gb at 38 mb/s, 31% : 0(0)/4 files : 0:21:27 remaining
+2026-05-12 15:10:31,506 - INFO: 55,000,000 lines at 96,085/s, 0 errored, 92,351 matched : 21.49 gb at 38 mb/s, 31% : 0(0)/4 files : 0:21:16 remaining
+2026-05-12 15:10:36,396 - INFO: 56,000,000 lines at 102,884/s, 0 errored, 93,891 matched : 21.88 gb at 41 mb/s, 32% : 0(0)/4 files : 0:21:03 remaining
+2026-05-12 15:10:58,267 - INFO: 57,000,000 lines at 98,721/s, 0 errored, 95,465 matched : 22.26 gb at 39 mb/s, 32% : 0(0)/4 files : 0:20:49 remaining
+2026-05-12 15:11:09,813 - INFO: 58,000,000 lines at 96,093/s, 0 errored, 97,403 matched : 22.65 gb at 38 mb/s, 33% : 0(0)/4 files : 0:20:36 remaining
+2026-05-12 15:11:10,852 - INFO: 59,000,000 lines at 96,210/s, 0 errored, 99,075 matched : 23.05 gb at 38 mb/s, 33% : 0(0)/4 files : 0:20:25 remaining
+2026-05-12 15:11:16,916 - INFO: 60,000,000 lines at 102,771/s, 0 errored, 100,810 matched : 23.44 gb at 41 mb/s, 34% : 0(0)/4 files : 0:20:13 remaining
+2026-05-12 15:11:37,367 - INFO: 61,000,000 lines at 99,647/s, 0 errored, 102,447 matched : 23.82 gb at 40 mb/s, 35% : 0(0)/4 files : 0:20:00 remaining
+2026-05-12 15:11:51,015 - INFO: 62,000,000 lines at 96,301/s, 0 errored, 104,265 matched : 24.22 gb at 38 mb/s, 35% : 0(0)/4 files : 0:19:47 remaining
+2026-05-12 15:11:52,199 - INFO: 63,000,000 lines at 96,584/s, 0 errored, 105,936 matched : 24.61 gb at 39 mb/s, 36% : 0(0)/4 files : 0:19:36 remaining
+2026-05-12 15:11:58,498 - INFO: 64,000,000 lines at 102,441/s, 0 errored, 107,684 matched : 25.01 gb at 41 mb/s, 36% : 0(0)/4 files : 0:19:24 remaining
+2026-05-12 15:12:18,960 - INFO: 65,000,000 lines at 98,978/s, 0 errored, 109,262 matched : 25.40 gb at 40 mb/s, 37% : 0(0)/4 files : 0:19:11 remaining
+2026-05-12 15:12:30,742 - INFO: 66,000,000 lines at 96,880/s, 0 errored, 111,007 matched : 25.79 gb at 39 mb/s, 37% : 0(0)/4 files : 0:18:59 remaining
+2026-05-12 15:12:30,892 - INFO: 67,000,000 lines at 97,599/s, 0 errored, 112,705 matched : 26.19 gb at 39 mb/s, 38% : 0(0)/4 files : 0:18:48 remaining
+2026-05-12 15:12:40,142 - INFO: 68,000,000 lines at 101,738/s, 0 errored, 114,201 matched : 26.58 gb at 41 mb/s, 39% : 0(0)/4 files : 0:18:36 remaining
+2026-05-12 15:12:58,789 - INFO: 69,000,000 lines at 99,313/s, 0 errored, 115,973 matched : 26.97 gb at 40 mb/s, 39% : 0(0)/4 files : 0:18:24 remaining
+2026-05-12 15:13:11,543 - INFO: 70,000,000 lines at 97,341/s, 0 errored, 117,753 matched : 27.35 gb at 39 mb/s, 40% : 0(0)/4 files : 0:18:12 remaining
+2026-05-12 15:13:13,051 - INFO: 71,000,000 lines at 97,503/s, 0 errored, 119,429 matched : 27.75 gb at 39 mb/s, 40% : 0(0)/4 files : 0:18:01 remaining
+2026-05-12 15:13:23,263 - INFO: 72,000,000 lines at 101,235/s, 0 errored, 120,837 matched : 28.16 gb at 41 mb/s, 41% : 0(0)/4 files : 0:17:49 remaining
+2026-05-12 15:13:39,900 - INFO: 73,000,000 lines at 99,020/s, 0 errored, 122,545 matched : 28.54 gb at 40 mb/s, 41% : 0(0)/4 files : 0:17:37 remaining
+2026-05-12 15:13:54,499 - INFO: 74,000,000 lines at 96,910/s, 0 errored, 124,250 matched : 28.93 gb at 39 mb/s, 42% : 0(0)/4 files : 0:17:25 remaining
+2026-05-12 15:13:54,709 - INFO: 75,000,000 lines at 97,055/s, 0 errored, 125,800 matched : 29.33 gb at 39 mb/s, 43% : 0(0)/4 files : 0:17:14 remaining
+2026-05-12 15:14:06,060 - INFO: 76,000,000 lines at 100,960/s, 0 errored, 127,410 matched : 29.72 gb at 41 mb/s, 43% : 0(0)/4 files : 0:17:03 remaining
+2026-05-12 15:14:20,972 - INFO: 77,000,000 lines at 99,017/s, 0 errored, 128,988 matched : 30.12 gb at 40 mb/s, 44% : 0(0)/4 files : 0:16:51 remaining
+2026-05-12 15:14:35,779 - INFO: 78,000,000 lines at 96,661/s, 0 errored, 130,492 matched : 30.50 gb at 39 mb/s, 44% : 0(0)/4 files : 0:16:40 remaining
+2026-05-12 15:14:35,979 - INFO: 79,000,000 lines at 96,876/s, 0 errored, 132,014 matched : 30.89 gb at 39 mb/s, 45% : 0(0)/4 files : 0:16:29 remaining
+2026-05-12 15:14:46,618 - INFO: 80,000,000 lines at 100,844/s, 0 errored, 133,753 matched : 31.29 gb at 40 mb/s, 45% : 0(0)/4 files : 0:16:20 remaining
+2026-05-12 15:15:01,981 - INFO: 81,000,000 lines at 99,175/s, 0 errored, 135,393 matched : 31.67 gb at 40 mb/s, 46% : 0(0)/4 files : 0:16:09 remaining
+2026-05-12 15:15:16,930 - INFO: 82,000,000 lines at 96,355/s, 0 errored, 136,802 matched : 32.06 gb at 39 mb/s, 46% : 0(0)/4 files : 0:15:59 remaining
+2026-05-12 15:15:17,112 - INFO: 83,000,000 lines at 97,061/s, 0 errored, 138,477 matched : 32.46 gb at 39 mb/s, 47% : 0(0)/4 files : 0:15:48 remaining
+2026-05-12 15:15:28,573 - INFO: 84,000,000 lines at 100,390/s, 0 errored, 140,135 matched : 32.85 gb at 40 mb/s, 48% : 0(0)/4 files : 0:15:38 remaining
+2026-05-12 15:15:44,794 - INFO: 85,000,000 lines at 98,647/s, 0 errored, 141,845 matched : 33.25 gb at 40 mb/s, 48% : 0(0)/4 files : 0:15:27 remaining
+2026-05-12 15:15:59,013 - INFO: 86,000,000 lines at 96,105/s, 0 errored, 143,317 matched : 33.66 gb at 39 mb/s, 49% : 0(0)/4 files : 0:15:17 remaining
+2026-05-12 15:15:59,089 - INFO: 87,000,000 lines at 96,828/s, 0 errored, 144,993 matched : 34.05 gb at 39 mb/s, 49% : 0(0)/4 files : 0:15:06 remaining
+2026-05-12 15:16:13,752 - INFO: 88,000,000 lines at 99,384/s, 0 errored, 146,634 matched : 34.45 gb at 40 mb/s, 50% : 0(0)/4 files : 0:14:56 remaining
+2026-05-12 15:16:26,187 - INFO: 89,000,000 lines at 98,174/s, 0 errored, 148,268 matched : 34.83 gb at 39 mb/s, 51% : 0(0)/4 files : 0:14:46 remaining
+2026-05-12 15:16:39,481 - INFO: 90,000,000 lines at 95,983/s, 0 errored, 149,710 matched : 35.23 gb at 39 mb/s, 51% : 0(0)/4 files : 0:14:36 remaining
+2026-05-12 15:16:41,311 - INFO: 91,000,000 lines at 96,391/s, 0 errored, 151,364 matched : 35.63 gb at 39 mb/s, 52% : 0(0)/4 files : 0:14:25 remaining
+2026-05-12 15:16:54,958 - INFO: 92,000,000 lines at 98,739/s, 0 errored, 153,011 matched : 36.02 gb at 40 mb/s, 52% : 0(0)/4 files : 0:14:15 remaining
+2026-05-12 15:17:06,608 - INFO: 93,000,000 lines at 97,931/s, 0 errored, 154,512 matched : 36.41 gb at 39 mb/s, 53% : 0(0)/4 files : 0:14:05 remaining
+2026-05-12 15:17:20,514 - INFO: 94,000,000 lines at 95,353/s, 0 errored, 155,959 matched : 36.78 gb at 38 mb/s, 53% : 0(0)/4 files : 0:13:56 remaining
+2026-05-12 15:17:21,380 - INFO: 95,000,000 lines at 96,300/s, 0 errored, 157,694 matched : 37.18 gb at 39 mb/s, 54% : 0(0)/4 files : 0:13:45 remaining
+2026-05-12 15:17:35,229 - INFO: 96,000,000 lines at 98,246/s, 0 errored, 159,234 matched : 37.57 gb at 40 mb/s, 54% : 0(0)/4 files : 0:13:36 remaining
+2026-05-12 15:17:46,741 - INFO: 97,000,000 lines at 98,255/s, 0 errored, 160,846 matched : 37.95 gb at 39 mb/s, 55% : 0(0)/4 files : 0:13:26 remaining
+2026-05-12 15:18:00,134 - INFO: 98,000,000 lines at 95,289/s, 0 errored, 162,262 matched : 38.35 gb at 38 mb/s, 56% : 0(0)/4 files : 0:13:16 remaining
+2026-05-12 15:18:03,390 - INFO: 99,000,000 lines at 95,947/s, 0 errored, 163,970 matched : 38.74 gb at 39 mb/s, 56% : 0(0)/4 files : 0:13:06 remaining
+2026-05-12 15:18:17,544 - INFO: 100,000,000 lines at 97,457/s, 0 errored, 165,507 matched : 39.14 gb at 39 mb/s, 57% : 0(0)/4 files : 0:12:56 remaining
+2026-05-12 15:18:29,167 - INFO: 101,000,000 lines at 97,953/s, 0 errored, 167,195 matched : 39.52 gb at 39 mb/s, 57% : 0(0)/4 files : 0:12:46 remaining
+2026-05-12 15:18:43,258 - INFO: 102,000,000 lines at 94,877/s, 0 errored, 168,793 matched : 39.93 gb at 38 mb/s, 58% : 0(0)/4 files : 0:12:36 remaining
+2026-05-12 15:18:46,025 - INFO: 103,000,000 lines at 95,699/s, 0 errored, 170,502 matched : 40.32 gb at 38 mb/s, 58% : 0(0)/4 files : 0:12:26 remaining
+2026-05-12 15:18:59,627 - INFO: 104,000,000 lines at 97,338/s, 0 errored, 172,032 matched : 40.71 gb at 39 mb/s, 59% : 0(0)/4 files : 0:12:16 remaining
+2026-05-12 15:19:10,335 - INFO: 105,000,000 lines at 97,600/s, 0 errored, 173,721 matched : 41.11 gb at 39 mb/s, 60% : 0(0)/4 files : 0:12:06 remaining
+2026-05-12 15:19:24,841 - INFO: 106,000,000 lines at 94,215/s, 0 errored, 175,429 matched : 41.50 gb at 38 mb/s, 60% : 0(0)/4 files : 0:11:57 remaining
+2026-05-12 15:19:27,149 - INFO: 107,000,000 lines at 95,821/s, 0 errored, 177,010 matched : 41.88 gb at 38 mb/s, 61% : 0(0)/4 files : 0:11:47 remaining
+2026-05-12 15:19:41,406 - INFO: 108,000,000 lines at 96,866/s, 0 errored, 178,574 matched : 42.28 gb at 39 mb/s, 61% : 0(0)/4 files : 0:11:37 remaining
+2026-05-12 15:19:48,985 - INFO: 109,000,000 lines at 98,127/s, 0 errored, 180,216 matched : 42.63 gb at 39 mb/s, 62% : 0(0)/4 files : 0:11:28 remaining
+2026-05-12 15:20:04,315 - INFO: 110,000,000 lines at 94,829/s, 0 errored, 181,785 matched : 43.02 gb at 38 mb/s, 62% : 0(0)/4 files : 0:11:18 remaining
+2026-05-12 15:20:07,956 - INFO: 111,000,000 lines at 96,369/s, 0 errored, 183,399 matched : 43.41 gb at 39 mb/s, 63% : 0(0)/4 files : 0:11:08 remaining
+2026-05-12 15:20:23,690 - INFO: 112,000,000 lines at 96,585/s, 0 errored, 184,951 matched : 43.81 gb at 39 mb/s, 64% : 0(0)/4 files : 0:10:59 remaining
+2026-05-12 15:20:29,520 - INFO: 113,000,000 lines at 98,729/s, 0 errored, 186,621 matched : 44.19 gb at 40 mb/s, 64% : 0(0)/4 files : 0:10:49 remaining
+2026-05-12 15:20:47,387 - INFO: 114,000,000 lines at 94,505/s, 0 errored, 188,179 matched : 44.59 gb at 38 mb/s, 65% : 0(0)/4 files : 0:10:39 remaining
+2026-05-12 15:20:50,417 - INFO: 115,000,000 lines at 96,449/s, 0 errored, 189,855 matched : 44.98 gb at 39 mb/s, 65% : 0(0)/4 files : 0:10:28 remaining
+2026-05-12 15:21:07,155 - INFO: 116,000,000 lines at 96,016/s, 0 errored, 191,578 matched : 45.38 gb at 38 mb/s, 66% : 0(0)/4 files : 0:10:19 remaining
+2026-05-12 15:21:11,748 - INFO: 117,000,000 lines at 98,493/s, 0 errored, 193,252 matched : 45.76 gb at 39 mb/s, 66% : 0(0)/4 files : 0:10:09 remaining
+2026-05-12 15:21:28,363 - INFO: 118,000,000 lines at 94,572/s, 0 errored, 194,877 matched : 46.15 gb at 38 mb/s, 67% : 0(0)/4 files : 0:09:59 remaining
+2026-05-12 15:21:35,205 - INFO: 119,000,000 lines at 95,451/s, 0 errored, 196,402 matched : 46.56 gb at 38 mb/s, 68% : 0(0)/4 files : 0:09:49 remaining
+2026-05-12 15:21:48,453 - INFO: 120,000,000 lines at 95,948/s, 0 errored, 198,120 matched : 46.95 gb at 38 mb/s, 68% : 0(0)/4 files : 0:09:39 remaining
+2026-05-12 15:21:52,534 - INFO: 121,000,000 lines at 98,584/s, 0 errored, 199,818 matched : 47.33 gb at 40 mb/s, 69% : 0(0)/4 files : 0:09:29 remaining
+2026-05-12 15:22:10,921 - INFO: 122,000,000 lines at 94,247/s, 0 errored, 201,259 matched : 47.74 gb at 38 mb/s, 69% : 0(0)/4 files : 0:09:19 remaining
+2026-05-12 15:22:16,984 - INFO: 123,000,000 lines at 95,492/s, 0 errored, 202,829 matched : 48.13 gb at 38 mb/s, 70% : 0(0)/4 files : 0:09:09 remaining
+2026-05-12 15:22:32,294 - INFO: 124,000,000 lines at 95,705/s, 0 errored, 204,694 matched : 48.54 gb at 38 mb/s, 70% : 0(0)/4 files : 0:08:59 remaining
+2026-05-12 15:22:35,267 - INFO: 125,000,000 lines at 98,422/s, 0 errored, 206,427 matched : 48.93 gb at 39 mb/s, 71% : 0(0)/4 files : 0:08:48 remaining
+2026-05-12 15:22:50,716 - INFO: 126,000,000 lines at 94,746/s, 0 errored, 207,971 matched : 49.32 gb at 38 mb/s, 72% : 0(0)/4 files : 0:08:38 remaining
+2026-05-12 15:22:57,677 - INFO: 127,000,000 lines at 96,553/s, 0 errored, 209,730 matched : 49.71 gb at 39 mb/s, 72% : 0(0)/4 files : 0:08:28 remaining
+2026-05-12 15:23:13,760 - INFO: 128,000,000 lines at 95,688/s, 0 errored, 211,433 matched : 50.11 gb at 38 mb/s, 73% : 0(0)/4 files : 0:08:18 remaining
+2026-05-12 15:23:18,087 - INFO: 129,000,000 lines at 97,841/s, 0 errored, 213,109 matched : 50.50 gb at 39 mb/s, 73% : 0(0)/4 files : 0:08:08 remaining
+2026-05-12 15:23:33,009 - INFO: 130,000,000 lines at 94,730/s, 0 errored, 214,645 matched : 50.89 gb at 38 mb/s, 74% : 0(0)/4 files : 0:07:57 remaining
+2026-05-12 15:23:43,359 - INFO: 131,000,000 lines at 95,494/s, 0 errored, 216,367 matched : 51.30 gb at 38 mb/s, 74% : 0(0)/4 files : 0:07:47 remaining
+2026-05-12 15:23:57,452 - INFO: 132,000,000 lines at 94,926/s, 0 errored, 217,932 matched : 51.70 gb at 38 mb/s, 75% : 0(0)/4 files : 0:07:37 remaining
+2026-05-12 15:24:00,623 - INFO: 133,000,000 lines at 97,473/s, 0 errored, 219,519 matched : 52.10 gb at 39 mb/s, 76% : 0(0)/4 files : 0:07:26 remaining
+2026-05-12 15:24:16,357 - INFO: 134,000,000 lines at 93,981/s, 0 errored, 220,882 matched : 52.50 gb at 38 mb/s, 76% : 0(0)/4 files : 0:07:16 remaining
+2026-05-12 15:24:24,436 - INFO: 135,000,000 lines at 95,306/s, 0 errored, 222,551 matched : 52.90 gb at 38 mb/s, 77% : 0(0)/4 files : 0:07:05 remaining
+2026-05-12 15:24:38,553 - INFO: 136,000,000 lines at 94,703/s, 0 errored, 223,995 matched : 53.29 gb at 38 mb/s, 77% : 0(0)/4 files : 0:06:55 remaining
+2026-05-12 15:24:40,387 - INFO: 137,000,000 lines at 97,438/s, 0 errored, 225,598 matched : 53.69 gb at 39 mb/s, 78% : 0(0)/4 files : 0:06:45 remaining
+2026-05-12 15:24:56,789 - INFO: 138,000,000 lines at 94,340/s, 0 errored, 226,999 matched : 54.09 gb at 38 mb/s, 78% : 0(0)/4 files : 0:06:34 remaining
+2026-05-12 15:25:04,807 - INFO: 139,000,000 lines at 95,761/s, 0 errored, 228,659 matched : 54.48 gb at 39 mb/s, 79% : 0(0)/4 files : 0:06:24 remaining
+2026-05-12 15:25:21,298 - INFO: 140,000,000 lines at 94,630/s, 0 errored, 230,112 matched : 54.88 gb at 38 mb/s, 80% : 0(0)/4 files : 0:06:13 remaining
+2026-05-12 15:25:21,576 - INFO: 141,000,000 lines at 97,911/s, 0 errored, 231,873 matched : 55.28 gb at 39 mb/s, 80% : 0(0)/4 files : 0:06:03 remaining
+2026-05-12 15:25:37,492 - INFO: 142,000,000 lines at 94,783/s, 0 errored, 233,489 matched : 55.67 gb at 38 mb/s, 81% : 0(0)/4 files : 0:05:52 remaining
+2026-05-12 15:25:47,297 - INFO: 143,000,000 lines at 95,666/s, 0 errored, 235,172 matched : 56.07 gb at 39 mb/s, 81% : 0(0)/4 files : 0:05:42 remaining
+2026-05-12 15:26:03,657 - INFO: 144,000,000 lines at 94,357/s, 0 errored, 237,085 matched : 56.49 gb at 38 mb/s, 82% : 0(0)/4 files : 0:05:31 remaining
+2026-05-12 15:26:05,437 - INFO: 145,000,000 lines at 97,355/s, 0 errored, 238,639 matched : 56.89 gb at 39 mb/s, 82% : 0(0)/4 files : 0:05:20 remaining
+2026-05-12 15:26:18,793 - INFO: 146,000,000 lines at 94,742/s, 0 errored, 240,177 matched : 57.29 gb at 38 mb/s, 83% : 0(0)/4 files : 0:05:09 remaining
+2026-05-12 15:26:29,502 - INFO: 147,000,000 lines at 95,566/s, 0 errored, 241,757 matched : 57.70 gb at 39 mb/s, 84% : 0(0)/4 files : 0:04:59 remaining
+2026-05-12 15:26:45,837 - INFO: 148,000,000 lines at 93,558/s, 0 errored, 243,621 matched : 58.11 gb at 38 mb/s, 84% : 0(0)/4 files : 0:04:48 remaining
+2026-05-12 15:26:47,283 - INFO: 149,000,000 lines at 96,782/s, 0 errored, 245,054 matched : 58.51 gb at 39 mb/s, 85% : 0(0)/4 files : 0:04:37 remaining
+2026-05-12 15:27:00,408 - INFO: 150,000,000 lines at 94,556/s, 0 errored, 246,739 matched : 58.91 gb at 38 mb/s, 85% : 0(0)/4 files : 0:04:27 remaining
+2026-05-12 15:27:13,861 - INFO: 151,000,000 lines at 95,082/s, 0 errored, 248,351 matched : 59.30 gb at 39 mb/s, 86% : 0(0)/4 files : 0:04:16 remaining
+2026-05-12 15:27:27,009 - INFO: 152,000,000 lines at 93,416/s, 0 errored, 250,037 matched : 59.70 gb at 38 mb/s, 87% : 0(0)/4 files : 0:04:06 remaining
+2026-05-12 15:27:28,129 - INFO: 153,000,000 lines at 97,319/s, 0 errored, 251,602 matched : 60.10 gb at 40 mb/s, 87% : 0(0)/4 files : 0:03:55 remaining
+2026-05-12 15:27:44,488 - INFO: 154,000,000 lines at 94,187/s, 0 errored, 253,207 matched : 60.49 gb at 38 mb/s, 88% : 0(0)/4 files : 0:03:45 remaining
+2026-05-12 15:27:56,525 - INFO: 155,000,000 lines at 95,268/s, 0 errored, 254,943 matched : 60.88 gb at 39 mb/s, 88% : 0(0)/4 files : 0:03:34 remaining
+2026-05-12 15:28:06,781 - INFO: 156,000,000 lines at 93,968/s, 0 errored, 256,794 matched : 61.27 gb at 38 mb/s, 89% : 0(0)/4 files : 0:03:24 remaining
+2026-05-12 15:28:09,669 - INFO: 157,000,000 lines at 97,183/s, 0 errored, 258,391 matched : 61.66 gb at 40 mb/s, 89% : 0(0)/4 files : 0:03:13 remaining
+2026-05-12 15:28:25,926 - INFO: 158,000,000 lines at 94,955/s, 0 errored, 259,867 matched : 62.06 gb at 39 mb/s, 90% : 0(0)/4 files : 0:03:03 remaining
+2026-05-12 15:28:40,097 - INFO: 159,000,000 lines at 94,742/s, 0 errored, 261,355 matched : 62.46 gb at 39 mb/s, 91% : 0(0)/4 files : 0:02:52 remaining
+2026-05-12 15:28:48,005 - INFO: 160,000,000 lines at 93,869/s, 0 errored, 262,993 matched : 62.86 gb at 38 mb/s, 91% : 0(0)/4 files : 0:02:42 remaining
+2026-05-12 15:28:51,676 - INFO: 161,000,000 lines at 97,316/s, 0 errored, 264,520 matched : 63.26 gb at 40 mb/s, 92% : 0(0)/4 files : 0:02:31 remaining
+2026-05-12 15:29:08,974 - INFO: 162,000,000 lines at 94,662/s, 0 errored, 266,090 matched : 63.66 gb at 39 mb/s, 92% : 0(0)/4 files : 0:02:20 remaining
+2026-05-12 15:29:26,835 - INFO: 163,000,000 lines at 94,080/s, 0 errored, 267,752 matched : 64.05 gb at 38 mb/s, 93% : 0(0)/4 files : 0:02:10 remaining
+2026-05-12 15:29:31,802 - INFO: 164,000,000 lines at 93,630/s, 0 errored, 269,387 matched : 64.44 gb at 38 mb/s, 93% : 0(0)/4 files : 0:02:00 remaining
+2026-05-12 15:29:37,820 - INFO: 165,000,000 lines at 95,798/s, 0 errored, 270,820 matched : 64.83 gb at 39 mb/s, 94% : 0(0)/4 files : 0:01:49 remaining
+2026-05-12 15:29:52,744 - INFO: 166,000,000 lines at 93,961/s, 0 errored, 272,512 matched : 65.23 gb at 38 mb/s, 95% : 0(0)/4 files : 0:01:39 remaining
+2026-05-12 15:30:10,445 - INFO: 167,000,000 lines at 93,596/s, 0 errored, 274,145 matched : 65.63 gb at 38 mb/s, 95% : 0(0)/4 files : 0:01:28 remaining
+2026-05-12 15:30:14,623 - INFO: 168,000,000 lines at 93,629/s, 0 errored, 275,738 matched : 66.03 gb at 38 mb/s, 96% : 0(0)/4 files : 0:01:18 remaining
+2026-05-12 15:30:19,973 - INFO: 169,000,000 lines at 95,831/s, 0 errored, 277,230 matched : 66.42 gb at 39 mb/s, 96% : 0(0)/4 files : 0:01:07 remaining
+2026-05-12 15:30:35,538 - INFO: 170,000,000 lines at 94,619/s, 0 errored, 278,726 matched : 66.83 gb at 39 mb/s, 97% : 0(0)/4 files : 0:00:56 remaining
+2026-05-12 15:30:35,796 - INFO: 170,567,337 lines at 96,819/s, 0 errored, 279,694 matched : 67.05 gb at 39 mb/s, 97% : 1(0)/4 files : 0:00:50 remaining
+2026-05-12 15:30:51,704 - INFO: 171,486,773 lines at 93,623/s, 0 errored, 281,046 matched : 67.41 gb at 38 mb/s, 98% : 2(0)/4 files : 0:00:41 remaining
+2026-05-12 15:30:54,273 - INFO: 172,347,855 lines at 96,372/s, 0 errored, 282,275 matched : 67.75 gb at 39 mb/s, 98% : 3(0)/4 files : 0:00:32 remaining
+2026-05-12 15:31:11,311 - INFO: 173,347,855 lines at 94,250/s, 0 errored, 283,671 matched : 68.14 gb at 38 mb/s, 99% : 3(0)/4 files : 0:00:21 remaining
+2026-05-12 15:31:44,147 - INFO: 174,347,855 lines at 90,104/s, 0 errored, 285,130 matched : 68.54 gb at 37 mb/s, 99% : 3(0)/4 files : 0:00:11 remaining
+2026-05-12 15:32:16,946 - INFO: 175,347,855 lines at 83,993/s, 0 errored, 286,541 matched : 68.93 gb at 34 mb/s, 100% : 3(0)/4 files : 0:00:00 remaining
+2026-05-12 15:32:19,836 - INFO: 175,442,700 lines at 84,512/s, 0 errored, 286,702 matched : 68.97 gb at 34 mb/s, 100% : 4(0)/4 files : 0:00:00 remaining
+2026-05-12 15:32:20,029 - INFO: 175,442,700, 0 errored : 68.97 gb, 100% : 4/4
+2026-05-12 15:32:20,029 - INFO: Processing complete, combining 4 result files
+2026-05-12 15:32:20,030 - INFO: From 0/4 files to 0 output handles : 0/286,702 lines
+2026-05-12 15:32:30,066 - INFO: From 4/4 files to 0 output handles : 286,702/286,702 lines
+2026-05-13 09:01:55,415 - INFO: Loading files from: ../../output/corpora/reddit/subreddit_filtering
+2026-05-13 09:01:55,415 - INFO: Writing output to: ../../output/corpora/reddit/term_filtering
+2026-05-13 09:01:55,415 - INFO: Checking if any of any of 10 values are contained in field selftext
+2026-05-13 09:01:55,501 - INFO: Processed 0 of 5 files with 0.00 of 0.14 gigabytes
+2026-05-13 09:01:55,501 - INFO: Processing file: ../../output/corpora/reddit/subreddit_filtering/RS_relationship_advice_submissions.zst
+2026-05-13 09:01:55,501 - INFO: Processing file: ../../output/corpora/reddit/subreddit_filtering/RS_offmychest_submissions.zst
+2026-05-13 09:01:55,501 - INFO: Processing file: ../../output/corpora/reddit/subreddit_filtering/RS_relationships_submissions.zst
+2026-05-13 09:01:55,501 - INFO: Processing file: ../../output/corpora/reddit/subreddit_filtering/RS_AmItheAsshole_submissions.zst
+2026-05-13 09:01:55,501 - INFO: Processing file: ../../output/corpora/reddit/subreddit_filtering/RS_confession_submissions.zst
+2026-05-13 09:01:56,111 - INFO: 20,739 lines at 33,993/s, 0 errored, 130 matched : 0.01 gb at 10 mb/s, 4% : 1(0)/5 files : 0:00:13 remaining
+2026-05-13 09:01:56,702 - INFO: 57,559 lines at 47,917/s, 0 errored, 1,291 matched : 0.02 gb at 18 mb/s, 15% : 2(0)/5 files : 0:00:08 remaining
+2026-05-13 09:01:57,692 - INFO: 118,063 lines at 53,875/s, 0 errored, 2,727 matched : 0.05 gb at 22 mb/s, 35% : 3(0)/5 files : 0:00:05 remaining
+2026-05-13 09:01:58,105 - INFO: 180,846 lines at 69,436/s, 0 errored, 5,472 matched : 0.09 gb at 34 mb/s, 62% : 4(0)/5 files : 0:00:02 remaining
+2026-05-13 09:01:59,291 - INFO: 286,702 lines at 75,650/s, 0 errored, 8,031 matched : 0.14 gb at 37 mb/s, 100% : 5(0)/5 files : 0:00:00 remaining
+2026-05-13 09:01:59,306 - INFO: 286,702, 0 errored : 0.14 gb, 100% : 5/5
+2026-05-13 09:01:59,306 - INFO: Processing complete, combining 5 result files
+2026-05-13 09:01:59,306 - INFO: From 0/5 files to 0 output handles : 0/8,031 lines
+2026-05-13 09:01:59,779 - INFO: From 5/5 files to 0 output handles : 8,031/8,031 lines
+2026-05-13 09:45:02,094 - INFO: Loading files from: ../../../data/reddit/submissions
+2026-05-13 09:45:02,094 - INFO: Writing output to: ../../output/corpora/reddit/subreddit_filtering
+2026-05-13 09:45:02,094 - INFO: Checking if any of any of 11 values exactly match field subreddit
+2026-05-13 09:45:02,171 - INFO: Processed 0 of 4 files with 0.00 of 68.97 gigabytes
+2026-05-13 09:45:02,171 - INFO: Processing file: ../../../data/reddit/submissions/RS_2026-01.zst
+2026-05-13 09:45:02,171 - INFO: Processing file: ../../../data/reddit/submissions/RS_2025-10.zst
+2026-05-13 09:45:02,171 - INFO: Processing file: ../../../data/reddit/submissions/RS_2025-12.zst
+2026-05-13 09:45:02,171 - INFO: Processing file: ../../../data/reddit/submissions/RS_2025-11.zst
+2026-05-13 09:45:43,513 - INFO: 1,000,000 lines at 24,190/s, 0 errored, 1,881 matched : 0.39 gb at 10 mb/s, 1% : 0(0)/4 files : 2:00:13 remaining
+2026-05-13 09:45:44,724 - INFO: 2,000,000 lines at 47,000/s, 0 errored, 4,121 matched : 0.80 gb at 19 mb/s, 1% : 0(0)/4 files : 1:20:31 remaining
+2026-05-13 09:45:45,045 - INFO: 3,000,000 lines at 69,972/s, 0 errored, 6,038 matched : 1.19 gb at 29 mb/s, 2% : 0(0)/4 files : 1:00:26 remaining
+2026-05-13 09:45:46,605 - INFO: 4,000,000 lines at 90,020/s, 0 errored, 8,091 matched : 1.60 gb at 37 mb/s, 2% : 0(0)/4 files : 0:48:44 remaining
+2026-05-13 09:46:27,752 - INFO: 5,000,000 lines at 58,424/s, 0 errored, 10,098 matched : 1.98 gb at 24 mb/s, 3% : 0(0)/4 files : 0:48:25 remaining
+2026-05-13 09:46:27,849 - INFO: 6,000,000 lines at 70,030/s, 0 errored, 12,220 matched : 2.37 gb at 28 mb/s, 3% : 0(0)/4 files : 0:46:35 remaining
+2026-05-13 09:46:28,853 - INFO: 7,000,000 lines at 80,755/s, 0 errored, 14,518 matched : 2.74 gb at 32 mb/s, 4% : 0(0)/4 files : 0:44:16 remaining
+2026-05-13 09:46:28,875 - INFO: 8,000,000 lines at 92,267/s, 0 errored, 16,625 matched : 3.13 gb at 37 mb/s, 5% : 0(0)/4 files : 0:41:40 remaining
+2026-05-13 09:47:08,184 - INFO: 9,000,000 lines at 71,421/s, 0 errored, 18,701 matched : 3.53 gb at 29 mb/s, 5% : 0(0)/4 files : 0:41:07 remaining
+2026-05-13 09:47:08,559 - INFO: 10,000,000 lines at 79,121/s, 0 errored, 20,608 matched : 3.91 gb at 32 mb/s, 6% : 0(0)/4 files : 0:40:13 remaining
+2026-05-13 09:47:11,758 - INFO: 11,000,000 lines at 84,885/s, 0 errored, 22,749 matched : 4.31 gb at 34 mb/s, 6% : 0(0)/4 files : 0:39:08 remaining
+2026-05-13 09:47:11,843 - INFO: 12,000,000 lines at 92,541/s, 0 errored, 25,186 matched : 4.69 gb at 37 mb/s, 7% : 0(0)/4 files : 0:37:55 remaining
+2026-05-13 09:47:48,586 - INFO: 13,000,000 lines at 78,118/s, 0 errored, 27,147 matched : 5.09 gb at 31 mb/s, 7% : 0(0)/4 files : 0:37:26 remaining
+2026-05-13 09:47:48,913 - INFO: 14,000,000 lines at 83,962/s, 0 errored, 29,065 matched : 5.47 gb at 34 mb/s, 8% : 0(0)/4 files : 0:36:49 remaining
+2026-05-13 09:47:54,711 - INFO: 15,000,000 lines at 86,937/s, 0 errored, 31,398 matched : 5.86 gb at 35 mb/s, 9% : 0(0)/4 files : 0:36:09 remaining
+2026-05-13 09:47:55,394 - INFO: 16,000,000 lines at 92,366/s, 0 errored, 33,405 matched : 6.26 gb at 37 mb/s, 9% : 0(0)/4 files : 0:35:23 remaining
+2026-05-13 09:48:27,802 - INFO: 17,000,000 lines at 82,673/s, 0 errored, 35,322 matched : 6.64 gb at 33 mb/s, 10% : 0(0)/4 files : 0:34:59 remaining
+2026-05-13 09:48:30,244 - INFO: 18,000,000 lines at 86,508/s, 0 errored, 37,421 matched : 7.04 gb at 35 mb/s, 10% : 0(0)/4 files : 0:34:29 remaining
+2026-05-13 09:48:35,595 - INFO: 19,000,000 lines at 89,025/s, 0 errored, 39,688 matched : 7.44 gb at 36 mb/s, 11% : 0(0)/4 files : 0:33:58 remaining
+2026-05-13 09:48:36,724 - INFO: 20,000,000 lines at 93,217/s, 0 errored, 41,820 matched : 7.83 gb at 37 mb/s, 11% : 0(0)/4 files : 0:33:24 remaining
+2026-05-13 09:49:10,741 - INFO: 21,000,000 lines at 84,483/s, 0 errored, 43,891 matched : 8.21 gb at 34 mb/s, 12% : 0(0)/4 files : 0:33:04 remaining
+2026-05-13 09:49:13,916 - INFO: 22,000,000 lines at 87,390/s, 0 errored, 45,826 matched : 8.61 gb at 35 mb/s, 12% : 0(0)/4 files : 0:32:41 remaining
+2026-05-13 09:49:20,737 - INFO: 23,000,000 lines at 88,952/s, 0 errored, 48,021 matched : 9.00 gb at 36 mb/s, 13% : 0(0)/4 files : 0:32:16 remaining
+2026-05-13 09:49:20,743 - INFO: 24,000,000 lines at 92,817/s, 0 errored, 50,339 matched : 9.39 gb at 37 mb/s, 14% : 0(0)/4 files : 0:31:50 remaining
+2026-05-13 09:49:50,603 - INFO: 25,000,000 lines at 86,675/s, 0 errored, 52,363 matched : 9.77 gb at 35 mb/s, 14% : 0(0)/4 files : 0:31:31 remaining
+2026-05-13 09:49:55,699 - INFO: 26,000,000 lines at 88,577/s, 0 errored, 54,185 matched : 10.17 gb at 35 mb/s, 15% : 0(0)/4 files : 0:31:11 remaining
+2026-05-13 09:50:04,145 - INFO: 27,000,000 lines at 89,412/s, 0 errored, 56,386 matched : 10.56 gb at 36 mb/s, 15% : 0(0)/4 files : 0:30:51 remaining
+2026-05-13 09:50:04,255 - INFO: 28,000,000 lines at 92,689/s, 0 errored, 58,528 matched : 10.95 gb at 37 mb/s, 16% : 0(0)/4 files : 0:30:29 remaining
+2026-05-13 09:50:34,551 - INFO: 29,000,000 lines at 87,250/s, 0 errored, 60,599 matched : 11.33 gb at 35 mb/s, 16% : 0(0)/4 files : 0:30:12 remaining
+2026-05-13 09:50:41,509 - INFO: 30,000,000 lines at 88,407/s, 0 errored, 62,548 matched : 11.72 gb at 35 mb/s, 17% : 0(0)/4 files : 0:29:55 remaining
+2026-05-13 09:50:45,612 - INFO: 31,000,000 lines at 90,263/s, 0 errored, 64,587 matched : 12.12 gb at 36 mb/s, 18% : 0(0)/4 files : 0:29:36 remaining
+2026-05-13 09:50:47,338 - INFO: 32,000,000 lines at 92,709/s, 0 errored, 66,621 matched : 12.50 gb at 37 mb/s, 18% : 0(0)/4 files : 0:29:17 remaining
+2026-05-13 09:51:17,463 - INFO: 33,000,000 lines at 87,931/s, 0 errored, 68,716 matched : 12.89 gb at 35 mb/s, 19% : 0(0)/4 files : 0:29:01 remaining
+2026-05-13 09:51:25,427 - INFO: 34,000,000 lines at 88,714/s, 0 errored, 70,753 matched : 13.27 gb at 35 mb/s, 19% : 0(0)/4 files : 0:28:45 remaining
+2026-05-13 09:51:29,093 - INFO: 35,000,000 lines at 90,458/s, 0 errored, 72,880 matched : 13.67 gb at 36 mb/s, 20% : 0(0)/4 files : 0:28:28 remaining
+2026-05-13 09:51:33,335 - INFO: 36,000,000 lines at 92,033/s, 0 errored, 75,031 matched : 14.06 gb at 37 mb/s, 20% : 0(0)/4 files : 0:28:11 remaining
+2026-05-13 09:52:00,863 - INFO: 37,000,000 lines at 88,370/s, 0 errored, 77,011 matched : 14.44 gb at 35 mb/s, 21% : 0(0)/4 files : 0:27:57 remaining
+2026-05-13 09:52:08,246 - INFO: 38,000,000 lines at 89,186/s, 0 errored, 78,991 matched : 14.84 gb at 36 mb/s, 22% : 0(0)/4 files : 0:27:41 remaining
+2026-05-13 09:52:11,604 - INFO: 39,000,000 lines at 90,818/s, 0 errored, 80,954 matched : 15.22 gb at 36 mb/s, 22% : 0(0)/4 files : 0:27:26 remaining
+2026-05-13 09:52:15,105 - INFO: 40,000,000 lines at 99,593/s, 0 errored, 83,062 matched : 15.62 gb at 40 mb/s, 23% : 0(0)/4 files : 0:27:06 remaining
+2026-05-13 09:52:43,936 - INFO: 41,000,000 lines at 93,032/s, 0 errored, 85,135 matched : 15.99 gb at 37 mb/s, 23% : 0(0)/4 files : 0:26:22 remaining
+2026-05-13 09:52:48,375 - INFO: 42,000,000 lines at 92,127/s, 0 errored, 87,310 matched : 16.39 gb at 37 mb/s, 24% : 0(0)/4 files : 0:25:50 remaining
+2026-05-13 09:52:52,767 - INFO: 43,000,000 lines at 91,515/s, 0 errored, 89,326 matched : 16.78 gb at 36 mb/s, 24% : 0(0)/4 files : 0:25:30 remaining
+2026-05-13 09:52:57,501 - INFO: 44,000,000 lines at 100,064/s, 0 errored, 91,460 matched : 17.17 gb at 40 mb/s, 25% : 0(0)/4 files : 0:25:15 remaining
+2026-05-13 09:53:28,038 - INFO: 45,000,000 lines at 92,815/s, 0 errored, 93,459 matched : 17.55 gb at 37 mb/s, 25% : 0(0)/4 files : 0:24:50 remaining
+2026-05-13 09:53:34,248 - INFO: 46,000,000 lines at 91,680/s, 0 errored, 95,680 matched : 17.94 gb at 37 mb/s, 26% : 0(0)/4 files : 0:24:30 remaining
+2026-05-13 09:53:37,067 - INFO: 47,000,000 lines at 91,081/s, 0 errored, 97,751 matched : 18.34 gb at 36 mb/s, 27% : 0(0)/4 files : 0:24:15 remaining
+2026-05-13 09:53:42,642 - INFO: 48,000,000 lines at 98,870/s, 0 errored, 100,061 matched : 18.73 gb at 39 mb/s, 27% : 0(0)/4 files : 0:24:01 remaining
+2026-05-13 09:54:12,747 - INFO: 49,000,000 lines at 91,940/s, 0 errored, 101,964 matched : 19.12 gb at 37 mb/s, 28% : 0(0)/4 files : 0:23:42 remaining
+2026-05-13 09:54:15,899 - INFO: 50,000,000 lines at 91,951/s, 0 errored, 104,009 matched : 19.51 gb at 37 mb/s, 28% : 0(0)/4 files : 0:23:26 remaining
+2026-05-13 09:54:19,340 - INFO: 51,000,000 lines at 91,229/s, 0 errored, 105,975 matched : 19.91 gb at 36 mb/s, 29% : 0(0)/4 files : 0:23:12 remaining
+2026-05-13 09:54:26,437 - INFO: 52,000,000 lines at 98,027/s, 0 errored, 108,164 matched : 20.30 gb at 39 mb/s, 29% : 0(0)/4 files : 0:22:59 remaining
+2026-05-13 09:54:54,723 - INFO: 53,000,000 lines at 91,590/s, 0 errored, 110,000 matched : 20.69 gb at 37 mb/s, 30% : 0(0)/4 files : 0:22:43 remaining
+2026-05-13 09:54:57,547 - INFO: 54,000,000 lines at 92,234/s, 0 errored, 111,954 matched : 21.09 gb at 37 mb/s, 31% : 0(0)/4 files : 0:22:28 remaining
+2026-05-13 09:55:03,798 - INFO: 55,000,000 lines at 91,036/s, 0 errored, 113,983 matched : 21.48 gb at 36 mb/s, 31% : 0(0)/4 files : 0:22:16 remaining
+2026-05-13 09:55:08,385 - INFO: 56,000,000 lines at 97,358/s, 0 errored, 116,187 matched : 21.88 gb at 39 mb/s, 32% : 0(0)/4 files : 0:22:03 remaining
+2026-05-13 09:55:36,841 - INFO: 57,000,000 lines at 91,421/s, 0 errored, 118,158 matched : 22.26 gb at 37 mb/s, 32% : 0(0)/4 files : 0:21:49 remaining
+2026-05-13 09:55:38,240 - INFO: 58,000,000 lines at 92,276/s, 0 errored, 120,272 matched : 22.65 gb at 37 mb/s, 33% : 0(0)/4 files : 0:21:36 remaining
+2026-05-13 09:55:44,019 - INFO: 59,000,000 lines at 91,272/s, 0 errored, 122,407 matched : 23.05 gb at 36 mb/s, 33% : 0(0)/4 files : 0:21:24 remaining
+2026-05-13 09:55:49,345 - INFO: 60,000,000 lines at 97,841/s, 0 errored, 124,773 matched : 23.44 gb at 39 mb/s, 34% : 0(0)/4 files : 0:21:12 remaining
+2026-05-13 09:56:18,259 - INFO: 61,000,000 lines at 91,907/s, 0 errored, 126,831 matched : 23.82 gb at 37 mb/s, 35% : 0(0)/4 files : 0:20:59 remaining
+2026-05-13 09:56:23,869 - INFO: 62,000,000 lines at 92,170/s, 0 errored, 128,914 matched : 24.22 gb at 37 mb/s, 35% : 0(0)/4 files : 0:20:46 remaining
+2026-05-13 09:56:25,846 - INFO: 63,000,000 lines at 91,743/s, 0 errored, 131,129 matched : 24.62 gb at 37 mb/s, 36% : 0(0)/4 files : 0:20:34 remaining
+2026-05-13 09:56:31,764 - INFO: 64,000,000 lines at 97,218/s, 0 errored, 133,334 matched : 25.01 gb at 39 mb/s, 36% : 0(0)/4 files : 0:20:22 remaining
+2026-05-13 09:56:58,254 - INFO: 65,000,000 lines at 92,296/s, 0 errored, 135,335 matched : 25.40 gb at 37 mb/s, 37% : 0(0)/4 files : 0:20:09 remaining
+2026-05-13 09:57:04,786 - INFO: 66,000,000 lines at 92,716/s, 0 errored, 137,236 matched : 25.80 gb at 37 mb/s, 37% : 0(0)/4 files : 0:19:57 remaining
+2026-05-13 09:57:07,123 - INFO: 67,000,000 lines at 92,227/s, 0 errored, 139,360 matched : 26.19 gb at 37 mb/s, 38% : 0(0)/4 files : 0:19:45 remaining
+2026-05-13 09:57:14,057 - INFO: 68,000,000 lines at 97,621/s, 0 errored, 141,505 matched : 26.58 gb at 39 mb/s, 39% : 0(0)/4 files : 0:19:32 remaining
+2026-05-13 09:57:39,002 - INFO: 69,000,000 lines at 93,415/s, 0 errored, 143,696 matched : 26.97 gb at 37 mb/s, 39% : 0(0)/4 files : 0:19:20 remaining
+2026-05-13 09:57:47,159 - INFO: 70,000,000 lines at 92,517/s, 0 errored, 145,517 matched : 27.37 gb at 37 mb/s, 40% : 0(0)/4 files : 0:19:08 remaining
+2026-05-13 09:57:49,465 - INFO: 71,000,000 lines at 92,389/s, 0 errored, 147,587 matched : 27.77 gb at 37 mb/s, 40% : 0(0)/4 files : 0:18:56 remaining
+2026-05-13 09:57:55,439 - INFO: 72,000,000 lines at 97,996/s, 0 errored, 149,792 matched : 28.16 gb at 39 mb/s, 41% : 0(0)/4 files : 0:18:43 remaining
+2026-05-13 09:58:18,397 - INFO: 73,000,000 lines at 94,438/s, 0 errored, 151,902 matched : 28.54 gb at 38 mb/s, 41% : 0(0)/4 files : 0:18:31 remaining
+2026-05-13 09:58:28,403 - INFO: 74,000,000 lines at 93,010/s, 0 errored, 153,902 matched : 28.93 gb at 37 mb/s, 42% : 0(0)/4 files : 0:18:19 remaining
+2026-05-13 09:58:29,695 - INFO: 75,000,000 lines at 93,669/s, 0 errored, 155,856 matched : 29.33 gb at 38 mb/s, 43% : 0(0)/4 files : 0:18:07 remaining
+2026-05-13 09:58:37,887 - INFO: 76,000,000 lines at 98,231/s, 0 errored, 157,942 matched : 29.72 gb at 39 mb/s, 43% : 0(0)/4 files : 0:17:54 remaining
+2026-05-13 09:58:59,766 - INFO: 77,000,000 lines at 94,771/s, 0 errored, 159,948 matched : 30.12 gb at 38 mb/s, 44% : 0(0)/4 files : 0:17:42 remaining
+2026-05-13 09:59:10,001 - INFO: 78,000,000 lines at 93,213/s, 0 errored, 162,121 matched : 30.52 gb at 37 mb/s, 44% : 0(0)/4 files : 0:17:29 remaining
+2026-05-13 09:59:11,076 - INFO: 79,000,000 lines at 93,757/s, 0 errored, 164,051 matched : 30.91 gb at 38 mb/s, 45% : 0(0)/4 files : 0:17:18 remaining
+2026-05-13 09:59:19,399 - INFO: 80,000,000 lines at 98,619/s, 0 errored, 165,937 matched : 31.29 gb at 40 mb/s, 45% : 0(0)/4 files : 0:17:07 remaining
+2026-05-13 09:59:42,832 - INFO: 81,000,000 lines at 94,099/s, 0 errored, 168,014 matched : 31.67 gb at 38 mb/s, 46% : 0(0)/4 files : 0:16:57 remaining
+2026-05-13 09:59:51,615 - INFO: 82,000,000 lines at 93,112/s, 0 errored, 170,142 matched : 32.07 gb at 37 mb/s, 46% : 0(0)/4 files : 0:16:45 remaining
+2026-05-13 09:59:52,336 - INFO: 83,000,000 lines at 94,013/s, 0 errored, 172,262 matched : 32.46 gb at 38 mb/s, 47% : 0(0)/4 files : 0:16:34 remaining
+2026-05-13 10:00:04,340 - INFO: 84,000,000 lines at 98,410/s, 0 errored, 174,069 matched : 32.85 gb at 40 mb/s, 48% : 0(0)/4 files : 0:16:23 remaining
+2026-05-13 10:00:25,042 - INFO: 85,000,000 lines at 94,938/s, 0 errored, 176,187 matched : 33.25 gb at 38 mb/s, 48% : 0(0)/4 files : 0:16:12 remaining
+2026-05-13 10:00:34,481 - INFO: 86,000,000 lines at 93,432/s, 0 errored, 178,227 matched : 33.65 gb at 38 mb/s, 49% : 0(0)/4 files : 0:16:00 remaining
+2026-05-13 10:00:35,036 - INFO: 87,000,000 lines at 94,570/s, 0 errored, 180,089 matched : 34.06 gb at 38 mb/s, 49% : 0(0)/4 files : 0:15:48 remaining
+2026-05-13 10:00:46,854 - INFO: 88,000,000 lines at 98,958/s, 0 errored, 182,130 matched : 34.45 gb at 40 mb/s, 50% : 0(0)/4 files : 0:15:37 remaining
+2026-05-13 10:01:06,282 - INFO: 89,000,000 lines at 95,033/s, 0 errored, 184,167 matched : 34.83 gb at 38 mb/s, 51% : 0(0)/4 files : 0:15:26 remaining
+2026-05-13 10:01:15,713 - INFO: 90,000,000 lines at 93,666/s, 0 errored, 186,058 matched : 35.23 gb at 38 mb/s, 51% : 0(0)/4 files : 0:15:15 remaining
+2026-05-13 10:01:15,776 - INFO: 91,000,000 lines at 95,276/s, 0 errored, 188,083 matched : 35.62 gb at 38 mb/s, 52% : 0(0)/4 files : 0:15:03 remaining
+2026-05-13 10:01:28,277 - INFO: 92,000,000 lines at 99,097/s, 0 errored, 190,108 matched : 36.02 gb at 40 mb/s, 52% : 0(0)/4 files : 0:14:52 remaining
+2026-05-13 10:01:48,830 - INFO: 93,000,000 lines at 94,825/s, 0 errored, 191,995 matched : 36.41 gb at 38 mb/s, 53% : 0(0)/4 files : 0:14:40 remaining
+2026-05-13 10:01:57,245 - INFO: 94,000,000 lines at 94,329/s, 0 errored, 194,001 matched : 36.81 gb at 38 mb/s, 53% : 0(0)/4 files : 0:14:29 remaining
+2026-05-13 10:01:57,707 - INFO: 95,000,000 lines at 95,280/s, 0 errored, 195,843 matched : 37.18 gb at 38 mb/s, 54% : 0(0)/4 files : 0:14:18 remaining
+2026-05-13 10:02:08,849 - INFO: 96,000,000 lines at 99,488/s, 0 errored, 197,963 matched : 37.57 gb at 40 mb/s, 54% : 0(0)/4 files : 0:14:06 remaining
+2026-05-13 10:02:29,392 - INFO: 97,000,000 lines at 94,855/s, 0 errored, 199,981 matched : 37.95 gb at 38 mb/s, 55% : 0(0)/4 files : 0:13:55 remaining
+2026-05-13 10:02:37,927 - INFO: 98,000,000 lines at 94,224/s, 0 errored, 201,910 matched : 38.35 gb at 38 mb/s, 56% : 0(0)/4 files : 0:13:44 remaining
+2026-05-13 10:02:39,029 - INFO: 99,000,000 lines at 95,195/s, 0 errored, 203,748 matched : 38.75 gb at 38 mb/s, 56% : 0(0)/4 files : 0:13:32 remaining
+2026-05-13 10:02:51,595 - INFO: 100,000,000 lines at 99,152/s, 0 errored, 205,793 matched : 39.14 gb at 40 mb/s, 57% : 0(0)/4 files : 0:13:21 remaining
+2026-05-13 10:03:14,309 - INFO: 101,000,000 lines at 95,020/s, 0 errored, 207,903 matched : 39.52 gb at 38 mb/s, 57% : 0(0)/4 files : 0:13:10 remaining
+2026-05-13 10:03:24,925 - INFO: 102,000,000 lines at 93,061/s, 0 errored, 209,848 matched : 39.92 gb at 37 mb/s, 58% : 0(0)/4 files : 0:13:00 remaining
+2026-05-13 10:03:26,038 - INFO: 103,000,000 lines at 94,141/s, 0 errored, 211,865 matched : 40.32 gb at 38 mb/s, 58% : 0(0)/4 files : 0:12:48 remaining
+2026-05-13 10:03:36,733 - INFO: 104,000,000 lines at 97,871/s, 0 errored, 213,931 matched : 40.71 gb at 39 mb/s, 59% : 0(0)/4 files : 0:12:37 remaining
+2026-05-13 10:03:56,306 - INFO: 105,000,000 lines at 94,771/s, 0 errored, 216,051 matched : 41.11 gb at 38 mb/s, 60% : 0(0)/4 files : 0:12:26 remaining
+2026-05-13 10:04:07,244 - INFO: 106,000,000 lines at 92,830/s, 0 errored, 218,060 matched : 41.50 gb at 37 mb/s, 60% : 0(0)/4 files : 0:12:16 remaining
+2026-05-13 10:04:08,499 - INFO: 107,000,000 lines at 94,102/s, 0 errored, 220,136 matched : 41.89 gb at 38 mb/s, 61% : 0(0)/4 files : 0:12:05 remaining
+2026-05-13 10:04:17,834 - INFO: 108,000,000 lines at 97,786/s, 0 errored, 222,129 matched : 42.28 gb at 39 mb/s, 61% : 0(0)/4 files : 0:11:54 remaining
+2026-05-13 10:04:34,945 - INFO: 109,000,000 lines at 95,638/s, 0 errored, 224,141 matched : 42.63 gb at 38 mb/s, 62% : 0(0)/4 files : 0:11:44 remaining
+2026-05-13 10:04:51,597 - INFO: 110,000,000 lines at 92,389/s, 0 errored, 226,177 matched : 43.03 gb at 37 mb/s, 62% : 0(0)/4 files : 0:11:34 remaining
+2026-05-13 10:04:53,512 - INFO: 111,000,000 lines at 93,285/s, 0 errored, 228,163 matched : 43.42 gb at 37 mb/s, 63% : 0(0)/4 files : 0:11:23 remaining
+2026-05-13 10:05:03,557 - INFO: 112,000,000 lines at 96,258/s, 0 errored, 230,151 matched : 43.81 gb at 39 mb/s, 64% : 0(0)/4 files : 0:11:13 remaining
+2026-05-13 10:05:17,253 - INFO: 113,000,000 lines at 95,389/s, 0 errored, 232,218 matched : 44.19 gb at 38 mb/s, 64% : 0(0)/4 files : 0:11:03 remaining
+2026-05-13 10:05:34,665 - INFO: 114,000,000 lines at 91,771/s, 0 errored, 234,413 matched : 44.59 gb at 37 mb/s, 65% : 0(0)/4 files : 0:10:52 remaining
+2026-05-13 10:05:36,476 - INFO: 115,000,000 lines at 93,170/s, 0 errored, 236,408 matched : 44.99 gb at 37 mb/s, 65% : 0(0)/4 files : 0:10:42 remaining
+2026-05-13 10:05:46,697 - INFO: 116,000,000 lines at 95,839/s, 0 errored, 238,458 matched : 45.38 gb at 38 mb/s, 66% : 0(0)/4 files : 0:10:31 remaining
+2026-05-13 10:05:58,450 - INFO: 117,000,000 lines at 95,483/s, 0 errored, 240,501 matched : 45.76 gb at 38 mb/s, 66% : 0(0)/4 files : 0:10:21 remaining
+2026-05-13 10:06:14,804 - INFO: 118,000,000 lines at 92,040/s, 0 errored, 242,667 matched : 46.16 gb at 37 mb/s, 67% : 0(0)/4 files : 0:10:11 remaining
+2026-05-13 10:06:17,874 - INFO: 119,000,000 lines at 93,195/s, 0 errored, 244,683 matched : 46.55 gb at 37 mb/s, 67% : 0(0)/4 files : 0:10:00 remaining
+2026-05-13 10:06:28,202 - INFO: 120,000,000 lines at 96,208/s, 0 errored, 246,633 matched : 46.95 gb at 39 mb/s, 68% : 0(0)/4 files : 0:09:50 remaining
+2026-05-13 10:06:39,669 - INFO: 121,000,000 lines at 95,576/s, 0 errored, 248,723 matched : 47.33 gb at 38 mb/s, 69% : 0(0)/4 files : 0:09:40 remaining
+2026-05-13 10:06:55,967 - INFO: 122,000,000 lines at 92,061/s, 0 errored, 251,028 matched : 47.74 gb at 37 mb/s, 69% : 0(0)/4 files : 0:09:29 remaining
+2026-05-13 10:07:00,880 - INFO: 123,000,000 lines at 93,629/s, 0 errored, 252,871 matched : 48.15 gb at 38 mb/s, 70% : 0(0)/4 files : 0:09:18 remaining
+2026-05-13 10:07:11,805 - INFO: 124,000,000 lines at 95,879/s, 0 errored, 254,809 matched : 48.54 gb at 38 mb/s, 70% : 0(0)/4 files : 0:09:08 remaining
+2026-05-13 10:07:20,253 - INFO: 125,000,000 lines at 96,113/s, 0 errored, 256,932 matched : 48.93 gb at 39 mb/s, 71% : 0(0)/4 files : 0:08:57 remaining
+2026-05-13 10:07:35,046 - INFO: 126,000,000 lines at 92,855/s, 0 errored, 259,072 matched : 49.33 gb at 37 mb/s, 72% : 0(0)/4 files : 0:08:47 remaining
+2026-05-13 10:07:40,776 - INFO: 127,000,000 lines at 94,221/s, 0 errored, 260,988 matched : 49.71 gb at 38 mb/s, 72% : 0(0)/4 files : 0:08:36 remaining
+2026-05-13 10:07:52,783 - INFO: 128,000,000 lines at 95,942/s, 0 errored, 263,153 matched : 50.11 gb at 38 mb/s, 73% : 0(0)/4 files : 0:08:26 remaining
+2026-05-13 10:08:01,878 - INFO: 129,000,000 lines at 96,020/s, 0 errored, 265,171 matched : 50.50 gb at 39 mb/s, 73% : 0(0)/4 files : 0:08:16 remaining
+2026-05-13 10:08:18,258 - INFO: 130,000,000 lines at 92,312/s, 0 errored, 267,240 matched : 50.90 gb at 37 mb/s, 74% : 0(0)/4 files : 0:08:05 remaining
+2026-05-13 10:08:25,535 - INFO: 131,000,000 lines at 93,467/s, 0 errored, 269,187 matched : 51.29 gb at 37 mb/s, 74% : 0(0)/4 files : 0:07:55 remaining
+2026-05-13 10:08:35,216 - INFO: 132,000,000 lines at 95,968/s, 0 errored, 271,319 matched : 51.70 gb at 39 mb/s, 75% : 0(0)/4 files : 0:07:44 remaining
+2026-05-13 10:08:43,770 - INFO: 133,000,000 lines at 95,935/s, 0 errored, 273,319 matched : 52.10 gb at 39 mb/s, 76% : 0(0)/4 files : 0:07:34 remaining
+2026-05-13 10:09:00,494 - INFO: 134,000,000 lines at 92,245/s, 0 errored, 275,276 matched : 52.49 gb at 37 mb/s, 76% : 0(0)/4 files : 0:07:23 remaining
+2026-05-13 10:09:08,573 - INFO: 135,000,000 lines at 92,918/s, 0 errored, 277,033 matched : 52.90 gb at 37 mb/s, 77% : 0(0)/4 files : 0:07:12 remaining
+2026-05-13 10:09:15,001 - INFO: 136,000,000 lines at 96,152/s, 0 errored, 279,118 matched : 53.29 gb at 39 mb/s, 77% : 0(0)/4 files : 0:07:02 remaining
+2026-05-13 10:09:27,050 - INFO: 137,000,000 lines at 95,326/s, 0 errored, 281,113 matched : 53.69 gb at 38 mb/s, 78% : 0(0)/4 files : 0:06:51 remaining
+2026-05-13 10:09:44,012 - INFO: 138,000,000 lines at 91,769/s, 0 errored, 283,055 matched : 54.09 gb at 37 mb/s, 78% : 0(0)/4 files : 0:06:41 remaining
+2026-05-13 10:09:50,980 - INFO: 139,000,000 lines at 92,993/s, 0 errored, 284,894 matched : 54.49 gb at 37 mb/s, 79% : 0(0)/4 files : 0:06:30 remaining
+2026-05-13 10:09:57,659 - INFO: 140,000,000 lines at 96,690/s, 0 errored, 286,971 matched : 54.88 gb at 39 mb/s, 80% : 0(0)/4 files : 0:06:20 remaining
+2026-05-13 10:10:09,849 - INFO: 141,000,000 lines at 96,314/s, 0 errored, 289,161 matched : 55.28 gb at 39 mb/s, 80% : 0(0)/4 files : 0:06:09 remaining
+2026-05-13 10:10:26,337 - INFO: 142,000,000 lines at 92,791/s, 0 errored, 291,181 matched : 55.68 gb at 37 mb/s, 81% : 0(0)/4 files : 0:05:58 remaining
+2026-05-13 10:10:35,295 - INFO: 143,000,000 lines at 93,176/s, 0 errored, 293,202 matched : 56.07 gb at 38 mb/s, 81% : 0(0)/4 files : 0:05:48 remaining
+2026-05-13 10:10:39,206 - INFO: 144,000,000 lines at 96,798/s, 0 errored, 295,252 matched : 56.46 gb at 39 mb/s, 82% : 0(0)/4 files : 0:05:37 remaining
+2026-05-13 10:10:53,697 - INFO: 145,000,000 lines at 95,952/s, 0 errored, 297,557 matched : 56.89 gb at 39 mb/s, 82% : 0(0)/4 files : 0:05:26 remaining
+2026-05-13 10:11:08,477 - INFO: 146,000,000 lines at 92,862/s, 0 errored, 299,441 matched : 57.28 gb at 38 mb/s, 83% : 0(0)/4 files : 0:05:15 remaining
+2026-05-13 10:11:18,129 - INFO: 147,000,000 lines at 92,792/s, 0 errored, 301,420 matched : 57.69 gb at 38 mb/s, 84% : 0(0)/4 files : 0:05:04 remaining
+2026-05-13 10:11:21,686 - INFO: 148,000,000 lines at 95,884/s, 0 errored, 303,451 matched : 58.09 gb at 39 mb/s, 84% : 0(0)/4 files : 0:04:53 remaining
+2026-05-13 10:11:37,919 - INFO: 149,000,000 lines at 95,983/s, 0 errored, 305,746 matched : 58.51 gb at 39 mb/s, 85% : 0(0)/4 files : 0:04:42 remaining
+2026-05-13 10:11:49,467 - INFO: 150,000,000 lines at 93,760/s, 0 errored, 307,788 matched : 58.90 gb at 38 mb/s, 85% : 0(0)/4 files : 0:04:31 remaining
+2026-05-13 10:12:00,586 - INFO: 151,000,000 lines at 93,519/s, 0 errored, 309,918 matched : 59.31 gb at 38 mb/s, 86% : 0(0)/4 files : 0:04:20 remaining
+2026-05-13 10:12:05,948 - INFO: 152,000,000 lines at 95,426/s, 0 errored, 311,962 matched : 59.70 gb at 39 mb/s, 87% : 0(0)/4 files : 0:04:09 remaining
+2026-05-13 10:12:19,975 - INFO: 153,000,000 lines at 96,223/s, 0 errored, 314,077 matched : 60.10 gb at 39 mb/s, 87% : 0(0)/4 files : 0:03:58 remaining
+2026-05-13 10:12:33,560 - INFO: 154,000,000 lines at 93,506/s, 0 errored, 316,139 matched : 60.49 gb at 38 mb/s, 88% : 0(0)/4 files : 0:03:48 remaining
+2026-05-13 10:12:43,582 - INFO: 155,000,000 lines at 93,552/s, 0 errored, 318,095 matched : 60.88 gb at 38 mb/s, 88% : 0(0)/4 files : 0:03:37 remaining
+2026-05-13 10:12:49,074 - INFO: 156,000,000 lines at 94,977/s, 0 errored, 320,243 matched : 61.28 gb at 39 mb/s, 89% : 0(0)/4 files : 0:03:26 remaining
+2026-05-13 10:13:01,626 - INFO: 157,000,000 lines at 95,865/s, 0 errored, 322,453 matched : 61.66 gb at 39 mb/s, 89% : 0(0)/4 files : 0:03:16 remaining
+2026-05-13 10:13:14,282 - INFO: 158,000,000 lines at 93,658/s, 0 errored, 324,412 matched : 62.06 gb at 38 mb/s, 90% : 0(0)/4 files : 0:03:05 remaining
+2026-05-13 10:13:24,807 - INFO: 159,000,000 lines at 93,614/s, 0 errored, 326,286 matched : 62.45 gb at 38 mb/s, 91% : 0(0)/4 files : 0:02:54 remaining
+2026-05-13 10:13:30,532 - INFO: 160,000,000 lines at 94,922/s, 0 errored, 328,172 matched : 62.86 gb at 39 mb/s, 91% : 0(0)/4 files : 0:02:43 remaining
+2026-05-13 10:13:44,157 - INFO: 161,000,000 lines at 95,544/s, 0 errored, 330,248 matched : 63.26 gb at 39 mb/s, 92% : 0(0)/4 files : 0:02:33 remaining
+2026-05-13 10:13:56,802 - INFO: 162,000,000 lines at 93,768/s, 0 errored, 332,136 matched : 63.65 gb at 38 mb/s, 92% : 0(0)/4 files : 0:02:22 remaining
+2026-05-13 10:14:08,697 - INFO: 163,000,000 lines at 93,549/s, 0 errored, 334,143 matched : 64.05 gb at 38 mb/s, 93% : 0(0)/4 files : 0:02:11 remaining
+2026-05-13 10:14:15,872 - INFO: 164,000,000 lines at 93,836/s, 0 errored, 336,221 matched : 64.44 gb at 38 mb/s, 93% : 0(0)/4 files : 0:02:01 remaining
+2026-05-13 10:14:26,584 - INFO: 165,000,000 lines at 94,766/s, 0 errored, 338,298 matched : 64.83 gb at 39 mb/s, 94% : 0(0)/4 files : 0:01:50 remaining
+2026-05-13 10:14:39,585 - INFO: 166,000,000 lines at 93,121/s, 0 errored, 340,206 matched : 65.23 gb at 38 mb/s, 95% : 0(0)/4 files : 0:01:40 remaining
+2026-05-13 10:14:53,580 - INFO: 167,000,000 lines at 92,680/s, 0 errored, 342,276 matched : 65.63 gb at 38 mb/s, 95% : 0(0)/4 files : 0:01:29 remaining
+2026-05-13 10:15:00,112 - INFO: 168,000,000 lines at 93,249/s, 0 errored, 344,384 matched : 66.03 gb at 38 mb/s, 96% : 0(0)/4 files : 0:01:18 remaining
+2026-05-13 10:15:08,594 - INFO: 169,000,000 lines at 95,044/s, 0 errored, 346,369 matched : 66.42 gb at 39 mb/s, 96% : 0(0)/4 files : 0:01:08 remaining
+2026-05-13 10:15:15,923 - INFO: 169,861,082 lines at 94,693/s, 0 errored, 348,006 matched : 66.77 gb at 39 mb/s, 97% : 1(0)/4 files : 0:00:58 remaining
+2026-05-13 10:15:24,249 - INFO: 170,428,419 lines at 93,949/s, 0 errored, 349,165 matched : 66.99 gb at 38 mb/s, 97% : 2(0)/4 files : 0:00:52 remaining
+2026-05-13 10:15:34,724 - INFO: 171,428,419 lines at 93,510/s, 0 errored, 351,032 matched : 67.39 gb at 38 mb/s, 98% : 2(0)/4 files : 0:00:42 remaining
+2026-05-13 10:15:42,070 - INFO: 172,347,855 lines at 95,493/s, 0 errored, 352,787 matched : 67.75 gb at 39 mb/s, 98% : 3(0)/4 files : 0:00:32 remaining
+2026-05-13 10:16:08,333 - INFO: 173,347,855 lines at 91,357/s, 0 errored, 354,565 matched : 68.14 gb at 37 mb/s, 99% : 3(0)/4 files : 0:00:22 remaining
+2026-05-13 10:16:41,773 - INFO: 174,347,855 lines at 85,833/s, 0 errored, 356,404 matched : 68.54 gb at 35 mb/s, 99% : 3(0)/4 files : 0:00:11 remaining
+2026-05-13 10:17:15,422 - INFO: 175,347,855 lines at 81,875/s, 0 errored, 358,249 matched : 68.93 gb at 33 mb/s, 100% : 3(0)/4 files : 0:00:00 remaining
+2026-05-13 10:17:18,405 - INFO: 175,442,700 lines at 82,402/s, 0 errored, 358,450 matched : 68.97 gb at 34 mb/s, 100% : 4(0)/4 files : 0:00:00 remaining
+2026-05-13 10:17:18,516 - INFO: 175,442,700, 0 errored : 68.97 gb, 100% : 4/4
+2026-05-13 10:17:18,517 - INFO: Processing complete, combining 4 result files
+2026-05-13 10:17:18,517 - INFO: From 0/4 files to 0 output handles : 0/358,450 lines
+2026-05-13 10:17:31,673 - INFO: From 4/4 files to 0 output handles : 358,450/358,450 lines
+2026-05-13 10:18:29,769 - INFO: Loading files from: ../../output/corpora/reddit/subreddit_filtering
+2026-05-13 10:18:29,769 - INFO: Writing output to: ../../output/corpora/reddit/term_filtering
+2026-05-13 10:18:29,769 - INFO: Checking if any of any of 49 values are contained in field selftext
+2026-05-13 10:18:29,853 - INFO: Processed 0 of 11 files with 0.00 of 0.16 gigabytes
+2026-05-13 10:18:29,853 - INFO: Processing file: ../../output/corpora/reddit/subreddit_filtering/RS_relationship_advice_submissions.zst
+2026-05-13 10:18:29,853 - INFO: Processing file: ../../output/corpora/reddit/subreddit_filtering/RS_offmychest_submissions.zst
+2026-05-13 10:18:29,853 - INFO: Processing file: ../../output/corpora/reddit/subreddit_filtering/RS_relationships_submissions.zst
+2026-05-13 10:18:29,853 - INFO: Processing file: ../../output/corpora/reddit/subreddit_filtering/RS_AmItheAsshole_submissions.zst
+2026-05-13 10:18:29,854 - INFO: Processing file: ../../output/corpora/reddit/subreddit_filtering/RS_MadeMeSmile_submissions.zst
+2026-05-13 10:18:29,854 - INFO: Processing file: ../../output/corpora/reddit/subreddit_filtering/RS_CasualConversation_submissions.zst
+2026-05-13 10:18:29,854 - INFO: Processing file: ../../output/corpora/reddit/subreddit_filtering/RS_confession_submissions.zst
+2026-05-13 10:18:29,854 - INFO: Processing file: ../../output/corpora/reddit/subreddit_filtering/RS_WritingPrompts_submissions.zst
+2026-05-13 10:18:29,854 - INFO: Processing file: ../../output/corpora/reddit/subreddit_filtering/RS_GetMotivated_submissions.zst
+2026-05-13 10:18:29,854 - INFO: Processing file: ../../output/corpora/reddit/subreddit_filtering/RS_wholesome_submissions.zst
+2026-05-13 10:18:29,854 - INFO: Processing file: ../../output/corpora/reddit/subreddit_filtering/RS_HumansBeingBros_submissions.zst
+2026-05-13 10:18:30,047 - INFO: 2,900 lines at 14,989/s, 0 errored, 121 matched : 0.00 gb at 7 mb/s, 1% : 1(0)/11 files : 0:00:24 remaining
+2026-05-13 10:18:30,096 - INFO: 3,743 lines at 15,448/s, 0 errored, 121 matched : 0.00 gb at 8 mb/s, 1% : 2(0)/11 files : 0:00:22 remaining
+2026-05-13 10:18:30,221 - INFO: 11,444 lines at 31,100/s, 0 errored, 421 matched : 0.00 gb at 10 mb/s, 2% : 3(0)/11 files : 0:00:19 remaining
+2026-05-13 10:18:30,261 - INFO: 20,985 lines at 51,441/s, 0 errored, 610 matched : 0.01 gb at 15 mb/s, 4% : 4(0)/11 files : 0:00:16 remaining
+2026-05-13 10:18:30,683 - INFO: 41,724 lines at 50,268/s, 0 errored, 1,881 matched : 0.01 gb at 15 mb/s, 8% : 5(0)/11 files : 0:00:14 remaining
+2026-05-13 10:18:30,836 - INFO: 62,560 lines at 63,691/s, 0 errored, 2,075 matched : 0.02 gb at 25 mb/s, 15% : 6(0)/11 files : 0:00:10 remaining
+2026-05-13 10:18:30,997 - INFO: 92,487 lines at 80,878/s, 0 errored, 5,244 matched : 0.03 gb at 28 mb/s, 19% : 7(0)/11 files : 0:00:08 remaining
+2026-05-13 10:18:31,847 - INFO: 129,307 lines at 64,872/s, 0 errored, 12,832 matched : 0.05 gb at 23 mb/s, 28% : 8(0)/11 files : 0:00:07 remaining
+2026-05-13 10:18:33,322 - INFO: 189,811 lines at 54,720/s, 0 errored, 27,686 matched : 0.07 gb at 21 mb/s, 44% : 9(0)/11 files : 0:00:05 remaining
+2026-05-13 10:18:34,309 - INFO: 252,594 lines at 56,687/s, 0 errored, 50,955 matched : 0.11 gb at 25 mb/s, 68% : 10(0)/11 files : 0:00:03 remaining
+2026-05-13 10:18:35,920 - INFO: 358,450 lines at 59,083/s, 0 errored, 77,358 matched : 0.16 gb at 27 mb/s, 100% : 11(0)/11 files : 0:00:00 remaining
+2026-05-13 10:18:35,938 - INFO: 358,450, 0 errored : 0.16 gb, 100% : 11/11
+2026-05-13 10:18:35,938 - INFO: Processing complete, combining 10 result files
+2026-05-13 10:18:35,939 - INFO: From 0/10 files to 0 output handles : 0/77,358 lines
+2026-05-13 10:18:39,975 - INFO: From 10/10 files to 0 output handles : 77,358/77,358 lines

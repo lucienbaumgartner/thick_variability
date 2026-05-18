@@ -5,36 +5,529 @@ library(dplyr)
 library(stringr)
 library(pscl)
 library(glmnet)
+library(lme4)
+library(brms)
+library(reshape2)
+library(tidybayes)
+library(ggplot2)
+library(dplyr)
+library(forcats)  # for ordering factors nicely
+library(ggdist) 
+library(tidyr)
+library(ggtext)
+library(xtable)
 
 rm(list = ls())
 setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
 
 # Load the CSV file
-df <- read.csv("../output/scores/multiscore.csv", header=T)
+df <- read.csv("../output/scores/abstracted_scores.csv", header=T)
+df <- df %>% mutate(isNegated = ifelse(is_negated == "True", TRUE, FALSE))
+df <- df %>% select(-is_negated)
+
+# Get metadata
+meta_controlled <- fromJSON("../input/proof-of-concept_data_controlled.json") %>% as.data.frame
+meta_controlled <- melt(meta_controlled, id.vars = "template_id", value.name = "sentence", variable.name = "isNegated") %>% 
+  rename(id = "template_id") %>% 
+  mutate(isNegated = ifelse(isNegated == "sentence_neg", TRUE, FALSE))
+
+target_terms <- c("compassionate", "cruel", "generous", "selfish", "sincere", "deceitful", "courageous", "cowardly", "virtuous", "vicious")
+
+meta_controlled <- lapply(target_terms, function(term){
+  tibble(id = meta_controlled$id, sentence = gsub("TERM", term, meta_controlled$sentence), target_word = term, isNegated = meta_controlled$isNegated)
+})
+meta_controlled <- do.call(rbind, meta_controlled)
+meta_controlled$pair <- NA
+
+meta_naturalistic <- fromJSON("../input/proof-of-concept_data_naturalistic_w_symmetric_neg.json") %>% as.data.frame
+meta_naturalistic <- melt(meta_naturalistic, id.vars = c("pair", "frame_id"), value.name = "sentence", variable.name = "isNegated") %>% 
+  rename(id = "frame_id") %>% 
+  mutate(isNegated = ifelse(isNegated == "sentence_neg", TRUE, FALSE))
+
+meta_naturalistic <- lapply(1:nrow(meta_naturalistic), function(r_index){
+  .row <- meta_naturalistic[r_index,]
+  terms <- unlist(strsplit(.row$pair, "/"))
+  .row1 <- .row %>% mutate(sentence = gsub("TERM", terms[1], sentence), target_word = terms[1])
+  .row2 <- .row %>% mutate(sentence = gsub("TERM", terms[2], sentence), target_word = terms[2])
+  return(rbind(.row1, .row2))
+}) %>% do.call(rbind, .)
+
+meta <- rbind(meta_controlled %>% mutate(corpus = "controlled"), meta_naturalistic %>% mutate(corpus = "naturalistic"))
+
+check <- anti_join(meta, df)
+# one wrongly labeled negation
+df <- left_join(df %>% select(-isNegated), meta)
+
 colnames(df)
+#df <- df %>% filter(target_word %in% c("honest", "dishonest"))
+#df$item_id = as.factor(rep(rep(seq_along(1:(nrow(df)/4)), each=2), 2))
 
 # Create additional predictors
 df <- df %>%
   rename(
     targetWord = "target_word",
-    isNegated = "is_negated",
     wordCount = "sentence_wordcount",
   ) %>% 
-  mutate(dependency = as.factor(dependency),
-         conceptType = factor(ifelse(targetWord %in% c("bad", "good", "right", "wrong"), "Thin", "Thick")),
-         )
-
-df <- filter(df, isNegated == "False")
+  mutate(across(c(targetWord, dependency, isNegated), ~ as.factor(.)))
 
 # Determine token polarity based on DW
-df <- mutate(df, tokenPolarity = factor(case_when(
-  (DW > 0 & sentencePolarity == 0) ~ "Negative",
-  (DW > 0 & sentencePolarity == 1) ~ "Positive",
-  (DW < 0 & sentencePolarity == 1) ~ "Negative",
-  (DW < 0 & sentencePolarity == 0) ~ "Positive",
-  (DW == 0) ~ "Neutral",
-  TRUE ~ NA_character_
-), levels = c("Negative", "Neutral", "Positive")))
+df <- mutate(df, 
+  conceptType = as.factor(case_when(
+    targetWord %in% c("cruel", "selfish", "deceitful", "cowardly", "vicious") ~ "NTT",
+    targetWord %in% c("compassionate", "generous", "sincere", "courageous", "virtuous") ~ "PTT",
+    TRUE ~ NA_character_
+  )))
+
+any(is.na(df$conceptType))
+df %>% filter(is.na(conceptType))
+
+all(table(df$isNegated)==200)
+
+dfl <- split(df, df$corpus)
+dfl <- lapply(dfl, function(x) x %>% mutate(id = as.factor(id)))
+str(dfl)
+
+# Inspect data for bimodality
+
+bi_c <- dfl[["controlled"]] %>% select(SC_signed, cw_SC_signed, conceptType, isNegated, dependency, targetWord, id) %>% 
+  melt(id.vars = c("conceptType", "isNegated", "dependency", "targetWord", "id"), variable.name = "Metric")
+ggplot(bi_c, aes(x = value, fill = conceptType)) +
+  geom_histogram() +
+  facet_grid(Metric ~ isNegated)
+
+bi_n <- dfl[["naturalistic"]] %>% select(SC_signed, cw_SC_signed, conceptType, isNegated, dependency, targetWord, id, pair) %>% 
+  melt(id.vars = c("conceptType", "isNegated", "dependency", "targetWord", "id", "pair"), variable.name = "Metric")
+ggplot(bi_n, aes(x = value, fill = conceptType)) +
+  geom_histogram() +
+  facet_grid(Metric ~ isNegated)
+
+# Data frame `df` has: NEC, SC, Polarity, Sentence, Word
+
+# Multivariate formula
+
+#### Fully controlled corpus
+bf_sc <- bf(
+  SC_signed ~ conceptType * isNegated +
+    log1p(wordCount) +
+    (1 + isNegated | id) +
+    (1 | targetWord) +
+    (1 | dependency),
+  family = gaussian()
+)
+
+bf_cwsc <- bf(
+  cw_SC_signed ~ conceptType * isNegated +
+    log1p(wordCount) +
+    (1 + isNegated | id) +
+    (1 | targetWord) +
+    (1 | dependency),
+  family = gaussian()
+)
+
+df_c <- dfl[["controlled"]]
+fit_c <- brm(
+  bf_sc + bf_cwsc + set_rescor(TRUE),
+  data = df_c,
+  chains = 6, 
+  cores = 6,
+  threads = threading(2),
+  iter = 4000,
+  warmup = 2000,
+  backend = "cmdstanr",
+  file = "../output/models/c1_eval.rds",
+  seed = 3879,
+  control = list(adapt_delta = 0.99, max_treedepth = 15)
+)
+
+doParallel::stopImplicitCluster()
+system("ps aux | grep cmdstan")
+system("pkill -f cmdstan")
+
+summary(fit_c)
+fit_c_r2 <- bayes_R2(fit_c)
+fit_c_r2
+
+bf_sc <- bf(
+  SC_signed ~ conceptType * isNegated +
+    conceptType * log1p(wordCount) +
+    (1 + isNegated | id) +
+    (1 | targetWord) +
+    (1 | dependency),
+  family = gaussian()
+)
+
+bf_cwsc <- bf(
+  cw_SC_signed ~ conceptType * isNegated +
+    conceptType * log1p(wordCount) +
+    (1 + isNegated | id) +
+    (1 | targetWord) +
+    (1 | dependency),
+  family = gaussian()
+)
+
+fit_c2 <- brm(
+  bf_sc + bf_cwsc + set_rescor(TRUE),
+  data = df_c,
+  chains = 6, 
+  cores = 6,
+  threads = threading(2),
+  iter = 4000,
+  warmup = 2000,
+  backend = "cmdstanr",
+  file = "../output/models/c1_eval_xWC.rds",
+  seed = 3879,
+  control = list(adapt_delta = 0.99, max_treedepth = 15)
+)
+
+loo1 <- loo(fit_c)
+loo2 <- loo(fit_c2)
+
+loo_compare(loo1, loo2)
+
+# Posterior draws of NEC and SC for each combination of conceptType and isNegated
+# Define all combinations of conceptType and isNegated
+newdata <- expand.grid(
+  conceptType = c("PTT", "NTT"),
+  isNegated   = c("FALSE", "TRUE"),
+  wordCount = median(df_c$wordCount)
+)
+
+# Get posterior draws
+draws_c <- fit_c %>%
+  epred_draws(newdata = newdata, re_formula = NA)  # Use re_formula = NA to ignore any random effects (none here)
+draws_c <- draws_c %>%
+  rename(Response = .category)
+
+draws_c <- draws_c %>% mutate(isNegated = ifelse(isNegated == "TRUE", "Under negation", "Affirmation"),
+                          Response = ifelse(Response == "cwSCsigned", "CWC", "LC"),
+                          corpus = "controlled")
+
+# 1. condition-level posterior means
+cond_means_c <- draws_c %>%
+  group_by(.draw, Response, conceptType, isNegated) %>%
+  summarise(mu = mean(.epred), .groups = "drop")
+
+# 2. LC: absolute magnitude (distance from zero), then compare types
+lc_table_c <- cond_means_c %>%
+  filter(Response == "LC") %>%
+  mutate(abs_mu = abs(mu)) %>%
+  group_by(.draw, isNegated, conceptType) %>%
+  summarise(abs_mu = mean(abs_mu), .groups = "drop") %>%
+  pivot_wider(names_from = conceptType, values_from = abs_mu) %>%
+  mutate(diff = NTT - PTT) %>%
+  group_by(Response = "LC", isNegated) %>%
+  summarise(
+    mean_diff = mean(diff),
+    lo = quantile(diff, .025),
+    hi = quantile(diff, .975),
+    p_gt_0 = mean(diff > 0),
+    .groups = "drop"
+  )
+
+# 3. CWC: signed contrasts
+cwc_table_c <- cond_means_c %>%
+  filter(Response == "CWC") %>%
+  group_by(.draw, isNegated, conceptType) %>%
+  summarise(mu = mean(mu), .groups = "drop") %>%
+  pivot_wider(names_from = conceptType, values_from = mu) %>%
+  mutate(diff = NTT - PTT) %>%
+  group_by(Response = "CWC", isNegated) %>%
+  summarise(
+    mean_diff = mean(diff),
+    lo = quantile(diff, .025),
+    hi = quantile(diff, .975),
+    p_gt_0 = mean(diff > 0),
+    .groups = "drop"
+  )
+
+# 4. combine
+summary_table_c <- bind_rows(lc_table_c, cwc_table_c)
+
+
+#### Naturalistic corpus
+bf_sc <- bf(
+  SC_signed ~ conceptType * isNegated +
+    log1p(wordCount) +
+    (1 | pair) +
+    (1 + isNegated | pair:id) +
+    (1 | pair:targetWord) +
+    (1 | dependency),
+  family = gaussian()
+)
+
+bf_cwsc <- bf(
+  cw_SC_signed ~ conceptType * isNegated +
+    log1p(wordCount) +
+    (1 | pair) +
+    (1 + isNegated | pair:id) +
+    (1 | pair:targetWord) +
+    (1 | dependency),
+  family = gaussian()
+)
+
+df_n <- dfl[["naturalistic"]] %>% mutate(pair = as.factor(pair))
+fit_n <- brm(
+  bf_sc + bf_cwsc + set_rescor(TRUE),
+  data = df_n,
+  chains = 6, 
+  cores = 6,
+  threads = threading(2),
+  iter = 4000,
+  warmup = 2000,
+  backend = "cmdstanr",
+  file = "../output/models/c2_eval.rds",
+  seed = 3879,
+  control = list(adapt_delta = 0.99, max_treedepth = 15)
+)
+
+summary(fit_n)
+fit_n_r2 <- bayes_R2(fit_n)
+fit_n_r2
+
+
+bf_sc <- bf(
+  SC_signed ~ conceptType * isNegated +
+    conceptType * log1p(wordCount) +
+    (1 | pair) +
+    (1 + isNegated | pair:id) +
+    (1 | pair:targetWord) +
+    (1 | dependency),
+  family = gaussian()
+)
+
+bf_cwsc <- bf(
+  cw_SC_signed ~ conceptType * isNegated +
+    conceptType * log1p(wordCount) +
+    (1 | pair) +
+    (1 + isNegated | pair:id) +
+    (1 | pair:targetWord) +
+    (1 | dependency),
+  family = gaussian()
+)
+
+fit_n2 <- brm(
+  bf_sc + bf_cwsc + set_rescor(TRUE),
+  data = df_n,
+  chains = 6, 
+  cores = 6,
+  threads = threading(2),
+  iter = 4000,
+  warmup = 2000,
+  backend = "cmdstanr",
+  file = "../output/models/c2_eval_xWC.rds",
+  seed = 3879,
+  control = list(adapt_delta = 0.99, max_treedepth = 15)
+)
+
+loo1 <- loo(fit_n)
+loo2 <- loo(fit_n2)
+
+loo_compare(loo1, loo2)
+
+# Posterior draws of NEC and SC for each combination of conceptType and isNegated
+# Define all combinations of conceptType and isNegated
+newdata <- expand.grid(
+  conceptType = c("PTT", "NTT"),
+  isNegated   = c("FALSE", "TRUE"),
+  wordCount = median(df_n$wordCount)
+)
+
+# Get posterior draws
+draws_n <- fit_n %>%
+  epred_draws(newdata = newdata, re_formula = NA)  # Use re_formula = NA to ignore any random effects (none here)
+draws_n <- draws_n %>%
+  rename(Response = .category)
+
+draws_n <- draws_n %>% mutate(isNegated = ifelse(isNegated == "TRUE", "Under negation", "Affirmation"),
+                              Response = ifelse(Response == "cwSCsigned", "CWC", "LC"),
+                              corpus = "naturalistic")
+
+
+# 1. condition-level posterior means
+cond_means_n <- draws_n %>%
+  group_by(.draw, Response, conceptType, isNegated) %>%
+  summarise(mu = mean(.epred), .groups = "drop")
+
+# 2. LC: absolute magnitude (distance from zero), then compare types
+lc_table_n <- cond_means_n %>%
+  filter(Response == "LC") %>%
+  mutate(abs_mu = abs(mu)) %>%
+  group_by(.draw, isNegated, conceptType) %>%
+  summarise(abs_mu = mean(abs_mu), .groups = "drop") %>%
+  pivot_wider(names_from = conceptType, values_from = abs_mu) %>%
+  mutate(diff = NTT - PTT) %>%
+  group_by(Response = "LC", isNegated) %>%
+  summarise(
+    mean_diff = mean(diff),
+    lo = quantile(diff, .025),
+    hi = quantile(diff, .975),
+    p_gt_0 = mean(diff > 0),
+    .groups = "drop"
+  )
+
+# 3. CWC: signed contrasts
+cwc_table_n <- cond_means_n %>%
+  filter(Response == "CWC") %>%
+  group_by(.draw, isNegated, conceptType) %>%
+  summarise(mu = mean(mu), .groups = "drop") %>%
+  pivot_wider(names_from = conceptType, values_from = mu) %>%
+  mutate(diff = NTT - PTT) %>%
+  group_by(Response = "CWC", isNegated) %>%
+  summarise(
+    mean_diff = mean(diff),
+    lo = quantile(diff, .025),
+    hi = quantile(diff, .975),
+    p_gt_0 = mean(diff > 0),
+    .groups = "drop"
+  )
+
+# 4. combine
+summary_table_n <- bind_rows(lc_table_n, cwc_table_n)
+
+summary_table <- bind_rows(summary_table_c, summary_table_n)
+
+xtable(summary_table, digits = 4)
+
+plotdata <- rbind(draws_c, draws_n)
+plotdata <- plotdata %>% mutate(
+  corpus = ifelse(corpus == "controlled", "<i>C<sub>1</sub></i>: Symmetric", "<i>C<sub>2</sub></i>: Inter-pair Variation"),
+  conceptType = ifelse(conceptType == "PTT", "Positive Thick", "Negative Thick")
+)
+
+p <- ggplot(plotdata, aes(x = .epred, y = Response, fill = conceptType)) +
+  stat_halfeye(.width = c(0.66, 0.95), size = 2, alpha = 0.8) +
+  scale_fill_manual(
+    values = MetBrewer::met.brewer("Lakota", n = length(unique(plotdata$Response)))
+  ) +
+  theme_light() +
+  theme(panel.spacing = unit(1, "lines"),
+        plot.caption = element_markdown(hjust = 0, size = 5),
+        strip.text.x = element_markdown(size = 10, margin = margin(0.2,0,0,0, "cm")),
+        axis.text = element_text(size = 8),
+        axis.title = element_text(size = 10),
+        legend.position = "top"
+        ) +
+  facet_grid(isNegated~corpus) +
+  labs(fill = "Term Type",
+       x = "Predicted Response",
+       y = NULL,
+       caption = paste0(
+         "<i>C<sub>1</sub></i>: bf((LC,CWC) ~ conceptType × isNegated + log1p(wordCount) + (1 + isNegated | id) + (1 | targetTerm) + (1 | dependency), family = gaussian())<br>",
+         "<i>C<sub>2</sub></i>: bf((LC,CWC) ~ conceptType × isNegated + log1p(wordCount) + (1 | pair) + (1 + isNegated | pair:id) + (1 | pair:targetTerm) +
+        (1 | dependency), family = gaussian())"
+       )) +
+  scale_y_discrete(expand = c(0,0.1)) +
+  scale_x_continuous(limits = c(-1.25,1.25), breaks = c(-1,0,1), expand = c(0,0))
+p
+
+ggsave(p, file = "../output/figures/pilot.png", width = 6, height = 4, dpi = 600)
+
+
+hypothesis(
+  fit,
+  "SCsigned_conceptTypePositive - NECINLP_conceptTypePositive = 0"
+)
+
+post <- as_draws_df(fit)
+
+# compute conditional means manually
+mu_neg_nonneg <- post$b_SCsigned_Intercept
+mu_pos_nonneg <- post$b_SCsigned_Intercept + post$b_SCsigned_conceptTypePositive
+
+mu_neg_negated <- post$b_SCsigned_Intercept + post$b_SCsigned_isNegatedTrue
+mu_pos_negated <- post$b_SCsigned_Intercept +
+  post$b_SCsigned_conceptTypePositive +
+  post$b_SCsigned_isNegatedTrue +
+  post$`b_SCsigned_conceptTypePositive:isNegatedTrue`
+
+d_neg_nonneg <- abs(mu_neg_nonneg)
+d_pos_nonneg <- abs(mu_pos_nonneg)
+
+d_neg_negated <- abs(mu_neg_negated)
+d_pos_negated <- abs(mu_pos_negated)
+
+# non-negated contrast
+mean(d_pos_nonneg - d_neg_nonneg < 0)
+
+# negated contrast
+mean(d_pos_negated - d_neg_negated < 0)
+
+
+post <- as_draws_df(fit)
+# non-negated
+mu_neg_nonneg <- post$b_cwSCsigned_Intercept
+mu_pos_nonneg <- post$b_cwSCsigned_Intercept + post$b_cwSCsigned_conceptTypePositive
+
+# negated
+mu_neg_negated <- post$b_cwSCsigned_Intercept + post$b_cwSCsigned_isNegatedTrue
+mu_pos_negated <- post$b_cwSCsigned_Intercept +
+  post$b_cwSCsigned_conceptTypePositive +
+  post$b_cwSCsigned_isNegatedTrue +
+  post$`b_cwSCsigned_conceptTypePositive:isNegatedTrue`
+diff_nonneg <- mu_pos_nonneg - mu_neg_nonneg
+diff_neg <- mu_pos_negated - mu_neg_negated
+mean(diff_nonneg < 0)  # positive < negative?
+mean(diff_neg < 0)
+
+
+p <- ggplot(draws, aes(x = .epred, y = Response, fill = conceptTypeL)) +
+  stat_halfeye(.width = c(0.66, 0.95), size = 2, alpha = 0.8) +
+  scale_fill_manual(
+    values = MetBrewer::met.brewer("Lakota", n = length(unique(draws$Response)))
+  ) +
+  labs(
+    x = "Predicted Response",
+    y = NULL
+  ) +
+  theme_light() +
+  theme(panel.spacing = unit(1, "lines")) +
+  facet_wrap(~isNegated) +
+  labs(fill = "Thick Term") +
+  scale_y_discrete(expand = c(0,0.1)) +
+  scale_x_continuous(limits = c(-3,3), breaks = c(-3,0,3), expand = c(0,0))
+p
+ggsave(p, file = "../output/figures/pilot.png", width = 5, height = 2, dpi = 600)
+
+# 1. condition-level posterior means
+cond_means <- draws %>%
+  group_by(.draw, Response, conceptTypeL, isNegated) %>%
+  summarise(mu = mean(.epred), .groups = "drop")
+
+# 2. LC: absolute magnitude (distance from zero), then compare types
+lc_table <- cond_means %>%
+  filter(Response == "LC") %>%
+  mutate(abs_mu = abs(mu)) %>%
+  group_by(.draw, isNegated, conceptTypeL) %>%
+  summarise(abs_mu = mean(abs_mu), .groups = "drop") %>%
+  pivot_wider(names_from = conceptTypeL, values_from = abs_mu) %>%
+  mutate(diff = dishonest - honest) %>%
+  group_by(Response = "LC", isNegated) %>%
+  summarise(
+    mean_diff = mean(diff),
+    lo = quantile(diff, .025),
+    hi = quantile(diff, .975),
+    p_gt_0 = mean(diff > 0),
+    .groups = "drop"
+  )
+
+# 3. CWC: signed contrasts
+cwc_table <- cond_means %>%
+  filter(Response == "CWC") %>%
+  group_by(.draw, isNegated, conceptTypeL) %>%
+  summarise(mu = mean(mu), .groups = "drop") %>%
+  pivot_wider(names_from = conceptTypeL, values_from = mu) %>%
+  mutate(diff = dishonest - honest) %>%
+  group_by(Response = "CWC", isNegated) %>%
+  summarise(
+    mean_diff = mean(diff),
+    lo = quantile(diff, .025),
+    hi = quantile(diff, .975),
+    p_gt_0 = mean(diff > 0),
+    .groups = "drop"
+  )
+
+# 4. combine
+summary_table <- bind_rows(lc_table, cwc_table)
 
 # Function for determining the statistical mode
 Mode <- function(x) {

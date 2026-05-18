@@ -128,11 +128,11 @@ def extract_targets(texts, target_terms, nlp, subsample=None):
                 term_negated = False
 
                 for token in sentence:
-                    if token.text.lower() != term.lower() or token.pos_ != "ADJ":
+                    if token.text.lower() != term.lower() or token.pos_ not in {"ADJ", "ADV"}:
                         continue
 
                     # Acceptable positions: amod modifying NOUN/PRON or acomp/ccomp/xcomp
-                    if (token.dep_ == "amod" and token.head.pos_ in ["NOUN", "PRON", "ADJ"]) or token.dep_ in ["acomp", "ccomp", "xcomp"]:
+                    if (token.dep_ == "amod" and token.head.pos_ in ["NOUN", "PRON", "ADJ", "ADP"]) or token.dep_ in ["acomp", "ccomp", "xcomp", "advcl", "oprd", "advmod", "pcomp", "amod"]:
                         term_dep = token.dep_
 
                         # --- 1. Direct negation on the adjective ---
@@ -140,20 +140,33 @@ def extract_targets(texts, target_terms, nlp, subsample=None):
                             term_negated = True
 
                         # --- 2. Negation on verbs affecting the adjective ---
+                        # Define clause boundaries BEFORE the ancestor loop
+                        CLAUSE_BOUNDARIES = {"ccomp", "advcl", "relcl", "acl", "xcomp"}
+
                         for ancestor in token.ancestors:
-                            if ancestor.pos_ in ["AUX", "VERB"]:
+                            # Stop if we cross ANY clause boundary, not just ccomp
+                            if token.dep_ in CLAUSE_BOUNDARIES:
+                                break
+                            # Also stop if any ancestor on the path is itself a clause root
+                            if ancestor.dep_ in CLAUSE_BOUNDARIES:
+                                break
+                            if ancestor.pos_ in {"AUX", "VERB"}:
                                 if any(child.dep_ == "neg" for child in ancestor.children):
                                     term_negated = True
                                     break
 
                         # --- 3. 'No' determiners attached to the noun modified by the adjective ---
-                        if token.dep_ == "amod" and token.head.pos_ in ["NOUN", "PRON", "ADJ"]:
+                        if token.dep_ in ["amod", "advmod"] and token.head.pos_ in ["NOUN", "PRON", "ADJ"]:
                             if any(child.dep_ == "det" and child.text.lower() == "no" for child in token.head.children):
+                                term_negated = True
+                            elif token.head.dep_ == "attr" and token.head.text.lower() == "nothing":
                                 term_negated = True
 
                         # --- 4. Optional: check for negations in conjunctions ---
                         for conj in token.conjuncts:
-                            if any(child.dep_ == "neg" for child in conj.children):
+                            # Only accept negation from conjuncts in the same clause
+                            if conj.dep_ not in CLAUSE_BOUNDARIES and \
+                                    any(child.dep_ == "neg" for child in conj.children):
                                 term_negated = True
 
                         break  # stop after first match for this term
@@ -173,3 +186,119 @@ def extract_targets(texts, target_terms, nlp, subsample=None):
                 })
 
     return filtered_texts
+
+
+def extract_targets_from_sentence(sentence, target_terms):
+
+    dependencies = {}
+    negations = {}
+
+    for term in target_terms:
+        term_lower = term.lower()
+
+        dependencies[term] = []
+        negations[term] = []
+
+        for i, token in enumerate(sentence):
+            if token.text.lower() != term_lower or token.pos_ not in {"ADJ", "ADV"}:
+                continue
+
+            if token.text.lower() == "kind":
+                if i + 1 < len(sentence) and sentence[i + 1].text.lower() == "of":
+                    continue
+
+            if token.text.lower() == "honest":
+                if i >= 2:
+
+                    # check "to be (ADV*) honest"
+                    j = i - 1
+
+                    # skip adverbs between be → honest
+                    while j >= 1 and sentence[j].pos_ == "ADV":
+                        j -= 1
+
+                    if (
+                            sentence[j].text.lower() == "be"
+                            and sentence[j - 1].text.lower() == "to"
+                    ):
+                        continue
+
+            if (token.dep_ == "amod" and token.head.pos_ in ["NOUN", "PRON", "ADJ", "ADP"]) or \
+               token.dep_ in ["acomp", "ccomp", "xcomp", "advcl", "oprd", "advmod", "pcomp", "amod"]:
+
+                term_dep = token.dep_
+                term_negated = False
+
+                # --- negation checks ---
+                if any(child.dep_ == "neg" for child in token.children):
+                    term_negated = True
+
+                # --- 2. Negation on verbs affecting the adjective ---
+                # Define clause boundaries BEFORE the ancestor loop
+                CLAUSE_BOUNDARIES = {"ccomp", "advcl", "relcl", "acl", "xcomp"}
+
+                for ancestor in token.ancestors:
+                    # Stop if we cross ANY clause boundary, not just ccomp
+                    if token.dep_ in CLAUSE_BOUNDARIES:
+                        break
+                    # Also stop if any ancestor on the path is itself a clause root
+                    if ancestor.dep_ in CLAUSE_BOUNDARIES:
+                        break
+                    if ancestor.pos_ in {"AUX", "VERB"}:
+                        if any(child.dep_ == "neg" for child in ancestor.children):
+                            term_negated = True
+                            break
+
+                if token.dep_ in ["amod", "advmod"] and token.head.pos_ in ["NOUN", "PRON", "ADJ"]:
+                    if any(child.dep_ == "det" and child.text.lower() == "no"
+                           for child in token.head.children):
+                        term_negated = True
+                    elif token.head.dep_ == "attr" and token.head.text.lower() == "nothing":
+                        term_negated = True
+
+                # --- 4. Optional: check for negations in conjunctions ---
+                for conj in token.conjuncts:
+                    # Only accept negation from conjuncts in the same clause
+                    if conj.dep_ not in CLAUSE_BOUNDARIES and \
+                            any(child.dep_ == "neg" for child in conj.children):
+                        term_negated = True
+
+                # ✔ append instead of overwrite
+                dependencies[term].append(term_dep)
+                negations[term].append(term_negated)
+
+    # keep only terms that actually occurred
+    dependencies = {k: v for k, v in dependencies.items() if v}
+    negations = {k: v for k, v in negations.items() if v}
+
+    if not dependencies:
+        return {}, {}
+
+    return dependencies, negations
+
+def build_corpus(items, nlp, target_terms):
+    corpus = []
+
+    for item in items:
+        text = item["title"] + ". " + item["selftext"]
+        doc = nlp(text)
+
+        if doc is None:
+            continue
+
+        for sentence in doc.sents:
+            deps, negs = extract_targets_from_sentence(sentence, target_terms)
+
+            # drop empty sentences (your requirement)
+            if not deps:
+                continue
+
+            corpus.append({
+                "sentence": sentence.text,
+                "id": item["id"],
+                "subreddit": item.get("subreddit"),
+                "target_dep_": deps,
+                "target_neg": negs,
+            })
+
+    return corpus

@@ -1,0 +1,302 @@
+[
+  {
+    "pair": "compassionate/cruel",
+    "frame_id": "CC01",
+    "sentence_aff": "The nurse was widely regarded as being TERM by her patients.",
+    "sentence_neg": "The nurse was widely regarded as not being TERM by her patients."
+  },
+  {
+    "pair": "compassionate/cruel",
+    "frame_id": "CC02",
+    "sentence_aff": "Those who worked with her found her to be deeply TERM.",
+    "sentence_neg": "Those who worked with her found her not to be deeply TERM."
+  },
+  {
+    "pair": "compassionate/cruel",
+    "frame_id": "CC03",
+    "sentence_aff": "It was clear from the way she spoke to the child that she was TERM.",
+    "sentence_neg": "It was clear from the way she spoke to the child that she wasn't TERM."
+  },
+  {
+    "pair": "compassionate/cruel",
+    "frame_id": "CC04",
+    "sentence_aff": "The judge is known for being TERM towards vulnerable defendants.",
+    "sentence_neg": "The judge is known for not being TERM towards vulnerable defendants."
+  },
+  {
+    "pair": "compassionate/cruel",
+    "frame_id": "CC05",
+    "sentence_aff": "The decision to implement the new treatment regime would have been TERM.",
+    "sentence_neg": "The decision to implement the new treatment regime wouldn't have been TERM."
+  },
+  {
+    "pair": "compassionate/cruel",
+    "frame_id": "CC06",
+    "sentence_aff": "She has always been TERM toward those less fortunate than herself.",
+    "sentence_neg": "She has never been TERM toward those less fortunate than herself."
+  },
+  {
+    "pair": "compassionate/cruel",
+    "frame_id": "CC07",
+    "sentence_aff": "Before her accident, Pia was TERM, but afterwards not so much anymore.",
+    "sentence_neg": "Before her accident, Pia wasn't TERM, but afterwards not so much anymore."
+  },
+  {
+    "pair": "compassionate/cruel",
+    "frame_id": "CC08",
+    "sentence_aff": "Case workers are generally TERM to their core.",
+    "sentence_neg": "Case workers are generally not TERM to their core."
+  },
+  {
+    "pair": "compassionate/cruel",
+    "frame_id": "CC09",
+    "sentence_aff": "Survivors described the soldier as being TERM beyond what duty required.",
+    "sentence_neg": "Survivors described the soldier as not being TERM beyond what duty required."
+  },
+  {
+    "pair": "compassionate/cruel",
+    "frame_id": "CC10",
+    "sentence_aff": "Based on what I know about your father, he will be TERM at the wake tomorrow.",
+    "sentence_neg": "Based on what I know about your father, he won't be TERM at the wake tomorrow."
+  },
+    {
+    "pair": "generous/selfish",
+    "frame_id": "GS01",
+    "sentence_aff": "When the will was read, the widow noted that the approach to dividing the estate was TERM.",
+    "sentence_neg": "When the will was read, the widow noted that the approach to dividing the estate was not TERM."
+  },
+  {
+    "pair": "generous/selfish",
+    "frame_id": "GS02",
+    "sentence_aff": "She is TERM when it comes to shared expenses; all her former roommates agree on that.",
+    "sentence_neg": "She isn't TERM when it comes to shared expenses; all her former roommates agree on that."
+  },
+  {
+    "pair": "generous/selfish",
+    "frame_id": "GS03",
+    "sentence_aff": "It was clear from the waiter's reaction that the tip he just go was TERM.",
+    "sentence_neg": "It was clear from the waiter's reaction that the tip he just go was not TERM."
+  },
+  {
+    "pair": "generous/selfish",
+    "frame_id": "GS04",
+    "sentence_aff": "The CEO is known for being TERM when it comes to distributing year-end bonuses.",
+    "sentence_neg": "The CEO is known for not being TERM when it comes to distributing year-end bonuses."
+  },
+  {
+    "pair": "generous/selfish",
+    "frame_id": "GS05",
+    "sentence_aff": "His decision to distribute the profits among the workforce was seen as TERM.",
+    "sentence_neg": "His decision to distribute the profits among the workforce was not seen as TERM."
+  },
+  {
+    "pair": "generous/selfish",
+    "frame_id": "GS06",
+    "sentence_aff": "She has always been TERM when colleagues needed support during difficult projects.",
+    "sentence_neg": "She has never been TERM when colleagues needed support during difficult projects."
+  },
+  {
+    "pair": "generous/selfish",
+    "frame_id": "GS07",
+    "sentence_aff": "Everyone at the fundraiser agreed that his contribution was genuinely TERM.",
+    "sentence_neg": "Everyone at the fundraiser agreed that his contribution was not genuinely TERM."
+  },
+  {
+    "pair": "generous/selfish",
+    "frame_id": "GS08",
+    "sentence_aff": "When it came to lending money to friends, Carl has always been TERM.",
+    "sentence_neg": "When it came to lending money to friends, Carl has never been TERM."
+  },
+  {
+    "pair": "generous/selfish",
+    "frame_id": "GS09",
+    "sentence_aff": "What she did for that poor girl was very TERM.",
+    "sentence_neg": "What she did for that poor girl was not very TERM."
+  },
+  {
+    "pair": "generous/selfish",
+    "frame_id": "GS10",
+    "sentence_aff": "Based on how she handled the scholarship fund, most people found her to be TERM.",
+    "sentence_neg": "Based on how she handled the scholarship fund, most people did not find her to be TERM."
+  },
+  {
+    "pair": "sincere/deceitful",
+    "frame_id": "SD01",
+    "sentence_aff": "After the hearing, the journalist noted that the politician's apology seemed genuinely TERM.",
+    "sentence_neg": "After the hearing, the journalist noted that the politician's apology did not seem genuinely TERM."
+  },
+  {
+    "pair": "sincere/deceitful",
+    "frame_id": "SD02",
+    "sentence_aff": "Literally everyone in the industry knows that she is TERM in her dealings with clients.",
+    "sentence_neg": "Literally everyone in the industry knows that She isn't TERM in her dealings with clients."
+  },
+  {
+    "pair": "sincere/deceitful",
+    "frame_id": "SD03",
+    "sentence_aff": "His excuse was TERM; it was clear from the way he avoided eye contact.",
+    "sentence_neg": "His excuse wasn't TERM; it was clear from the way he avoided eye contact."
+  },
+  {
+    "pair": "sincere/deceitful",
+    "frame_id": "SD04",
+    "sentence_aff": "When questioned under pressure, the witness was TERM in her deposition.",
+    "sentence_neg": "When questioned under pressure, the witness was not TERM in her deposition."
+  },
+  {
+    "pair": "sincere/deceitful",
+    "frame_id": "SD05",
+    "sentence_aff": "His account of the events during the investigation was widely considered to be TERM.",
+    "sentence_neg": "His account of the events during the investigation was not widely considered to be TERM."
+  },
+  {
+    "pair": "sincere/deceitful",
+    "frame_id": "SD06",
+    "sentence_aff": "Even under scrutiny, he has always been TERM when asked about his motivations.",
+    "sentence_neg": "Even under scrutiny, he has never been TERM when asked about his motivations."
+  },
+  {
+    "pair": "sincere/deceitful",
+    "frame_id": "SD07",
+    "sentence_aff": "I really want to believe that you are just being TERM, but it feels like I'm lying to myself.",
+    "sentence_neg": "I really want to believe that you are just not being TERM, but it feels like I'm lying to myself."
+  },
+  {
+    "pair": "sincere/deceitful",
+    "frame_id": "SD08",
+    "sentence_aff": "Sally is TERM in everything she does, I can attest to that.",
+    "sentence_neg": "Sally isn't TERM in everything she does, I can attest to that."
+  },
+  {
+    "pair": "sincere/deceitful",
+    "frame_id": "SD09",
+    "sentence_aff": "His therapist remarked that he had become TERM over the course of treatment.",
+    "sentence_neg": "His therapist remarked that he had not become TERM over the course of treatment."
+  },
+  {
+    "pair": "sincere/deceitful",
+    "frame_id": "SD10",
+    "sentence_aff": "You could tell just from talking to her for five minutes that she was TERM.",
+    "sentence_neg": "You could tell just from talking to her for five minutes that she was not TERM."
+  },
+  {
+    "pair": "courageous/cowardly",
+    "frame_id": "COCO01",
+    "sentence_aff": "Standing before the crowd, the speaker remained TERM, as he had in the past.",
+    "sentence_neg": "Standing before the crowd, the speaker did not remain TERM, as he had in the past."
+  },
+  {
+    "pair": "courageous/cowardly",
+    "frame_id": "COCO02",
+    "sentence_aff": "It was widely agreed that the firefighter's actions during the rescue were TERM.",
+    "sentence_neg": "It was widely agreed that the firefighter's actions during the rescue were not TERM."
+  },
+  {
+    "pair": "courageous/cowardly",
+    "frame_id": "COCO03",
+    "sentence_aff": "Despite the personal risk, her decision to speak out was undeniably TERM, even for her.",
+    "sentence_neg": "Despite the personal risk, her decision to speak out was not undeniably TERM, even for her."
+  },
+  {
+    "pair": "courageous/cowardly",
+    "frame_id": "COCO04",
+    "sentence_aff": "In moments like that, you discover whether someone is truly TERM.",
+    "sentence_neg": "In moments like that, you discover whether someone is truly not TERM."
+  },
+  {
+    "pair": "courageous/cowardly",
+    "frame_id": "COCO05",
+    "sentence_aff": "The committee described his refusal to back down as TERM.",
+    "sentence_neg": "The committee did not describe his refusal to back down as TERM."
+  },
+  {
+    "pair": "courageous/cowardly",
+    "frame_id": "COCO06",
+    "sentence_aff": "She proved herself TERM during the outbreak of the fire at the school.",
+    "sentence_neg": "She did not prove herself TERM during the outbreak of the fire at the school."
+  },
+  {
+    "pair": "courageous/cowardly",
+    "frame_id": "COCO07",
+    "sentence_aff": "Nobody expected anything from him, but his response was surprisingly TERM.",
+    "sentence_neg": "Nobody expected anything from him, but his response was not surprisingly TERM."
+  },
+  {
+    "pair": "courageous/cowardly",
+    "frame_id": "COCO08",
+    "sentence_aff": "When the crisis unfolded, the leader was TERM in the face of mounting pressure.",
+    "sentence_neg": "When the crisis unfolded, the leader was not TERM in the face of mounting pressure."
+  },
+  {
+    "pair": "courageous/cowardly",
+    "frame_id": "COCO09",
+    "sentence_aff": "Debating the morality of the intervention struck many as TERM.",
+    "sentence_neg": "Debating the morality of the intervention did not strike many as TERM."
+  },
+  {
+    "pair": "courageous/cowardly",
+    "frame_id": "COCO10",
+    "sentence_aff": "Looking back, he noticed that he had been TERM at a critical moment.",
+    "sentence_neg": "Looking back, he noticed that he had not been TERM at a critical moment."
+  },
+    {
+    "pair": "virtuous/vicious",
+    "frame_id": "VV01",
+    "sentence_aff": "The leader's conduct is widely regarded as TERM, especially compared to his predecessors.",
+    "sentence_neg": "The leader's conduct is not widely regarded as TERM, especially compared to his predecessors."
+  },
+  {
+    "pair": "virtuous/vicious",
+    "frame_id": "VV02",
+    "sentence_aff": "Even among critics, his motives would have been considered TERM.",
+    "sentence_neg": "Even among critics, his motives would not have been considered TERM."
+  },
+  {
+    "pair": "virtuous/vicious",
+    "frame_id": "VV03",
+    "sentence_aff": "In private as well as in public, her behavior will remain consistently TERM, I promise you that.",
+    "sentence_neg": "In private as well as in public, her behavior will not remain consistently TERM, I promise you that."
+  },
+  {
+    "pair": "virtuous/vicious",
+    "frame_id": "VV04",
+    "sentence_aff": "Your behavior is TERM, even given the circumstances.",
+    "sentence_neg": "Your behavior is not TERM, even given the circumstances."
+  },
+  {
+    "pair": "virtuous/vicious",
+    "frame_id": "VV05",
+    "sentence_aff": "I'd wager that his influence over the group will prove TERM over time.",
+    "sentence_neg": "I'd wager that his influence over the group will not prove TERM over time."
+  },
+  {
+    "pair": "virtuous/vicious",
+    "frame_id": "VV06",
+    "sentence_aff": "During the investigation, the official was found to be TERM in her dealings.",
+    "sentence_neg": "During the investigation, the official was not found to be TERM in her dealings."
+  },
+  {
+    "pair": "virtuous/vicious",
+    "frame_id": "VV07",
+    "sentence_aff": "What troubled many was whether the practice itself was TERM.",
+    "sentence_neg": "What troubled many was whether the practice itself was not TERM."
+  },
+  {
+    "pair": "virtuous/vicious",
+    "frame_id": "VV08",
+    "sentence_aff": "By his own admission, his actions at the time were TERM, but pretty much everyone else disagreed.",
+    "sentence_neg": "By his own admission, his actions at the time were not TERM, but pretty much everyone else disagreed."
+  },
+  {
+    "pair": "virtuous/vicious",
+    "frame_id": "VV09",
+    "sentence_aff": "Rarely had anyone ever witnessed the queen being TERM, but this time she was.",
+    "sentence_neg": "Rarely had anyone ever witnessed the queen not being TERM, but this time she was."
+  },
+  {
+    "pair": "virtuous/vicious",
+    "frame_id": "VV10",
+    "sentence_aff": "People are generally TERM; don't be intimidated.",
+    "sentence_neg": "People are not generally TERM; don't be intimidated."
+  }
+]

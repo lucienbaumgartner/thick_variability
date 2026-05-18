@@ -1,0 +1,52 @@
+[
+  {
+    "template_id": "S1",
+    "sentence_aff": "Everyone agreed that John was a TERM person.",
+    "sentence_neg": "Everyone agreed that John was not a TERM person."
+  },
+  {
+    "template_id": "S2",
+    "sentence_aff": "There was something TERM in his demeanor towards his wife.",
+    "sentence_neg": "There was nothing TERM in his demeanor towards his wife."
+  },
+  {
+    "template_id": "S3",
+    "sentence_aff": "Your comments on my paper were TERM, I didn't expect that.",
+    "sentence_neg": "Your comments on my paper weren't TERM, I didn't expect that."
+  },
+  {
+    "template_id": "S4",
+    "sentence_aff": "She has always been TERM in the way she handles difficult situations.",
+    "sentence_neg": "She has never been TERM in the way she handles difficult situations."
+  },
+  {
+    "template_id": "S5",
+    "sentence_aff": "The board found his conduct during the negotiations to be TERM.",
+    "sentence_neg": "The board did not find his conduct during the negotiations to be TERM."
+  },
+  {
+    "template_id": "S6",
+    "sentence_aff": "His decision to help them was widely seen as TERM.",
+    "sentence_neg": "His decision to help them was not widely seen as TERM."
+  },
+  {
+    "template_id": "S7",
+    "sentence_aff": "People who knew him well described him as genuinely TERM.",
+    "sentence_neg": "People who knew him well would not describe him as genuinely TERM."
+  },
+  {
+    "template_id": "S8",
+    "sentence_aff": "Drunk people generally are TERM.",
+    "sentence_neg": "Drunk people generally aren't TERM."
+  },
+  {
+    "template_id": "S9",
+    "sentence_aff": "It was baffling that someone so successful could be TERM.",
+    "sentence_neg": "It was baffling that someone so successful couldn't be TERM."
+  },
+  {
+    "template_id": "S10",
+    "sentence_aff": "After the war, Lisa became TERM.",
+    "sentence_neg": "After the war, Lisa didn't become TERM."
+  }
+]
