@@ -2,6 +2,7 @@ import numpy as np
 import csv
 import os
 import re
+import torch
 from tqdm import tqdm
 from typing import Callable, Iterable, Tuple, Optional
 
@@ -16,6 +17,7 @@ def ablate_word(sentence: str, word: str) -> str:
         if w.lower() != word.lower()
     )
 
+
 # -----------------------------
 # Core metric engine
 # -----------------------------
@@ -27,10 +29,10 @@ def compute_metrics(
     embed_fn: Callable[[list[str]], np.ndarray],
     sentiment_score_fn: Callable[[str], float],
     sentiment_label_fn: Callable[[str], int],
-    attribution_fn: Callable[[str, str], float],
+    attribution_fn: Optional[Callable[[str, str], float]] = None,
+    causal_fn: Optional[Callable[[str, str], dict]] = None,
     P_final: Optional[np.ndarray] = None,
     batch_size: int = 16,
-    compute_DW: bool = False,
 ):
     """
     Pure metric computation engine.
@@ -77,8 +79,12 @@ def compute_metrics(
         "SC_signed",
         "cw_SC_signed",
         "DW",
+        "cf_effect",
+        "expected_cf_score",
+        "cf_baseline",
+        "cf_n_candidates",
         "targetPolarity",
-        "sentencePolarity",
+        #"sentencePolarity",
         "sentenceSentimentProb"
     ]
 
@@ -192,14 +198,15 @@ def compute_metrics(
                         else 0
                     )
 
-                    if compute_DW:
-                        # --- attribution ---
-                        if attribution_fn is not None:
-                            DW = attribution_fn(sentence, target_word)
-                        else:
-                            DW = None
+                    if attribution_fn is not None:
+                        DW = attribution_fn(sentence, target_word)
                     else:
                         DW = None
+
+                    if causal_fn is not None:
+                        causal_result = causal_fn(sentence, target_word)
+                    else:
+                        causal_result = None
 
                     writer.writerow({
                         "id": id_,
@@ -219,7 +226,83 @@ def compute_metrics(
                         "SC_signed": SC_signed,
                         "cw_SC_signed": cw_SC_signed,
                         "DW": DW,
+                        "cf_effect": causal_result["effect"] if causal_result else None,
+                        "expected_cf_score": causal_result["expected_cf_score"] if causal_result else None,
+                        "cf_baseline": causal_result["baseline"] if causal_result else None,
+                        "cf_n_candidates": causal_result["n_candidates"] if causal_result else None,
                         "targetPolarity": target_polarity,
-                        "sentencePolarity": sentiment_label_fn(sentence),
-                        "sentenceSentimentProb": sentiment_score_fn(sentence)
+                        #"sentencePolarity": sentiment_label_fn(sentence),
+                        "sentenceSentimentProb": full_sentiments[i]
+                    })
+
+def compute_metrics_roberta(
+    corpus: Iterable[Tuple],
+    output_path: str,
+    *,
+    causal_fn: Callable[[str, str], dict],
+    batch_size: int = 16,
+):
+    """
+    Causal counterfactual metric computation engine.
+
+    Parameters
+    ----------
+    corpus : iterable
+        Each item: (sentence, target_words, id, dep, neg)
+
+    causal_fn : callable
+        (sentence, target_word) -> dict with effect, expected_cf_score,
+        baseline, n_candidates, replacement_entropy; or None if skipped
+
+    batch_size : int
+        Mini-batch size for processing
+    """
+
+    os.makedirs(os.path.dirname(output_path), exist_ok=True)
+
+    fieldnames = [
+        "id",
+        "sentence",
+        "target_word",
+        "dependency",
+        "is_negated",
+        "sentence_wordcount",
+        "cf_effect",
+        "replacement_entropy",
+        "expected_cf_score",
+        "cf_baseline",
+        "cf_n_candidates",
+    ]
+
+    with open(output_path, "w", newline="") as f_out:
+        writer = csv.DictWriter(f_out, fieldnames=fieldnames)
+        writer.writeheader()
+
+        for batch_start in tqdm(
+            range(0, len(corpus), batch_size),
+            desc="Processing corpus",
+            unit="batch"
+        ):
+            batch = corpus[batch_start:batch_start + batch_size]
+
+            for i, (sentence, target_words, id_, dep_, neg_) in enumerate(batch):
+                if isinstance(target_words, str):
+                    target_words = (target_words,)
+
+                for target_word, dep_word, neg_flag in zip(target_words, dep_, neg_):
+
+                    causal_result = causal_fn(sentence, target_word)
+
+                    writer.writerow({
+                        "id": id_,
+                        "sentence": sentence,
+                        "target_word": target_word,
+                        "dependency": dep_word,
+                        "is_negated": neg_flag,
+                        "sentence_wordcount": len(re.findall(r'\w+', sentence)),
+                        "cf_effect": -causal_result["effect"] if causal_result else None,
+                        "replacement_entropy": causal_result["replacement_entropy"] if causal_result else None,
+                        "expected_cf_score": causal_result["expected_cf_score"] if causal_result else None,
+                        "cf_baseline": causal_result["baseline"] if causal_result else None,
+                        "cf_n_candidates": causal_result["n_candidates"] if causal_result else None,
                     })

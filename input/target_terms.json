@@ -17,7 +17,7 @@
   {
     "pair": "virtuous_vicious",
     "pos": ["virtuous", "moral", "righteous", "upright", "ethical"],
-    "neg": ["vicious", "cruel", "malicious", "evil", "malevolent"]
+    "neg": ["vicious", "malicious", "evil", "malevolent"]
   },
   {
     "pair": "courageous_cowardly",
